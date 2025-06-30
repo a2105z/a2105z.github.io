@@ -227,7 +227,7 @@ export const EDUCATION: Education[] = [
     tileColor: "#003262",
     location: "Berkeley, California, United States",
     degree:
-      "Master of Engineering in Electrical Engineering and Computer Sciences",
+      "Master of Engineering, Electrical Engineering & Computer Sciences",
     startDate: "Aug 2028",
     endDate: "Spring 2029",
     dateRange: "Aug 2028 — Spring 2029",
