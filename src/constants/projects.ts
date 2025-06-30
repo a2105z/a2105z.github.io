@@ -66,7 +66,7 @@ export const EXPERIENCES: Experience[] = [
     company: "LinkedIn",
     monogram: "in",
     logo: "/icons/organizations/linkedin.svg",
-    location: "Sunnyvale, California, United States",
+    location: "Mountain View, California, United States",
     startDate: "Jun 2027",
     endDate: "Aug 2027",
     summary: "Making Core AI products stronger at LinkedIn",
@@ -74,7 +74,7 @@ export const EXPERIENCES: Experience[] = [
       {
         title: "Software Engineering Intern, Core AI",
         dateRange: "Jun 2027 — Aug 2027",
-        location: "Sunnyvale, California, United States",
+        location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
       },
     ],
