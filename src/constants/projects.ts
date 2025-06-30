@@ -63,6 +63,42 @@ const FIVE_BULLETS: string[] = [
 
 export const EXPERIENCES: Experience[] = [
   {
+    company: "LinkedIn",
+    monogram: "in",
+    logo: "/icons/organizations/linkedin.svg",
+    location: "Sunnyvale, California, United States",
+    startDate: "Jun 2027",
+    endDate: "Aug 2027",
+    summary: "Making Core AI products stronger at LinkedIn",
+    roles: [
+      {
+        title: "Software Engineering Intern, Core AI",
+        dateRange: "Jun 2027 — Aug 2027",
+        location: "Sunnyvale, California, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
+    company: "Y Combinator",
+    monogram: "YC",
+    logo: "/icons/organizations/ycombinator.svg",
+    logoFull: true,
+    tileColor: "#FF6600",
+    location: "San Francisco, California, United States",
+    startDate: "Jun 2027",
+    endDate: "Aug 2027",
+    summary: "Making early-stage products with a YC Summer Grant",
+    roles: [
+      {
+        title: "Summer Grant Fellow",
+        dateRange: "Jun 2027 — Aug 2027",
+        location: "San Francisco, California, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "Rivian",
     monogram: "RIV",
     logo: "/icons/organizations/rivian.png",

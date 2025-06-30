@@ -8,6 +8,12 @@ interface MarqueeItem {
 }
 
 const ITEMS: MarqueeItem[] = [
+  { label: "LinkedIn", logo: "/icons/organizations/linkedin.svg" },
+  {
+    label: "Y Combinator",
+    logo: "/icons/organizations/ycombinator.svg",
+    wordmark: "YC",
+  },
   {
     label: "RV Tech",
     logo: "/icons/organizations/rv-tech.png",
