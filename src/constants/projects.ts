@@ -69,8 +69,7 @@ export const EXPERIENCES: Experience[] = [
     location: "Urbana, Illinois, United States",
     startDate: "Sep 2026",
     endDate: "May 2027",
-    summary:
-      "Software engineering internship on vehicle firmware — embedded systems work across Rivian's vehicle stack.",
+    summary: "making vehicle firmware more capable at Rivian",
     roles: [
       {
         title: "Software Engineering Intern, Vehicle Firmware",
@@ -87,8 +86,7 @@ export const EXPERIENCES: Experience[] = [
     location: "Urbana, Illinois, United States",
     startDate: "Sep 2026",
     endDate: "May 2027",
-    summary:
-      "Student research with NVIDIA's NeMo team — applied AI research across large language and multimodal systems.",
+    summary: "making foundation models stronger with NeMo at NVIDIA",
     roles: [
       {
         title: "AI Student Researcher, NeMo",
@@ -108,7 +106,7 @@ export const EXPERIENCES: Experience[] = [
     startDate: "Jun 2026",
     endDate: "Aug 2026",
     summary:
-      "Software engineering on the Vehicle Telematics team — building tooling and infrastructure for software-defined vehicle platforms.",
+      "making software-defined vehicles scale at Rivian and Volkswagen Group Technologies",
     roles: [
       {
         title: "Software Engineer Intern, Vehicle Telematics",
@@ -125,8 +123,7 @@ export const EXPERIENCES: Experience[] = [
     location: "Mountain View, California, United States",
     startDate: "Jun 2026",
     endDate: "Aug 2026",
-    summary:
-      "Externship on Google Cloud AI — contributing to developer tools and integrations across the Cloud AI surface.",
+    summary: "making cloud AI more useful at Google",
     roles: [
       {
         title: "Software Engineer Extern, Cloud AI",
@@ -145,8 +142,7 @@ export const EXPERIENCES: Experience[] = [
     location: "Urbana, Illinois, United States",
     startDate: "Jun 2025",
     endDate: "Aug 2025",
-    summary:
-      "Research-focused software engineering on the Alexa AGI research team — applied ML and systems work on next-generation Alexa intelligence.",
+    summary: "making Alexa smarter with AGI research at Amazon",
     roles: [
       {
         title: "Software Development Engineer Intern, Alexa AGI Research",
@@ -163,8 +159,7 @@ export const EXPERIENCES: Experience[] = [
     location: "Phoenix, Arizona, United States",
     startDate: "Jan 2025",
     endDate: "May 2025",
-    summary:
-      "Embedded and flight software for the Lucy mission spacecraft — exploring AI/ML-native flight OS architecture and spacecraft telematics.",
+    summary: "making spacecraft software fly on Lucy at NASA",
     roles: [
       {
         title: "Embedded Software Engineer Intern, Lucy Mission",
@@ -183,8 +178,7 @@ export const EXPERIENCES: Experience[] = [
     location: "New York City, New York, United States",
     startDate: "Jun 2024",
     endDate: "Aug 2024",
-    summary:
-      "Software Engineering Fellowship focused on Defense & National Security — applied engineering alongside platform and forward-deployed teams.",
+    summary: "making defense software decisions sharper at Palantir",
     roles: [
       {
         title: "Software Engineering Fellow, Defense & National Security",
