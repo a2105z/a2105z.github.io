@@ -87,11 +87,10 @@ const About: React.FC = () => {
                 Gemini ecosystem — with earlier work at{" "}
                 <span className="text-ink font-medium">Amazon</span>,{" "}
                 <span className="text-ink font-medium">NASA</span>,{" "}
-                <span className="text-ink font-medium">Palantir</span>,{" "}
-                <span className="text-ink font-medium">Harvard Medical School</span>
-                , and <span className="text-ink font-medium">AlgoDynamix</span>{" "}
+                <span className="text-ink font-medium">Palantir</span>, and{" "}
+                <span className="text-ink font-medium">AlgoDynamix</span>{" "}
                 — spanning applied AI, flight software, enterprise platforms,
-                ML for robotics, and quantitative finance.
+                defense tech, and quantitative finance.
               </motion.p>
 
               <motion.p variants={item}>
@@ -118,12 +117,15 @@ const About: React.FC = () => {
                 </span>
                 , and{" "}
                 <span className="text-ink font-medium">
-                  Technology Entrepreneurship
+                  Engineering Entrepreneurship
                 </span>{" "}
-                at UIUC — a triple B.S. put together to keep engineering,
-                systems, and business context in the same head at once — and
-                will finish with an M.S. in Computer Science, AI focus, in{" "}
-                <span className="text-ink font-medium">2029</span>.
+                at UIUC, then continue to a{" "}
+                <span className="text-ink font-medium">
+                  Master of Engineering in Electrical Engineering and Computer
+                  Sciences
+                </span>{" "}
+                at UC Berkeley, focused on AI, data science, computer vision, and
+                product.
               </motion.p>
             </motion.div>
 
@@ -138,7 +140,7 @@ const About: React.FC = () => {
               {[
                 { k: "Focus", v: "Product · Capital" },
                 { k: "Now", v: "Rivian × Google" },
-                { k: "Class of", v: "2029 (M.S. CS · AI)" },
+                { k: "Next", v: "Berkeley M.Eng. EECS" },
               ].map((s) => (
                 <div key={s.k}>
                   <p className="text-[10px] uppercase tracking-[0.24em] text-ink-dim font-medium">

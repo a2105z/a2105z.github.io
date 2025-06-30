@@ -136,41 +136,21 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "Palantir",
+    company: "Palantir Technologies",
     monogram: "P",
     logo: "/icons/organizations/palantir.png",
     logoFull: true,
     tileColor: "#000000",
     location: "Denver, Colorado",
-    startDate: "2024",
-    endDate: "2024",
+    startDate: "Jun 2024",
+    endDate: "Aug 2024",
     summary:
-      "Software Engineering Fellowship at Palantir — applied engineering work alongside the platform and forward-deployed teams.",
+      "Software Engineering Fellowship focused on Defense & National Security — applied engineering alongside platform and forward-deployed teams.",
     roles: [
       {
-        title: "Software Engineering Fellow",
-        dateRange: "06/2024 — 08/2024",
+        title: "Software Engineering Fellow, Defense & National Security",
+        dateRange: "Jun 2024 — Aug 2024",
         location: "Denver, Colorado",
-        highlights: [...FIVE_BULLETS],
-      },
-    ],
-  },
-  {
-    company: "Harvard Medical School",
-    monogram: "HMS",
-    logo: "/icons/organizations/harvard-medical.png",
-    logoFull: true,
-    tileColor: "#b7383b",
-    location: "Boston, Massachusetts",
-    startDate: "2023",
-    endDate: "2023",
-    summary:
-      "Machine learning research engineering on a Robotics Research effort at Harvard Medical School — model development, data pipelines, and evaluation for embodied medical applications.",
-    roles: [
-      {
-        title: "Machine Learning Research Engineer Intern, Robotics Research",
-        dateRange: "06/2023 — 08/2023",
-        location: "Boston, Massachusetts",
         highlights: [...FIVE_BULLETS],
       },
     ],
@@ -199,21 +179,22 @@ export const EXPERIENCES: Experience[] = [
 
 export const EDUCATION: Education[] = [
   {
-    institution: "Massachusetts Institute of Technology",
-    monogram: "MIT",
-    logo: "/icons/organizations/mit.png",
+    institution: "University of California, Berkeley",
+    monogram: "UCB",
+    logo: "/icons/organizations/berkeley.svg",
     logoFull: true,
-    tileColor: "#000000",
-    location: "Cambridge, Massachusetts",
-    degree: "MicroMasters® - Technology & Operational Systems",
-    startDate: "2026",
-    endDate: "2029",
-    dateRange: "Jun 2026 — May 2029",
+    tileColor: "#003262",
+    location: "Berkeley, California",
+    degree:
+      "Master of Engineering in Electrical Engineering and Computer Sciences",
+    startDate: "Aug 2028",
+    endDate: "Spring 2029",
+    dateRange: "Aug 2028 — Spring 2029",
     focus: [
-      "Supply Chain Management",
-      "Manufacturing",
-      "Economics & Finance",
-      "Statistics & Data Science",
+      "Artificial Intelligence",
+      "Data Science",
+      "Computer Vision",
+      "Product",
     ],
   },
   {
@@ -224,10 +205,10 @@ export const EDUCATION: Education[] = [
     tileColor: "#13294B",
     location: "Urbana–Champaign, Illinois",
     degree:
-      "BS/MS - Computer Science · BS - Electrical Engineering · BS - Engineering Entrepreneurship",
-    startDate: "2024",
-    endDate: "2029",
-    dateRange: "Jun 2024 — May 2029",
+      "Bachelor of Science, Computer Science · Bachelor of Science, Electrical Engineering · Bachelor of Science, Engineering Entrepreneurship",
+    startDate: "Aug 2024",
+    endDate: "May 2028",
+    dateRange: "Aug 2024 — May 2028",
     focus: [
       "Computer Science",
       "Electrical Engineering",

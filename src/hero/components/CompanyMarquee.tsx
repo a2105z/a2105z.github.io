@@ -18,16 +18,12 @@ const ITEMS: MarqueeItem[] = [
     wordmark: "P",
   },
   {
-    label: "Harvard Medical School",
-    logo: "/icons/organizations/harvard-medical.png",
-    wordmark: "HMS",
-  },
-  {
     label: "AlgoDynamix",
     logo: "/icons/organizations/algodynamix.png",
     wordmark: "AD",
   },
   { label: "UIUC", logo: "/icons/organizations/uiuc.png" },
+  { label: "UC Berkeley", logo: "/icons/organizations/berkeley.svg" },
 ];
 
 const Wordmark: React.FC<{ text: string }> = ({ text }) => (

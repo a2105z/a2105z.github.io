@@ -10,7 +10,7 @@ import { EASE_PREMIUM } from "../../shared/motion";
 type Tab = "work" | "education";
 
 const TABS: { id: Tab; label: string }[] = [
-  { id: "work", label: "Research & Internships" },
+  { id: "work", label: "Experience" },
   { id: "education", label: "Education" },
 ];
 
@@ -19,7 +19,7 @@ const Experience: React.FC = () => {
   const description =
     tab === "work"
       ? "Selected engineering work across autonomy, AI, systems, and infrastructure."
-      : "Formal training across engineering, systems, business, and applied AI.";
+      : "Formal training across engineering, systems, product, and applied AI.";
 
   return (
     <section className="bg-canvas pt-24 pb-32">
