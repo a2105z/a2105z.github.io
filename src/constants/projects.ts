@@ -122,9 +122,9 @@ export const EXPERIENCES: Experience[] = [
   {
     company: "NVIDIA",
     monogram: "NV",
-    logo: "/icons/organizations/nvidia.png",
+    logo: "/icons/organizations/nvidia.svg",
     logoFull: true,
-    tileColor: "#7EBA00",
+    tileColor: "#76B900",
     location: "Urbana, Illinois, United States",
     startDate: "Sep 2026",
     endDate: "May 2027",
