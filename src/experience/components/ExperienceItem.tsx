@@ -90,9 +90,8 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
   roles,
 }) => {
   const primary = roles && roles.length > 0 ? roles[0] : undefined;
-  const roleTitle = primary?.title;
+  const headline = primary?.title ?? company;
   const links = primary?.links;
-  const headline = summary || roleTitle || company;
 
   return (
     <motion.div
@@ -127,11 +126,14 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
               </a>
             ))}
           </div>
-          {roleTitle && summary && (
-            <p className="text-ink-muted text-[14px] mt-0.5">{roleTitle}</p>
-          )}
+          <p className="text-ink-muted text-[14px] mt-0.5">{company}</p>
           {location && (
             <p className="text-[12px] text-ink-dim mt-1">{location}</p>
+          )}
+          {summary && (
+            <p className="text-ink-muted text-[14px] leading-relaxed mt-3 max-w-2xl">
+              {summary}
+            </p>
           )}
         </div>
       </div>
