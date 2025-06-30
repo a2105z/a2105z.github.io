@@ -63,6 +63,40 @@ const FIVE_BULLETS: string[] = [
 
 export const EXPERIENCES: Experience[] = [
   {
+    company: "John Deere",
+    monogram: "JD",
+    logo: "/icons/organizations/john-deere.svg",
+    location: "Urbana, Illinois, United States",
+    startDate: "Sep 2027",
+    endDate: "May 2028",
+    summary: "Making agricultural software and systems better at John Deere",
+    roles: [
+      {
+        title: "Software Engineering Intern, (Unknown Team)",
+        dateRange: "Sep 2027 — May 2028",
+        location: "Urbana, Illinois, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
+    company: "Google DeepMind",
+    monogram: "DM",
+    logo: "/icons/organizations/deepmind.svg",
+    location: "Urbana, Illinois, United States",
+    startDate: "Sep 2027",
+    endDate: "May 2028",
+    summary: "Making AlphaFold and JAX research stronger at Google DeepMind",
+    roles: [
+      {
+        title: "AI Student Researcher, AlphaFold + JAX",
+        dateRange: "Sep 2027 — May 2028",
+        location: "Urbana, Illinois, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "Rivian",
     monogram: "RIV",
     logo: "/icons/organizations/rivian.png",
