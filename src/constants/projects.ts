@@ -69,7 +69,7 @@ export const EXPERIENCES: Experience[] = [
     location: "Urbana, Illinois, United States",
     startDate: "Sep 2026",
     endDate: "May 2027",
-    summary: "making vehicle firmware more capable at Rivian",
+    summary: "making vehicle firmware more reliable at Rivian",
     roles: [
       {
         title: "Software Engineering Intern, Vehicle Firmware",
@@ -86,7 +86,7 @@ export const EXPERIENCES: Experience[] = [
     location: "Urbana, Illinois, United States",
     startDate: "Sep 2026",
     endDate: "May 2027",
-    summary: "making foundation models stronger with NeMo at NVIDIA",
+    summary: "making generative AI models better with NeMo at NVIDIA",
     roles: [
       {
         title: "AI Student Researcher, NeMo",
@@ -106,7 +106,7 @@ export const EXPERIENCES: Experience[] = [
     startDate: "Jun 2026",
     endDate: "Aug 2026",
     summary:
-      "making software-defined vehicles scale at Rivian and Volkswagen Group Technologies",
+      "making vehicle telematics work across software-defined vehicles at Rivian and Volkswagen Group Technologies",
     roles: [
       {
         title: "Software Engineer Intern, Vehicle Telematics",
@@ -123,7 +123,8 @@ export const EXPERIENCES: Experience[] = [
     location: "Mountain View, California, United States",
     startDate: "Jun 2026",
     endDate: "Aug 2026",
-    summary: "making cloud AI more useful at Google",
+    summary:
+      "making ADK agents, Genkit apps, MediaPipe edge AI, and the Python GenAI SDK better for developers at Google",
     roles: [
       {
         title: "Software Engineer Extern, Cloud AI",
@@ -142,7 +143,7 @@ export const EXPERIENCES: Experience[] = [
     location: "Urbana, Illinois, United States",
     startDate: "Jun 2025",
     endDate: "Aug 2025",
-    summary: "making Alexa smarter with AGI research at Amazon",
+    summary: "making Alexa smarter through AGI research at Amazon",
     roles: [
       {
         title: "Software Development Engineer Intern, Alexa AGI Research",
@@ -159,10 +160,11 @@ export const EXPERIENCES: Experience[] = [
     location: "Phoenix, Arizona, United States",
     startDate: "Jan 2025",
     endDate: "May 2025",
-    summary: "making spacecraft software fly on Lucy at NASA",
+    summary:
+      "making real-time flight software for a Venus aerobot at NASA",
     roles: [
       {
-        title: "Embedded Software Engineer Intern, Lucy Mission",
+        title: "Embedded Software Engineer Intern, L'SPACE Venus Aerobot",
         dateRange: "Jan 2025 — May 2025",
         location: "Phoenix, Arizona, United States",
         highlights: [...FIVE_BULLETS],
@@ -178,7 +180,8 @@ export const EXPERIENCES: Experience[] = [
     location: "New York City, New York, United States",
     startDate: "Jun 2024",
     endDate: "Aug 2024",
-    summary: "making defense software decisions sharper at Palantir",
+    summary:
+      "building software for defense and national security missions at Palantir",
     roles: [
       {
         title: "Software Engineering Fellow, Defense & National Security",
