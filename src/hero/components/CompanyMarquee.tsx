@@ -26,7 +26,7 @@ const ITEMS: MarqueeItem[] = [
     wordmark: "P",
   },
   { label: "UIUC", logo: "/icons/organizations/uiuc.png" },
-  { label: "UC Berkeley", logo: "/icons/organizations/berkeley.svg" },
+  { label: "UC Berkeley", logo: "/icons/organizations/berkeley.png" },
 ];
 
 const Wordmark: React.FC<{ text: string }> = ({ text }) => (

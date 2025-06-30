@@ -241,9 +241,9 @@ export const EDUCATION: Education[] = [
   {
     institution: "University of California, Berkeley",
     monogram: "UCB",
-    logo: "/icons/organizations/berkeley.svg",
+    logo: "/icons/organizations/berkeley.png",
     logoFull: true,
-    tileColor: "#003262",
+    tileColor: "#002575",
     location: "Berkeley, California, United States",
     degree:
       "Master of Engineering, Electrical Engineering & Computer Sciences",
