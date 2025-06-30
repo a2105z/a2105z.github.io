@@ -65,9 +65,9 @@ export const EXPERIENCES: Experience[] = [
   {
     company: "Phia",
     monogram: "P",
-    logo: "/icons/organizations/phia.svg",
+    logo: "/icons/organizations/phia.png",
     logoFull: true,
-    tileColor: "#084BE7",
+    tileColor: "#16019C",
     location: "New York City, New York, United States",
     startDate: "Sep 2028",
     endDate: "May 2029",
