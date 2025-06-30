@@ -7,7 +7,7 @@ const Skills: React.FC = () => {
     <section className="bg-canvas pt-24 pb-32">
       <Wrapper>
         <Header
-          index="04"
+          index="05"
           eyebrow="Toolkit"
           text="Languages, frameworks, and things I reach for."
           description="A working set — not a laundry list. The tools that show up most in the work I ship."

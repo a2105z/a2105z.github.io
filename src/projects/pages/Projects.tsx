@@ -8,7 +8,7 @@ const Projects: React.FC = () => {
     <section className="bg-canvas pt-24 pb-24">
       <Wrapper>
         <Header
-          index="03"
+          index="04"
           eyebrow="Selected work"
           text="Projects & things being built."
           description="A rotating set — from applied AI systems to flight software and product surfaces. Full case studies on request."

@@ -5,6 +5,7 @@ import NavbarWrapper from "./navbar/pages/NavbarWrapper";
 import Hero from "./hero/pages/Hero";
 import About from "./about/pages/About";
 import Experience from "./experience/pages/Experience";
+import Education from "./experience/pages/Education";
 import Projects from "./projects/pages/Projects";
 import Skills from "./skills/pages/Skills";
 import ContactForm from "./contact/pages/ContactForm";
@@ -13,6 +14,7 @@ import Footer from "./footer/pages/Footer";
 function App() {
   const aboutRef = useRef<HTMLDivElement>(null);
   const experienceRef = useRef<HTMLDivElement>(null);
+  const educationRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
   const skillsRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
@@ -28,6 +30,7 @@ function App() {
   const fetchAllLocations = (): { [key: string]: number } => ({
     About: fetchLocation(aboutRef) - 0,
     Experience: fetchLocation(experienceRef) - 50,
+    Education: fetchLocation(educationRef) - 50,
     Projects: fetchLocation(projectsRef) - 50,
     Skills: fetchLocation(skillsRef) - 50,
     Contact: fetchLocation(contactRef) + 50,
@@ -35,7 +38,6 @@ function App() {
 
   useEffect(() => {
     setRefLocations(fetchAllLocations());
-    // Recompute on window resize so scroll-jump stays accurate.
     const onResize = () => setRefLocations(fetchAllLocations());
     window.addEventListener("resize", onResize);
     return () => window.removeEventListener("resize", onResize);
@@ -93,6 +95,9 @@ function App() {
             </div>
             <div ref={experienceRef}>
               <Experience />
+            </div>
+            <div ref={educationRef}>
+              <Education />
             </div>
             <div ref={projectsRef}>
               <Projects />

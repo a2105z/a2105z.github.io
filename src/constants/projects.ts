@@ -63,6 +63,42 @@ const FIVE_BULLETS: string[] = [
 
 export const EXPERIENCES: Experience[] = [
   {
+    company: "Rivian",
+    monogram: "RIV",
+    logo: "/icons/organizations/rivian.png",
+    location: "Urbana, Illinois, United States",
+    startDate: "Sep 2026",
+    endDate: "May 2027",
+    summary:
+      "Software engineering internship on vehicle firmware — embedded systems work across Rivian's vehicle stack.",
+    roles: [
+      {
+        title: "Software Engineering Intern, Vehicle Firmware",
+        dateRange: "Sep 2026 — May 2027",
+        location: "Urbana, Illinois, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
+    company: "NVIDIA",
+    monogram: "NV",
+    logo: "/icons/organizations/nvidia.svg",
+    location: "Urbana, Illinois, United States",
+    startDate: "Sep 2026",
+    endDate: "May 2027",
+    summary:
+      "Student research with NVIDIA's NeMo team — applied AI research across large language and multimodal systems.",
+    roles: [
+      {
+        title: "AI Student Researcher, NeMo",
+        dateRange: "Sep 2026 — May 2027",
+        location: "Urbana, Illinois, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "Rivian and Volkswagen Group Technologies",
     monogram: "RV",
     logo: "/icons/organizations/rv-tech.png",
@@ -101,56 +137,20 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "Rivian",
-    monogram: "RIV",
-    logo: "/icons/organizations/rivian.png",
-    location: "Urbana, Illinois, United States",
-    startDate: "Sep 2026",
-    endDate: "May 2027",
-    summary:
-      "Software engineering internship on vehicle firmware — embedded systems work across Rivian's vehicle stack.",
-    roles: [
-      {
-        title: "Software Engineering Intern, Vehicle Firmware",
-        dateRange: "Sep 2026 — May 2027",
-        location: "Urbana, Illinois, United States",
-        highlights: [...FIVE_BULLETS],
-      },
-    ],
-  },
-  {
-    company: "NVIDIA",
-    monogram: "NV",
-    logo: "/icons/organizations/nvidia.svg",
-    location: "Urbana, Illinois, United States",
-    startDate: "Sep 2026",
-    endDate: "May 2027",
-    summary:
-      "Student research with NVIDIA's NeMo team — applied AI research across large language and multimodal systems.",
-    roles: [
-      {
-        title: "AI Student Researcher, NeMo",
-        dateRange: "Sep 2026 — May 2027",
-        location: "Urbana, Illinois, United States",
-        highlights: [...FIVE_BULLETS],
-      },
-    ],
-  },
-  {
     company: "Amazon",
     monogram: "AMZ",
     logo: "/icons/organizations/amazon.png",
     logoFull: true,
     tileColor: "#f47024",
     location: "Urbana, Illinois, United States",
-    startDate: "2025",
-    endDate: "2025",
+    startDate: "Jun 2025",
+    endDate: "Aug 2025",
     summary:
       "Research-focused software engineering on the Alexa AGI research team — applied ML and systems work on next-generation Alexa intelligence.",
     roles: [
       {
         title: "Software Development Engineer Intern, Alexa AGI Research",
-        dateRange: "06/2025 — 08/2025",
+        dateRange: "Jun 2025 — Aug 2025",
         location: "Urbana, Illinois, United States",
         highlights: [...FIVE_BULLETS],
       },
@@ -161,14 +161,14 @@ export const EXPERIENCES: Experience[] = [
     monogram: "NASA",
     logo: "/icons/organizations/nasa.png",
     location: "Phoenix, Arizona, United States",
-    startDate: "2025",
-    endDate: "2025",
+    startDate: "Jan 2025",
+    endDate: "May 2025",
     summary:
       "Embedded and flight software for the Lucy mission spacecraft — exploring AI/ML-native flight OS architecture and spacecraft telematics.",
     roles: [
       {
         title: "Embedded Software Engineer Intern, Lucy Mission",
-        dateRange: "01/2025 — 05/2025",
+        dateRange: "Jan 2025 — May 2025",
         location: "Phoenix, Arizona, United States",
         highlights: [...FIVE_BULLETS],
       },
@@ -190,26 +190,6 @@ export const EXPERIENCES: Experience[] = [
         title: "Software Engineering Fellow, Defense & National Security",
         dateRange: "Jun 2024 — Aug 2024",
         location: "New York City, New York, United States",
-        highlights: [...FIVE_BULLETS],
-      },
-    ],
-  },
-  {
-    company: "AlgoDynamix",
-    monogram: "AD",
-    logo: "/icons/organizations/algodynamix.png",
-    logoFull: true,
-    tileColor: "#000000",
-    location: "Remote · London, United Kingdom",
-    startDate: "2022",
-    endDate: "2023",
-    summary:
-      "Applied machine learning at AlgoDynamix — a quantitative fintech using non-equilibrium models to forecast large price movements across global markets.",
-    roles: [
-      {
-        title: "Machine Learning Engineer Intern",
-        dateRange: "2022 — 2023",
-        location: "Remote · London, United Kingdom",
         highlights: [...FIVE_BULLETS],
       },
     ],

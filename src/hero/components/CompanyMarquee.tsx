@@ -23,11 +23,6 @@ const ITEMS: MarqueeItem[] = [
     logo: "/icons/organizations/palantir.png",
     wordmark: "P",
   },
-  {
-    label: "AlgoDynamix",
-    logo: "/icons/organizations/algodynamix.png",
-    wordmark: "AD",
-  },
   { label: "UIUC", logo: "/icons/organizations/uiuc.png" },
   { label: "UC Berkeley", logo: "/icons/organizations/berkeley.svg" },
 ];

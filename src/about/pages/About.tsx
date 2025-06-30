@@ -93,9 +93,8 @@ const About: React.FC = () => {
                 <span className="text-ink font-medium">NVIDIA</span>'s NeMo
                 team, plus earlier roles at{" "}
                 <span className="text-ink font-medium">Amazon</span>,{" "}
-                <span className="text-ink font-medium">NASA</span>,{" "}
-                <span className="text-ink font-medium">Palantir</span>, and{" "}
-                <span className="text-ink font-medium">AlgoDynamix</span>.
+                <span className="text-ink font-medium">NASA</span>, and{" "}
+                <span className="text-ink font-medium">Palantir</span>.
               </motion.p>
 
               <motion.p variants={item}>
