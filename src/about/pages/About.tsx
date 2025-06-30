@@ -86,10 +86,10 @@ const About: React.FC = () => {
                   Rivian and Volkswagen Group Technologies
                 </span>{" "}
                 on Vehicle Telematics, and at{" "}
-                <span className="text-ink font-medium">Google</span> on the
-                Gemini ecosystem — with additional work at{" "}
+                <span className="text-ink font-medium">Google</span> on Cloud
+                AI — with additional work at{" "}
                 <span className="text-ink font-medium">Rivian</span> on Vehicle
-                Firmware and as a Student Researcher on{" "}
+                Firmware and as an AI Student Researcher on{" "}
                 <span className="text-ink font-medium">NVIDIA</span>'s NeMo
                 team, plus earlier roles at{" "}
                 <span className="text-ink font-medium">Amazon</span>,{" "}

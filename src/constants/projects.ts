@@ -69,14 +69,14 @@ export const EXPERIENCES: Experience[] = [
     logoFull: true,
     tileColor: "#000000",
     location: "Palo Alto, California, United States",
-    startDate: "2026",
-    endDate: "Present",
+    startDate: "Jun 2026",
+    endDate: "Aug 2026",
     summary:
       "Software engineering on the Vehicle Telematics team — building tooling and infrastructure for software-defined vehicle platforms.",
     roles: [
       {
         title: "Software Engineer Intern, Vehicle Telematics",
-        dateRange: "2026 — Present",
+        dateRange: "Jun 2026 — Aug 2026",
         location: "Palo Alto, California, United States",
         highlights: [...FIVE_BULLETS],
       },
@@ -87,14 +87,14 @@ export const EXPERIENCES: Experience[] = [
     monogram: "G",
     logo: "/icons/organizations/google.png",
     location: "Mountain View, California, United States",
-    startDate: "2026",
-    endDate: "Present",
+    startDate: "Jun 2026",
+    endDate: "Aug 2026",
     summary:
-      "Externship on Google's Gemini ecosystem — contributing to developer tools and integrations across the broader Gemini surface.",
+      "Externship on Google Cloud AI — contributing to developer tools and integrations across the Cloud AI surface.",
     roles: [
       {
-        title: "Software Engineer Extern, Gemini Ecosystem",
-        dateRange: "2026 — Present",
+        title: "Software Engineer Extern, Cloud AI",
+        dateRange: "Jun 2026 — Aug 2026",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
       },
@@ -122,8 +122,6 @@ export const EXPERIENCES: Experience[] = [
     company: "NVIDIA",
     monogram: "NV",
     logo: "/icons/organizations/nvidia.svg",
-    logoFull: true,
-    tileColor: "#000000",
     location: "Urbana, Illinois, United States",
     startDate: "Sep 2026",
     endDate: "May 2027",
@@ -131,7 +129,7 @@ export const EXPERIENCES: Experience[] = [
       "Student research with NVIDIA's NeMo team — applied AI research across large language and multimodal systems.",
     roles: [
       {
-        title: "Student Researcher, NeMo",
+        title: "AI Student Researcher, NeMo",
         dateRange: "Sep 2026 — May 2027",
         location: "Urbana, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -248,7 +246,7 @@ export const EDUCATION: Education[] = [
     degree:
       "Bachelor of Science, Computer Science · Bachelor of Science, Electrical Engineering",
     degreeSecondary:
-      "Innovation, Leadership & Engineering Entrepreneurship",
+      "Bachelor of Science, Innovation, Leadership & Engineering Entrepreneurship",
     startDate: "Aug 2024",
     endDate: "May 2028",
     dateRange: "Aug 2024 — May 2028",

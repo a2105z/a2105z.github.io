@@ -101,9 +101,9 @@ const EducationItem: React.FC<EducationItemProps> = ({
             {degree}
           </h3>
           {degreeSecondary && (
-            <p className="text-[15px] sm:text-[16px] font-medium text-ink tracking-tight leading-snug mt-1">
+            <h3 className="text-[17px] sm:text-[19px] font-medium text-ink tracking-tight leading-snug mt-1">
               {degreeSecondary}
-            </p>
+            </h3>
           )}
           <p className="text-ink-muted text-[14px] mt-0.5">{institution}</p>
           {location && (
