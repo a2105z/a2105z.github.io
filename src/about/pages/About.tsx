@@ -127,7 +127,7 @@ const About: React.FC = () => {
                 </span>{" "}
                 at UIUC, then continue to a{" "}
                 <span className="text-ink font-medium">
-                  Master of Engineering in Electrical Engineering and Computer
+                  Master of Engineering, Electrical Engineering &amp; Computer
                   Sciences
                 </span>{" "}
                 at UC Berkeley, focused on AI, data science, computer vision, and
