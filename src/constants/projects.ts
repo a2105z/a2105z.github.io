@@ -63,6 +63,25 @@ const FIVE_BULLETS: string[] = [
 
 export const EXPERIENCES: Experience[] = [
   {
+    company: "Phia",
+    monogram: "P",
+    logo: "/icons/organizations/phia.svg",
+    logoFull: true,
+    tileColor: "#084BE7",
+    location: "New York City, New York, United States",
+    startDate: "Sep 2028",
+    endDate: "May 2029",
+    summary: "Making AI shopping products better at Phia",
+    roles: [
+      {
+        title: "AI Product Management Intern",
+        dateRange: "Sep 2028 — May 2029",
+        location: "New York City, New York, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "John Deere",
     monogram: "JD",
     logo: "/icons/organizations/john-deere.png",
