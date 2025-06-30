@@ -199,6 +199,8 @@ export const EXPERIENCES: Experience[] = [
     company: "NASA",
     monogram: "NASA",
     logo: "/icons/organizations/nasa.png",
+    logoFull: true,
+    tileColor: "#0B3D91",
     location: "Phoenix, Arizona, United States",
     startDate: "Jan 2025",
     endDate: "May 2025",

@@ -36,10 +36,10 @@ const LogoBadge: React.FC<{
 
   const isColored = logoFull && !showFallback;
   const chromeClass = isColored
-    ? "border border-transparent shadow-ring"
+    ? "border-0 shadow-ring"
     : "bg-surface border border-line shadow-ring";
   const chromeStyle = isColored && tileColor
-    ? { backgroundColor: tileColor, borderColor: tileColor }
+    ? { backgroundColor: tileColor }
     : undefined;
 
   return (
@@ -58,9 +58,11 @@ const LogoBadge: React.FC<{
           src={logo}
           alt={institution}
           onError={() => setErrored(true)}
-          className={`w-full h-full ${
-            logoFull ? "object-cover p-0" : "object-contain p-2"
-          }`}
+          className={
+            logoFull
+              ? "h-full w-full object-cover object-center"
+              : "h-full w-full object-contain p-2"
+          }
         />
       )}
     </div>
