@@ -81,17 +81,17 @@ const About: React.FC = () => {
               </motion.p>
 
               <motion.p variants={item}>
-                Upcoming:{" "}
-                <span className="text-ink font-medium">LinkedIn</span> Core AI
-                and a{" "}
-                <span className="text-ink font-medium">Y Combinator</span>{" "}
-                Summer Grant — with recent work at{" "}
+                Right now I'm at{" "}
                 <span className="text-ink font-medium">
                   Rivian and Volkswagen Group Technologies
-                </span>
-                , <span className="text-ink font-medium">Google</span> Cloud
-                AI, <span className="text-ink font-medium">Rivian</span>,{" "}
-                <span className="text-ink font-medium">NVIDIA</span>,{" "}
+                </span>{" "}
+                on Vehicle Telematics, and at{" "}
+                <span className="text-ink font-medium">Google</span> on Cloud
+                AI — with additional work at{" "}
+                <span className="text-ink font-medium">Rivian</span> on Vehicle
+                Firmware and as an AI Student Researcher on{" "}
+                <span className="text-ink font-medium">NVIDIA</span>'s NeMo
+                team, plus earlier roles at{" "}
                 <span className="text-ink font-medium">Amazon</span>,{" "}
                 <span className="text-ink font-medium">NASA</span>, and{" "}
                 <span className="text-ink font-medium">Palantir</span>.
@@ -144,7 +144,7 @@ const About: React.FC = () => {
             >
               {[
                 { k: "Focus", v: "Product · Capital" },
-                { k: "Now", v: "LinkedIn × YC" },
+                { k: "Now", v: "RV Tech × Google" },
                 { k: "Next", v: "Berkeley M.Eng. EECS" },
               ].map((s) => (
                 <div key={s.k}>
