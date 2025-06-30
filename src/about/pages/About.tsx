@@ -81,16 +81,21 @@ const About: React.FC = () => {
               </motion.p>
 
               <motion.p variants={item}>
-                Right now I'm at <span className="text-ink font-medium">Rivian</span>{" "}
-                on the Vehicle &amp; Autonomy Telematics team, and at{" "}
+                Right now I'm at{" "}
+                <span className="text-ink font-medium">
+                  Rivian and Volkswagen Group Technologies
+                </span>{" "}
+                on Vehicle Telematics, and at{" "}
                 <span className="text-ink font-medium">Google</span> on the
-                Gemini ecosystem — with earlier work at{" "}
+                Gemini ecosystem — with additional work at{" "}
+                <span className="text-ink font-medium">Rivian</span> on Vehicle
+                Firmware and as a Student Researcher on{" "}
+                <span className="text-ink font-medium">NVIDIA</span>'s NeMo
+                team, plus earlier roles at{" "}
                 <span className="text-ink font-medium">Amazon</span>,{" "}
                 <span className="text-ink font-medium">NASA</span>,{" "}
                 <span className="text-ink font-medium">Palantir</span>, and{" "}
-                <span className="text-ink font-medium">AlgoDynamix</span>{" "}
-                — spanning applied AI, flight software, enterprise platforms,
-                defense tech, and quantitative finance.
+                <span className="text-ink font-medium">AlgoDynamix</span>.
               </motion.p>
 
               <motion.p variants={item}>
@@ -111,13 +116,14 @@ const About: React.FC = () => {
 
               <motion.p variants={item}>
                 I study{" "}
-                <span className="text-ink font-medium">Computer Science</span>,{" "}
+                <span className="text-ink font-medium">Computer Science</span>{" "}
+                and{" "}
                 <span className="text-ink font-medium">
                   Electrical Engineering
                 </span>
-                , and{" "}
+                , along with{" "}
                 <span className="text-ink font-medium">
-                  Engineering Entrepreneurship
+                  Innovation, Leadership &amp; Engineering Entrepreneurship
                 </span>{" "}
                 at UIUC, then continue to a{" "}
                 <span className="text-ink font-medium">
@@ -139,7 +145,7 @@ const About: React.FC = () => {
             >
               {[
                 { k: "Focus", v: "Product · Capital" },
-                { k: "Now", v: "Rivian × Google" },
+                { k: "Now", v: "RV Tech × Google" },
                 { k: "Next", v: "Berkeley M.Eng. EECS" },
               ].map((s) => (
                 <div key={s.k}>

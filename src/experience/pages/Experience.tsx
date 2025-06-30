@@ -107,6 +107,7 @@ const Experience: React.FC = () => {
                           logoFull={experience.logoFull}
                           tileColor={experience.tileColor}
                           monogram={experience.monogram}
+                          location={experience.location}
                           summary={experience.summary}
                           delay={index * 0.05}
                           roles={experience.roles}
@@ -148,6 +149,7 @@ const Experience: React.FC = () => {
                         logoFull={edu.logoFull}
                         tileColor={edu.tileColor}
                         degree={edu.degree}
+                        degreeSecondary={edu.degreeSecondary}
                         dateRange={edu.dateRange}
                         location={edu.location}
                         focus={edu.focus}

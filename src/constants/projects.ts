@@ -45,6 +45,7 @@ export type Education = {
   tileColor?: string;
   location?: string;
   degree: string;
+  degreeSecondary?: string;
   startDate: string;
   endDate: string;
   dateRange: string;
@@ -62,19 +63,21 @@ const FIVE_BULLETS: string[] = [
 
 export const EXPERIENCES: Experience[] = [
   {
-    company: "Rivian",
-    monogram: "RIV",
-    logo: "/icons/organizations/rivian.png",
-    location: "Palo Alto, California",
+    company: "Rivian and Volkswagen Group Technologies",
+    monogram: "RV",
+    logo: "/icons/organizations/rv-tech.png",
+    logoFull: true,
+    tileColor: "#000000",
+    location: "Palo Alto, California, United States",
     startDate: "2026",
     endDate: "Present",
     summary:
-      "Software engineering on Rivian's Vehicle & Autonomy Telematics team — building tooling and infrastructure that powers the company's vehicle and autonomy programs.",
+      "Software engineering on the Vehicle Telematics team — building tooling and infrastructure for software-defined vehicle platforms.",
     roles: [
       {
-        title: "Software Engineer Intern, Vehicle & Autonomy Telematics",
+        title: "Software Engineer Intern, Vehicle Telematics",
         dateRange: "2026 — Present",
-        location: "Palo Alto, California",
+        location: "Palo Alto, California, United States",
         highlights: [...FIVE_BULLETS],
       },
     ],
@@ -83,7 +86,7 @@ export const EXPERIENCES: Experience[] = [
     company: "Google",
     monogram: "G",
     logo: "/icons/organizations/google.png",
-    location: "Mountain View, California",
+    location: "Mountain View, California, United States",
     startDate: "2026",
     endDate: "Present",
     summary:
@@ -92,7 +95,45 @@ export const EXPERIENCES: Experience[] = [
       {
         title: "Software Engineer Extern, Gemini Ecosystem",
         dateRange: "2026 — Present",
-        location: "Mountain View, California",
+        location: "Mountain View, California, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
+    company: "Rivian",
+    monogram: "RIV",
+    logo: "/icons/organizations/rivian.png",
+    location: "Urbana, Illinois, United States",
+    startDate: "Sep 2026",
+    endDate: "May 2027",
+    summary:
+      "Software engineering internship on vehicle firmware — embedded systems work across Rivian's vehicle stack.",
+    roles: [
+      {
+        title: "Software Engineering Intern, Vehicle Firmware",
+        dateRange: "Sep 2026 — May 2027",
+        location: "Urbana, Illinois, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
+    company: "NVIDIA",
+    monogram: "NV",
+    logo: "/icons/organizations/nvidia.svg",
+    logoFull: true,
+    tileColor: "#000000",
+    location: "Urbana, Illinois, United States",
+    startDate: "Sep 2026",
+    endDate: "May 2027",
+    summary:
+      "Student research with NVIDIA's NeMo team — applied AI research across large language and multimodal systems.",
+    roles: [
+      {
+        title: "Student Researcher, NeMo",
+        dateRange: "Sep 2026 — May 2027",
+        location: "Urbana, Illinois, United States",
         highlights: [...FIVE_BULLETS],
       },
     ],
@@ -103,7 +144,7 @@ export const EXPERIENCES: Experience[] = [
     logo: "/icons/organizations/amazon.png",
     logoFull: true,
     tileColor: "#f47024",
-    location: "Urbana, Illinois",
+    location: "Urbana, Illinois, United States",
     startDate: "2025",
     endDate: "2025",
     summary:
@@ -112,7 +153,7 @@ export const EXPERIENCES: Experience[] = [
       {
         title: "Software Development Engineer Intern, Alexa AGI Research",
         dateRange: "06/2025 — 08/2025",
-        location: "Urbana, Illinois",
+        location: "Urbana, Illinois, United States",
         highlights: [...FIVE_BULLETS],
       },
     ],
@@ -121,7 +162,7 @@ export const EXPERIENCES: Experience[] = [
     company: "NASA",
     monogram: "NASA",
     logo: "/icons/organizations/nasa.png",
-    location: "Phoenix, Arizona",
+    location: "Phoenix, Arizona, United States",
     startDate: "2025",
     endDate: "2025",
     summary:
@@ -130,7 +171,7 @@ export const EXPERIENCES: Experience[] = [
       {
         title: "Embedded Software Engineer Intern, Lucy Mission",
         dateRange: "01/2025 — 05/2025",
-        location: "Phoenix, Arizona",
+        location: "Phoenix, Arizona, United States",
         highlights: [...FIVE_BULLETS],
       },
     ],
@@ -141,7 +182,7 @@ export const EXPERIENCES: Experience[] = [
     logo: "/icons/organizations/palantir.png",
     logoFull: true,
     tileColor: "#000000",
-    location: "Denver, Colorado",
+    location: "New York City, New York, United States",
     startDate: "Jun 2024",
     endDate: "Aug 2024",
     summary:
@@ -150,7 +191,7 @@ export const EXPERIENCES: Experience[] = [
       {
         title: "Software Engineering Fellow, Defense & National Security",
         dateRange: "Jun 2024 — Aug 2024",
-        location: "Denver, Colorado",
+        location: "New York City, New York, United States",
         highlights: [...FIVE_BULLETS],
       },
     ],
@@ -184,7 +225,7 @@ export const EDUCATION: Education[] = [
     logo: "/icons/organizations/berkeley.svg",
     logoFull: true,
     tileColor: "#003262",
-    location: "Berkeley, California",
+    location: "Berkeley, California, United States",
     degree:
       "Master of Engineering in Electrical Engineering and Computer Sciences",
     startDate: "Aug 2028",
@@ -203,9 +244,11 @@ export const EDUCATION: Education[] = [
     logo: "/icons/organizations/uiuc.png",
     logoFull: true,
     tileColor: "#13294B",
-    location: "Urbana–Champaign, Illinois",
+    location: "Urbana–Champaign, Illinois, United States",
     degree:
-      "Bachelor of Science, Computer Science · Bachelor of Science, Electrical Engineering · Bachelor of Science, Engineering Entrepreneurship",
+      "Bachelor of Science, Computer Science · Bachelor of Science, Electrical Engineering",
+    degreeSecondary:
+      "Innovation, Leadership & Engineering Entrepreneurship",
     startDate: "Aug 2024",
     endDate: "May 2028",
     dateRange: "Aug 2024 — May 2028",

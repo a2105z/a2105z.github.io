@@ -8,8 +8,14 @@ interface MarqueeItem {
 }
 
 const ITEMS: MarqueeItem[] = [
+  {
+    label: "RV Tech",
+    logo: "/icons/organizations/rv-tech.png",
+    wordmark: "RV",
+  },
   { label: "Rivian", logo: "/icons/organizations/rivian.png" },
   { label: "Google", logo: "/icons/organizations/google.png" },
+  { label: "NVIDIA", logo: "/icons/organizations/nvidia.svg" },
   { label: "Amazon", logo: "/icons/organizations/amazon.png" },
   { label: "NASA", logo: "/icons/organizations/nasa.png" },
   {

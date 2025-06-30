@@ -9,6 +9,7 @@ interface EducationItemProps {
   logoFull?: boolean;
   tileColor?: string;
   degree: string;
+  degreeSecondary?: string;
   dateRange: string;
   location?: string;
   focus: string[];
@@ -73,7 +74,7 @@ const EducationItem: React.FC<EducationItemProps> = ({
   logoFull,
   tileColor,
   degree,
-  dateRange,
+  degreeSecondary,
   location,
   focus,
   summary,
@@ -99,11 +100,15 @@ const EducationItem: React.FC<EducationItemProps> = ({
           <h3 className="text-[17px] sm:text-[19px] font-medium text-ink tracking-tight leading-snug">
             {degree}
           </h3>
+          {degreeSecondary && (
+            <p className="text-[15px] sm:text-[16px] font-medium text-ink tracking-tight leading-snug mt-1">
+              {degreeSecondary}
+            </p>
+          )}
           <p className="text-ink-muted text-[14px] mt-0.5">{institution}</p>
-          <p className="text-[12px] text-ink-dim mt-1.5">
-            {dateRange}
-            {location ? ` · ${location}` : ""}
-          </p>
+          {location && (
+            <p className="text-[12px] text-ink-dim mt-1">{location}</p>
+          )}
           {summary && (
             <p className="text-ink-muted text-[14px] leading-relaxed mt-3 max-w-2xl">
               {summary}
