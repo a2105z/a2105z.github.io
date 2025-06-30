@@ -8,8 +8,8 @@ interface MarqueeItem {
 }
 
 const ITEMS: MarqueeItem[] = [
-  { label: "John Deere", logo: "/icons/organizations/john-deere.svg" },
-  { label: "Google DeepMind", logo: "/icons/organizations/deepmind.svg" },
+  { label: "John Deere", logo: "/icons/organizations/john-deere.png" },
+  { label: "Google DeepMind", logo: "/icons/organizations/deepmind.png" },
   {
     label: "RV Tech",
     logo: "/icons/organizations/rv-tech.png",
@@ -17,7 +17,7 @@ const ITEMS: MarqueeItem[] = [
   },
   { label: "Rivian", logo: "/icons/organizations/rivian.png" },
   { label: "Google", logo: "/icons/organizations/google.png" },
-  { label: "NVIDIA", logo: "/icons/organizations/nvidia.svg" },
+  { label: "NVIDIA", logo: "/icons/organizations/nvidia.png" },
   { label: "Amazon", logo: "/icons/organizations/amazon.png" },
   { label: "NASA", logo: "/icons/organizations/nasa.png" },
   {
