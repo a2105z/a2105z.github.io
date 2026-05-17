@@ -34,8 +34,8 @@ const Hero = () => {
           </h2>
 
           <p className="text-base md:text-lg text-white/75 max-w-2xl mx-auto leading-relaxed">
-            Flagship: <span className="text-white font-semibold">Chronos</span> — natural language in, constraint-backed
-            calendar out. Software Engineer Fellow at Databricks · Intern at Rivian (Vehicle Telematics) · B.S./M.S. CS
+            Flagship: <span className="text-white font-semibold">CoolGames.io</span> — 14 free classic browser games,
+            no accounts. Software Engineer Fellow at Databricks · Intern at Rivian (Vehicle Telematics) · B.S./M.S. CS
             at UIUC Grainger.
           </p>
 
@@ -43,17 +43,17 @@ const Hero = () => {
             <Button
               size="lg"
               className="h-12 px-7 bg-white text-primary hover:bg-white/90 font-semibold rounded-xl"
-              onClick={() => scrollToSection("projects")}
+              onClick={() => window.open("https://a2105z.github.io/CoolGames.io/", "_blank")}
             >
-              See Chronos
+              Play CoolGames.io
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="h-12 px-7 bg-transparent text-white border-2 border-white/30 hover:bg-white/10 hover:border-white font-semibold rounded-xl"
-              onClick={() => scrollToSection("experience")}
+              onClick={() => scrollToSection("projects")}
             >
-              Experience
+              Projects
             </Button>
           </div>
 

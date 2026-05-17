@@ -3,24 +3,40 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
 
-const chronos = {
-  id: "chronos",
-  title: "Chronos",
-  badge: "Flagship · AI-Native",
-  description: "Natural language in. Constraint-backed calendar out.",
+const coolGames = {
+  id: "coolgames",
+  title: "CoolGames.io",
+  badge: "Flagship · Product",
+  description: "Free classic browser games — no downloads, no accounts, just play.",
   thesis:
-    "Reasons over multi-spot plans and constraints, retrieves availability as ground truth, remembers per-user schedule state with diagnostics — so the model never invents capacity the calendar can’t support.",
-  tech: ["Python", "FastAPI", "React", "TypeScript", "JWT", "FullCalendar", "Docker", "CI"],
+    "A shipped multi-game product: 14 playable titles across board, puzzle, and arcade — Chess, Tetris, Snake, Pong, 2048, Wordle, Ludo, and more — with 2P / vs AI modes, HTML5 Canvas + DOM engines, and GitHub Pages hosting.",
+  tech: ["JavaScript", "React", "Vite", "HTML5 Canvas", "DOM", "GitHub Pages"],
   features: [
-    "AI / deterministic planner separate from SchedulingEngine source of truth",
-    "Multi-spot NL (“find me 3 spots, each 2 hours”) → contiguous constraint-backed blocks",
-    "JWT multi-user, FullCalendar drag/resize, America/Chicago validation, Docker + CI",
-    "Diagnostics when work can’t fit — explainable, editable weeks",
+    "14 games: Chess, Checkers, Connect 4, Ludo, Tic-Tac-Toe, Wordle, Memory Match, 2048, Minesweeper, Pong, Air Hockey, Snake, Tetris, Brick Breaker",
+    "Most titles support 2 Player or vs AI from the sidebar; Ludo is 4-player",
+    "Per-game engines (e.g. chess/ludo) + shared UI shell — Vite build, live on GitHub Pages",
+    "Zero accounts / zero downloads — open the URL and play",
   ],
-  github: "https://github.com/a2105z/Chronos",
+  github: "https://github.com/a2105z/CoolGames.io",
+  demo: "https://a2105z.github.io/CoolGames.io/",
 };
 
 const featured = [
+  {
+    id: "chronos",
+    title: "Chronos",
+    badge: "AI-Native",
+    description: "Natural language in. Constraint-backed calendar out.",
+    thesis:
+      "Reasons over multi-spot plans and constraints, retrieves availability as ground truth, remembers per-user schedule state with diagnostics.",
+    tech: ["Python", "FastAPI", "React", "TypeScript", "Scheduling"],
+    features: [
+      "AI / deterministic planner separate from SchedulingEngine source of truth",
+      "Multi-spot NL → contiguous constraint-backed blocks",
+      "JWT multi-user, FullCalendar, Docker + CI",
+    ],
+    github: "https://github.com/a2105z/Chronos",
+  },
   {
     id: "texform",
     title: "TeXForm",
@@ -53,13 +69,6 @@ const supporting = [
     github: "https://github.com/a2105z/Cosmos",
     demo: "https://a2105z.github.io/Cosmos/",
   },
-  {
-    id: "coolgames",
-    title: "CoolGames.io",
-    blurb: "Classic browser games product — Chess, Tetris, Snake, Pong, 2048, and more.",
-    github: "https://github.com/a2105z/CoolGames.io",
-    demo: "https://a2105z.github.io/CoolGames.io/",
-  },
 ];
 
 const Projects = () => {
@@ -76,17 +85,17 @@ const Projects = () => {
         >
           <h2 className="font-display text-5xl md:text-6xl font-normal text-primary mb-4">Projects</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Led by <span className="text-foreground font-semibold">Chronos</span> — AI products that reason, retrieve,
-            and remember
+            Led by <span className="text-foreground font-semibold">CoolGames.io</span> — a shipped browser games
+            product, plus AI builds that reason, retrieve, and remember
           </p>
           <div className="w-20 h-1 bg-primary/80 mx-auto rounded-full mt-6" />
         </div>
 
         <div className="max-w-6xl mx-auto mb-12">
-          <ChronosFeature project={chronos} />
+          <CoolGamesFeature project={coolGames} />
         </div>
 
-        <div className="grid md:grid-cols-1 max-w-3xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {featured.map((project, index) => (
             <FeaturedCard key={project.id} project={project} index={index} />
           ))}
@@ -97,7 +106,7 @@ const Projects = () => {
           <p className="text-center text-muted-foreground mb-8 text-sm">
             Full-stack and product/PM-shaped apps — shipping UX and iteration
           </p>
-          <div className="grid md:grid-cols-3 gap-5">
+          <div className="grid md:grid-cols-2 gap-5 max-w-3xl mx-auto">
             {supporting.map((p) => (
               <div
                 key={p.id}
@@ -126,7 +135,7 @@ const Projects = () => {
   );
 };
 
-const ChronosFeature = ({ project }: { project: typeof chronos }) => {
+const CoolGamesFeature = ({ project }: { project: typeof coolGames }) => {
   const { ref, inView } = useInView({ threshold: 0.1 });
   return (
     <Card
@@ -155,14 +164,18 @@ const ChronosFeature = ({ project }: { project: typeof chronos }) => {
               </span>
             ))}
           </div>
-          <div className="flex gap-3 pt-4">
+          <div className="flex flex-wrap gap-3 pt-4">
             <Button
               size="lg"
               className="bg-primary hover:bg-primary/90"
-              onClick={() => window.open(project.github, "_blank")}
+              onClick={() => window.open(project.demo, "_blank")}
             >
+              <ExternalLink className="mr-2 h-4 w-4" />
+              Play live
+            </Button>
+            <Button size="lg" variant="outline" onClick={() => window.open(project.github, "_blank")}>
               <Github className="mr-2 h-4 w-4" />
-              View Chronos on GitHub
+              GitHub
             </Button>
           </div>
         </CardHeader>

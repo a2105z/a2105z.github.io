@@ -34,7 +34,8 @@ const About = () => {
             on open-source AI / Omnigent agent infrastructure. At{" "}
             <span className="text-foreground font-semibold">Rivian</span>, I intern as a Software Engineer focused on
             vehicle telematics. Alongside industry work I ship{" "}
-            <span className="text-foreground font-semibold">Chronos</span> (AI-native planner) and TeXForm.
+            <span className="text-foreground font-semibold">CoolGames.io</span> (browser games product), Chronos, and
+            TeXForm.
           </p>
         </div>
 
