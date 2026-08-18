@@ -1,0 +1,62 @@
+.hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 0 4rem;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-content h1 {
+    margin-bottom: 0.5rem;
+}
+
+.hero-location {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.hero-bio {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    max-width: 500px;
+    margin: 0 auto 1rem;
+}
+
+.hero-contact {
+    margin-bottom: 1.5rem;
+}
+
+.hero-contact a {
+    color: var(--accent-primary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color var(--transition-fast);
+}
+
+.hero-contact a:hover {
+    color: var(--accent-primary-hover);
+}
+
+.social-links {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+}
+
+.social-links a {
+    color: var(--text-muted);
+    font-size: 1.35rem;
+    transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.social-links a:hover {
+    color: var(--accent-primary);
+    transform: translateY(-2px);
+}
