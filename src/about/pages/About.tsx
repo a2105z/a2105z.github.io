@@ -94,7 +94,7 @@ const About: React.FC = () => {
                 team, plus earlier roles at{" "}
                 <span className="text-ink font-medium">Amazon</span>,{" "}
                 <span className="text-ink font-medium">NASA</span>, and{" "}
-                <span className="text-ink font-medium">Palantir</span> — and
+                <span className="text-ink font-medium">Uber</span> — and
                 upcoming work at{" "}
                 <span className="text-ink font-medium">John Deere</span>,{" "}
                 <span className="text-ink font-medium">Google DeepMind</span>,

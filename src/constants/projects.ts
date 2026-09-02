@@ -235,21 +235,20 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "Palantir Technologies",
-    monogram: "P",
-    logo: "/icons/organizations/palantir.png",
+    company: "Uber",
+    monogram: "U",
+    logo: "/icons/organizations/uber.svg",
     logoFull: true,
     tileColor: "#000000",
-    location: "New York City, New York, United States",
+    location: "San Francisco, California, United States",
     startDate: "Jun 2024",
     endDate: "Aug 2024",
-    summary:
-      "Making defense and national security software work at Palantir",
+    summary: "Making maps and location systems better at Uber",
     roles: [
       {
-        title: "Software Engineering Fellow, Defense & National Security",
+        title: "Software Engineering Fellow, Maps & Location Engineering",
         dateRange: "Jun 2024 — Aug 2024",
-        location: "New York City, New York, United States",
+        location: "San Francisco, California, United States",
         highlights: [...FIVE_BULLETS],
       },
     ],
