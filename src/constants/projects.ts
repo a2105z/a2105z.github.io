@@ -240,7 +240,7 @@ export const EXPERIENCES: Experience[] = [
     logo: "/icons/organizations/uber.svg",
     logoFull: true,
     tileColor: "#000000",
-    location: "San Francisco, California, United States",
+    location: "New York City, New York, United States",
     startDate: "Jun 2024",
     endDate: "Aug 2024",
     summary: "Making maps and location systems better at Uber",
@@ -248,7 +248,7 @@ export const EXPERIENCES: Experience[] = [
       {
         title: "Software Engineering Fellow, Maps & Location Engineering",
         dateRange: "Jun 2024 — Aug 2024",
-        location: "San Francisco, California, United States",
+        location: "New York City, New York, United States",
         highlights: [...FIVE_BULLETS],
       },
     ],
