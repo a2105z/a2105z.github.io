@@ -139,25 +139,6 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "NVIDIA",
-    monogram: "NV",
-    logo: "/icons/organizations/nvidia.svg",
-    logoFull: true,
-    tileColor: "#76B900",
-    location: "Urbana, Illinois, United States",
-    startDate: "Sep 2026",
-    endDate: "May 2027",
-    summary: "Making generative AI models better with NeMo at NVIDIA",
-    roles: [
-      {
-        title: "AI Student Researcher, NeMo",
-        dateRange: "Sep 2026 — May 2027",
-        location: "Urbana, Illinois, United States",
-        highlights: [...FIVE_BULLETS],
-      },
-    ],
-  },
-  {
     company: "Rivian and Volkswagen Group Technologies",
     monogram: "RV",
     logo: "/icons/organizations/rv-tech.png",
