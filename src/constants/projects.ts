@@ -204,10 +204,10 @@ export const EXPERIENCES: Experience[] = [
     location: "Urbana, Illinois, United States",
     startDate: "Jun 2025",
     endDate: "Aug 2025",
-    summary: "Making Alexa smarter through AGI research at Amazon",
+    summary: "Making Alexa and conversational AI better at Amazon",
     roles: [
       {
-        title: "Software Development Engineer Intern, Alexa AGI Research",
+        title: "Software Engineering Intern, Alexa and Conversational AI",
         dateRange: "Jun 2025 — Aug 2025",
         location: "Urbana, Illinois, United States",
         highlights: [...FIVE_BULLETS],
