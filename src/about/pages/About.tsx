@@ -94,10 +94,8 @@ const About: React.FC = () => {
                 <span className="text-ink font-medium">NASA</span>, and{" "}
                 <span className="text-ink font-medium">Uber</span> — and
                 upcoming work at{" "}
-                <span className="text-ink font-medium">John Deere</span>,{" "}
-                <span className="text-ink font-medium">Google DeepMind</span>,
-                and{" "}
-                <span className="text-ink font-medium">Phia</span>.
+                <span className="text-ink font-medium">John Deere</span> and{" "}
+                <span className="text-ink font-medium">Google DeepMind</span>.
               </motion.p>
 
               <motion.p variants={item}>
