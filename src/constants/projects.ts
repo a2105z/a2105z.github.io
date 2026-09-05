@@ -218,10 +218,10 @@ export const EXPERIENCES: Experience[] = [
     location: "Urbana–Champaign, Illinois, United States",
     startDate: "Sep 2025",
     endDate: "May 2026",
-    summary: "Making machine learning systems stronger at Capital One ASKS",
+    summary: "Making AI foundations and safety stronger at Capital One ASKS",
     roles: [
       {
-        title: "Machine Learning Engineering Intern",
+        title: "Machine Learning Engineering Intern, AI Foundations and Safety Team",
         dateRange: "Sep 2025 — May 2026",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
