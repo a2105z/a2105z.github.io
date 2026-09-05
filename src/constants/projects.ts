@@ -178,9 +178,9 @@ export const EXPERIENCES: Experience[] = [
   {
     company: "Capital One",
     monogram: "C1",
-    logo: "/icons/organizations/capital-one.svg",
+    logo: "/icons/organizations/capital-one.png",
     logoFull: true,
-    tileColor: "#CC2427",
+    tileColor: "#001E33",
     location: "Urbana–Champaign, Illinois, United States",
     startDate: "Sep 2025",
     endDate: "May 2026",
