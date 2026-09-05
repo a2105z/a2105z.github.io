@@ -87,10 +87,10 @@ const About: React.FC = () => {
                 <span className="text-ink font-medium">Google</span> on Cloud
                 AI — plus earlier roles at{" "}
                 <span className="text-ink font-medium">
-                  Capital One–Illinois ASKS Center
+                  Capital One ASKS
                 </span>
                 ,{" "}
-                <span className="text-ink font-medium">Amazon</span>, and{" "}
+                <span className="text-ink font-medium">Amazon AICE</span>, and{" "}
                 <span className="text-ink font-medium">Uber</span> — and
                 upcoming work at{" "}
                 <span className="text-ink font-medium">Google</span> on AI

@@ -72,7 +72,7 @@ export const EXPERIENCES: Experience[] = [
     summary: "Making AI infrastructure better at Google",
     roles: [
       {
-        title: "Software Engineering Intern, AI Infrastructure",
+        title: "Software Engineering Intern, AI Infrastructure Team",
         dateRange: "Jun 2028 — Aug 2028",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -126,10 +126,10 @@ export const EXPERIENCES: Experience[] = [
     location: "Mountain View, California, United States",
     startDate: "Jun 2027",
     endDate: "Aug 2027",
-    summary: "Making Gemini API and ML compilation better at Google DeepMind",
+    summary: "Making Gemini API and AI Studio better at Google DeepMind",
     roles: [
       {
-        title: "Software Engineering Contributor, Gemini API and ML Compilation",
+        title: "Software Engineering Contributor, Gemini API & AI Studio Team",
         dateRange: "Jun 2027 — Aug 2027",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -185,7 +185,7 @@ export const EXPERIENCES: Experience[] = [
       "Making AI agents and on-device MediaPipe easier to build at Google",
     roles: [
       {
-        title: "Software Engineering Contributor, Cloud AI",
+        title: "Software Engineering Contributor, Cloud AI Team",
         dateRange: "Jun 2026 — Aug 2026",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -193,7 +193,7 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "Capital One–Illinois ASKS Center",
+    company: "Capital One ASKS",
     monogram: "C1",
     logo: "/icons/organizations/capital-one.png",
     logoFull: true,
@@ -201,7 +201,7 @@ export const EXPERIENCES: Experience[] = [
     location: "Urbana–Champaign, Illinois, United States",
     startDate: "Sep 2025",
     endDate: "May 2026",
-    summary: "Making machine learning systems stronger at Capital One–Illinois ASKS Center",
+    summary: "Making machine learning systems stronger at Capital One ASKS",
     roles: [
       {
         title: "Machine Learning Engineering Intern",
@@ -212,7 +212,7 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "Amazon",
+    company: "Amazon AICE",
     monogram: "AMZ",
     logo: "/icons/organizations/amazon.png",
     logoFull: true,
@@ -220,10 +220,10 @@ export const EXPERIENCES: Experience[] = [
     location: "Chicago, Illinois, United States",
     startDate: "Jun 2025",
     endDate: "Aug 2025",
-    summary: "Making conversational AI better at Amazon",
+    summary: "Making conversational AI better at Amazon AICE",
     roles: [
       {
-        title: "Software Engineering Intern, Conversational AI",
+        title: "Software Engineering Intern, Conversational AI Team",
         dateRange: "Jun 2025 — Aug 2025",
         location: "Chicago, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -242,7 +242,7 @@ export const EXPERIENCES: Experience[] = [
     summary: "Making marketplace data better at Uber",
     roles: [
       {
-        title: "Software Engineering Fellow, Marketplace Data",
+        title: "Software Engineering Fellow, Marketplace Data Team",
         dateRange: "Jun 2024 — Aug 2024",
         location: "New York City, New York, United States",
         highlights: [...FIVE_BULLETS],
