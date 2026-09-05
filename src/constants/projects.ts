@@ -63,6 +63,23 @@ const FIVE_BULLETS: string[] = [
 
 export const EXPERIENCES: Experience[] = [
   {
+    company: "Tesla",
+    monogram: "T",
+    logo: "/icons/organizations/tesla.png",
+    logoFull: true,
+    tileColor: "#E31937",
+    startDate: "Jun 2029",
+    endDate: "Aug 2029",
+    summary: "Making AI data infrastructure better at Tesla",
+    roles: [
+      {
+        title: "Software Engineering Intern, AI Data Infrastructure Team",
+        dateRange: "Jun 2029 — Aug 2029",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "Google",
     monogram: "G",
     logo: "/icons/organizations/google.png",
