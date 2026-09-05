@@ -70,10 +70,10 @@ export const EXPERIENCES: Experience[] = [
     tileColor: "#E31937",
     startDate: "Jun 2029",
     endDate: "Aug 2029",
-    summary: "Making AI data infrastructure better at Tesla",
+    summary: "Making AI data and autonomy infrastructure better at Tesla",
     roles: [
       {
-        title: "Software Engineering Intern, AI Data Infrastructure Team",
+        title: "Software Engineering Intern, AI Data & Autonomy Infrastructure Team",
         dateRange: "Jun 2029 — Aug 2029",
         highlights: [...FIVE_BULLETS],
       },
