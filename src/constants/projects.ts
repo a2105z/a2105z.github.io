@@ -145,10 +145,10 @@ export const EXPERIENCES: Experience[] = [
     location: "Urbana–Champaign, Illinois, United States",
     startDate: "Sep 2026",
     endDate: "May 2027",
-    summary: "Making electrical power controls more reliable at Rivian",
+    summary: "Making electric power conversion more reliable at Rivian",
     roles: [
       {
-        title: "Software Engineering Intern, Electrical Power Controls",
+        title: "Software Engineering Intern, Electric Power Conversion Team",
         dateRange: "Sep 2026 — May 2027",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -167,7 +167,7 @@ export const EXPERIENCES: Experience[] = [
     summary: "Making vehicle telematics scale at Rivian",
     roles: [
       {
-        title: "Software Engineering Intern, Vehicle Telematics",
+        title: "Software Engineering Intern, Vehicle Telematics Team",
         dateRange: "Jun 2026 — Aug 2026",
         location: "Palo Alto, California, United States",
         highlights: [...FIVE_BULLETS],

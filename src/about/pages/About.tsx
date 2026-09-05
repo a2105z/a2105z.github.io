@@ -83,7 +83,7 @@ const About: React.FC = () => {
               <motion.p variants={item}>
                 Right now I'm at{" "}
                 <span className="text-ink font-medium">Rivian</span> on
-                Vehicle Telematics and Electrical Power Controls, and at{" "}
+                Vehicle Telematics and Electric Power Conversion, and at{" "}
                 <span className="text-ink font-medium">Google</span> on Cloud
                 AI — plus earlier roles at{" "}
                 <span className="text-ink font-medium">
