@@ -86,7 +86,10 @@ const About: React.FC = () => {
                 Vehicle Telematics and Electrical Power Controls, and at{" "}
                 <span className="text-ink font-medium">Google</span> on Cloud
                 AI — plus earlier roles at{" "}
-                <span className="text-ink font-medium">Capital One</span>,{" "}
+                <span className="text-ink font-medium">
+                  Capital One–Illinois ASKS Center
+                </span>
+                ,{" "}
                 <span className="text-ink font-medium">Amazon</span>, and{" "}
                 <span className="text-ink font-medium">Uber</span> — and
                 upcoming work at{" "}

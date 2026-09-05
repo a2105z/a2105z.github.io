@@ -193,7 +193,7 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "Capital One",
+    company: "Capital One–Illinois ASKS Center",
     monogram: "C1",
     logo: "/icons/organizations/capital-one.png",
     logoFull: true,
@@ -201,10 +201,10 @@ export const EXPERIENCES: Experience[] = [
     location: "Urbana–Champaign, Illinois, United States",
     startDate: "Sep 2025",
     endDate: "May 2026",
-    summary: "Making machine learning research stronger at Capital One",
+    summary: "Making machine learning systems stronger at Capital One–Illinois ASKS Center",
     roles: [
       {
-        title: "ML Research Engineering Intern",
+        title: "Machine Learning Engineering Intern",
         dateRange: "Sep 2025 — May 2026",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
