@@ -13,6 +13,7 @@ const ITEMS: MarqueeItem[] = [
   { label: "Google DeepMind", logo: "/icons/organizations/deepmind.png" },
   { label: "Rivian", logo: "/icons/organizations/rivian.png" },
   { label: "Google", logo: "/icons/organizations/google.png" },
+  { label: "Capital One", logo: "/icons/organizations/capital-one.svg" },
   { label: "Amazon", logo: "/icons/organizations/amazon.png" },
   {
     label: "Uber",

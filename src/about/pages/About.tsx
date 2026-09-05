@@ -83,10 +83,11 @@ const About: React.FC = () => {
               <motion.p variants={item}>
                 Right now I'm at{" "}
                 <span className="text-ink font-medium">Rivian</span> on
-                Vehicle Telematics, and at{" "}
+                Vehicle Telematics and Electrical Power Controls, and at{" "}
                 <span className="text-ink font-medium">Google</span> on Cloud
                 AI — plus earlier roles at{" "}
-                <span className="text-ink font-medium">Amazon</span> and{" "}
+                <span className="text-ink font-medium">Capital One</span>,{" "}
+                <span className="text-ink font-medium">Amazon</span>, and{" "}
                 <span className="text-ink font-medium">Uber</span> — and
                 upcoming work at{" "}
                 <span className="text-ink font-medium">John Deere</span>,{" "}
