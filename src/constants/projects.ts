@@ -68,6 +68,7 @@ export const EXPERIENCES: Experience[] = [
     logo: "/icons/organizations/tesla.png",
     logoFull: true,
     tileColor: "#E31937",
+    location: "Palo Alto, California, United States",
     startDate: "Jun 2029",
     endDate: "Aug 2029",
     summary: "Making autonomy data infrastructure better at Tesla",
@@ -75,6 +76,7 @@ export const EXPERIENCES: Experience[] = [
       {
         title: "Software Engineering Intern, Autonomy Data Infrastructure Team",
         dateRange: "Jun 2029 — Aug 2029",
+        location: "Palo Alto, California, United States",
         highlights: [...FIVE_BULLETS],
       },
     ],
