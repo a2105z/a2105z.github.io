@@ -88,10 +88,10 @@ export const EXPERIENCES: Experience[] = [
     location: "Urbana–Champaign, Illinois, United States",
     startDate: "Sep 2027",
     endDate: "May 2028",
-    summary: "Making agricultural software and systems better at John Deere",
+    summary: "Making Connect Mobile better at John Deere",
     roles: [
       {
-        title: "Software Engineering Intern, (Unknown Team)",
+        title: "Software Engineering Intern, Connect Mobile Team",
         dateRange: "Sep 2027 — May 2028",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -107,10 +107,10 @@ export const EXPERIENCES: Experience[] = [
     location: "Mountain View, California, United States",
     startDate: "Jun 2027",
     endDate: "Aug 2027",
-    summary: "Making CoreAI better at LinkedIn",
+    summary: "Making Core AI better at LinkedIn",
     roles: [
       {
-        title: "Software Engineering Intern, CoreAI",
+        title: "Software Engineering Intern, Core AI Team",
         dateRange: "Jun 2027 — Aug 2027",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
