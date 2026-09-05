@@ -82,19 +82,36 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
+    company: "LinkedIn",
+    monogram: "in",
+    logo: "/icons/organizations/linkedin.svg",
+    location: "Mountain View, California, United States",
+    startDate: "Jun 2027",
+    endDate: "Aug 2027",
+    summary: "Making CoreAI better at LinkedIn",
+    roles: [
+      {
+        title: "Software Engineering Intern, CoreAI",
+        dateRange: "Jun 2027 — Aug 2027",
+        location: "Mountain View, California, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "Google DeepMind",
     monogram: "DM",
     logo: "/icons/organizations/deepmind.png",
     logoFull: true,
     tileColor: "#5477EF",
     location: "Urbana, Illinois, United States",
-    startDate: "Sep 2027",
-    endDate: "May 2028",
-    summary: "Making AlphaFold and JAX research stronger at Google DeepMind",
+    startDate: "Jun 2027",
+    endDate: "Aug 2027",
+    summary: "Making Gemini API and ML compilation better at Google DeepMind",
     roles: [
       {
-        title: "AI Student Researcher, AlphaFold + JAX",
-        dateRange: "Sep 2027 — May 2028",
+        title: "Software Engineering Contributor, Gemini API and ML Compilation",
+        dateRange: "Jun 2027 — Aug 2027",
         location: "Urbana, Illinois, United States",
         highlights: [...FIVE_BULLETS],
       },
@@ -106,30 +123,10 @@ export const EXPERIENCES: Experience[] = [
     logo: "/icons/organizations/rivian.png",
     logoFull: true,
     tileColor: "#173430",
-    location: "Urbana, Illinois, United States",
-    startDate: "Sep 2026",
-    endDate: "May 2027",
-    summary: "Making vehicle firmware more reliable at Rivian",
-    roles: [
-      {
-        title: "Software Engineering Intern, Vehicle Firmware",
-        dateRange: "Sep 2026 — May 2027",
-        location: "Urbana, Illinois, United States",
-        highlights: [...FIVE_BULLETS],
-      },
-    ],
-  },
-  {
-    company: "Rivian and Volkswagen Group Technologies",
-    monogram: "RV",
-    logo: "/icons/organizations/rv-tech.png",
-    logoFull: true,
-    tileColor: "#000000",
     location: "Palo Alto, California, United States",
     startDate: "Jun 2026",
     endDate: "Aug 2026",
-    summary:
-      "Making vehicle telematics scale at Rivian and Volkswagen Group Technologies",
+    summary: "Making vehicle telematics scale at Rivian",
     roles: [
       {
         title: "Software Engineer Intern, Vehicle Telematics",
@@ -150,7 +147,7 @@ export const EXPERIENCES: Experience[] = [
       "Making AI agents and on-device MediaPipe easier to build at Google",
     roles: [
       {
-        title: "Software Engineer Extern, Cloud AI",
+        title: "Software Engineering Contributor, Cloud AI",
         dateRange: "Jun 2026 — Aug 2026",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -166,32 +163,12 @@ export const EXPERIENCES: Experience[] = [
     location: "Urbana, Illinois, United States",
     startDate: "Jun 2025",
     endDate: "Aug 2025",
-    summary: "Making Alexa and conversational AI better at Amazon",
+    summary: "Making conversational AI better at Amazon",
     roles: [
       {
-        title: "Software Engineering Intern, Alexa and Conversational AI",
+        title: "Software Engineering Intern, Conversational AI",
         dateRange: "Jun 2025 — Aug 2025",
         location: "Urbana, Illinois, United States",
-        highlights: [...FIVE_BULLETS],
-      },
-    ],
-  },
-  {
-    company: "NASA",
-    monogram: "NASA",
-    logo: "/icons/organizations/nasa.png",
-    logoFull: true,
-    tileColor: "#0B3D91",
-    location: "Phoenix, Arizona, United States",
-    startDate: "Jan 2025",
-    endDate: "May 2025",
-    summary:
-      "Making real-time flight software for a Venus aerobot at NASA",
-    roles: [
-      {
-        title: "Embedded Software Engineer Intern, L'SPACE Venus Aerobot",
-        dateRange: "Jan 2025 — May 2025",
-        location: "Phoenix, Arizona, United States",
         highlights: [...FIVE_BULLETS],
       },
     ],
@@ -205,10 +182,10 @@ export const EXPERIENCES: Experience[] = [
     location: "New York City, New York, United States",
     startDate: "Jun 2024",
     endDate: "Aug 2024",
-    summary: "Making maps and location systems better at Uber",
+    summary: "Making maps and location services better at Uber",
     roles: [
       {
-        title: "Software Engineering Fellow, Maps & Location Engineering",
+        title: "Software Engineering Fellow, Maps & Location Services",
         dateRange: "Jun 2024 — Aug 2024",
         location: "New York City, New York, United States",
         highlights: [...FIVE_BULLETS],

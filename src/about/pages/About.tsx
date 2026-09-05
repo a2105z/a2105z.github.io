@@ -82,19 +82,15 @@ const About: React.FC = () => {
 
               <motion.p variants={item}>
                 Right now I'm at{" "}
-                <span className="text-ink font-medium">
-                  Rivian and Volkswagen Group Technologies
-                </span>{" "}
-                on Vehicle Telematics, and at{" "}
+                <span className="text-ink font-medium">Rivian</span> on
+                Vehicle Telematics, and at{" "}
                 <span className="text-ink font-medium">Google</span> on Cloud
-                AI — with additional work at{" "}
-                <span className="text-ink font-medium">Rivian</span> on Vehicle
-                Firmware, plus earlier roles at{" "}
-                <span className="text-ink font-medium">Amazon</span>,{" "}
-                <span className="text-ink font-medium">NASA</span>, and{" "}
+                AI — plus earlier roles at{" "}
+                <span className="text-ink font-medium">Amazon</span> and{" "}
                 <span className="text-ink font-medium">Uber</span> — and
                 upcoming work at{" "}
-                <span className="text-ink font-medium">John Deere</span> and{" "}
+                <span className="text-ink font-medium">John Deere</span>,{" "}
+                <span className="text-ink font-medium">LinkedIn</span>, and{" "}
                 <span className="text-ink font-medium">Google DeepMind</span>.
               </motion.p>
 
@@ -145,7 +141,7 @@ const About: React.FC = () => {
             >
               {[
                 { k: "Focus", v: "Product · Capital" },
-                { k: "Now", v: "RV Tech × Google" },
+                { k: "Now", v: "Rivian × Google" },
                 { k: "Next", v: "Berkeley M.Eng. EECS" },
               ].map((s) => (
                 <div key={s.k}>

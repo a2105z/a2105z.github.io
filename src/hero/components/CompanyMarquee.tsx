@@ -9,16 +9,11 @@ interface MarqueeItem {
 
 const ITEMS: MarqueeItem[] = [
   { label: "John Deere", logo: "/icons/organizations/john-deere.png" },
+  { label: "LinkedIn", logo: "/icons/organizations/linkedin.svg" },
   { label: "Google DeepMind", logo: "/icons/organizations/deepmind.png" },
-  {
-    label: "RV Tech",
-    logo: "/icons/organizations/rv-tech.png",
-    wordmark: "RV",
-  },
   { label: "Rivian", logo: "/icons/organizations/rivian.png" },
   { label: "Google", logo: "/icons/organizations/google.png" },
   { label: "Amazon", logo: "/icons/organizations/amazon.png" },
-  { label: "NASA", logo: "/icons/organizations/nasa.png" },
   {
     label: "Uber",
     logo: "/icons/organizations/uber.svg",
