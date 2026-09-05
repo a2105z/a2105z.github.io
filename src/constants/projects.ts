@@ -84,7 +84,7 @@ export const EXPERIENCES: Experience[] = [
   {
     company: "LinkedIn",
     monogram: "in",
-    logo: "/icons/organizations/linkedin.svg",
+    logo: "/icons/organizations/linkedin.png",
     logoFull: true,
     tileColor: "#0A66C2",
     location: "Mountain View, California, United States",

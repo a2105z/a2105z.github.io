@@ -9,7 +9,7 @@ interface MarqueeItem {
 
 const ITEMS: MarqueeItem[] = [
   { label: "John Deere", logo: "/icons/organizations/john-deere.png" },
-  { label: "LinkedIn", logo: "/icons/organizations/linkedin.svg" },
+  { label: "LinkedIn", logo: "/icons/organizations/linkedin.png" },
   { label: "Google DeepMind", logo: "/icons/organizations/deepmind.png" },
   { label: "Rivian", logo: "/icons/organizations/rivian.png" },
   { label: "Google", logo: "/icons/organizations/google.png" },
