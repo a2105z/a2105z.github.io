@@ -63,6 +63,23 @@ const FIVE_BULLETS: string[] = [
 
 export const EXPERIENCES: Experience[] = [
   {
+    company: "Google",
+    monogram: "G",
+    logo: "/icons/organizations/google.png",
+    location: "Mountain View, California, United States",
+    startDate: "Jun 2028",
+    endDate: "Aug 2028",
+    summary: "Making AI infrastructure better at Google",
+    roles: [
+      {
+        title: "Software Engineering Intern, AI Infrastructure",
+        dateRange: "Jun 2028 — Aug 2028",
+        location: "Mountain View, California, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "John Deere",
     monogram: "JD",
     logo: "/icons/organizations/john-deere.png",
@@ -150,7 +167,7 @@ export const EXPERIENCES: Experience[] = [
     summary: "Making vehicle telematics scale at Rivian",
     roles: [
       {
-        title: "Software Engineer Intern, Vehicle Telematics",
+        title: "Software Engineering Intern, Vehicle Telematics",
         dateRange: "Jun 2026 — Aug 2026",
         location: "Palo Alto, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -187,7 +204,7 @@ export const EXPERIENCES: Experience[] = [
     summary: "Making machine learning research stronger at Capital One",
     roles: [
       {
-        title: "Machine Learning Research Engineering Intern",
+        title: "ML Research Engineering Intern",
         dateRange: "Sep 2025 — May 2026",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],

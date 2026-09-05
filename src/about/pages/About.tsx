@@ -90,6 +90,8 @@ const About: React.FC = () => {
                 <span className="text-ink font-medium">Amazon</span>, and{" "}
                 <span className="text-ink font-medium">Uber</span> — and
                 upcoming work at{" "}
+                <span className="text-ink font-medium">Google</span> on AI
+                Infrastructure,{" "}
                 <span className="text-ink font-medium">John Deere</span>,{" "}
                 <span className="text-ink font-medium">LinkedIn</span>, and{" "}
                 <span className="text-ink font-medium">Google DeepMind</span>.
