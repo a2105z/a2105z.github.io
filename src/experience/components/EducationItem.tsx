@@ -60,7 +60,7 @@ const LogoBadge: React.FC<{
           onError={() => setErrored(true)}
           className={
             logoFull
-              ? "h-full w-full object-cover object-center"
+              ? "h-full w-full object-contain object-center"
               : "h-full w-full object-contain p-2"
           }
         />

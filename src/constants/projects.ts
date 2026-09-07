@@ -82,6 +82,8 @@ export const EXPERIENCES: Experience[] = [
     startDate: "2029",
     endDate: "2033",
     summary: "Making Microsoft 365 Copilot and Teams better at Microsoft",
+    groupIcon: "💼",
+    employmentType: "Full-time",
     roles: [
       {
         title: "Product Manager II, Microsoft 365 Copilot",
@@ -235,7 +237,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Part-time",
     roles: [
       {
-        title: "Part-Time Software Developer, Gemini API & AI Studio",
+        title: "Software Development Contributor, Gemini API & AI Studio",
         dateRange: "Jun 2026 — Aug 2026",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],

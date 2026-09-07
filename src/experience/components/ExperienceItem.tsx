@@ -104,6 +104,10 @@ const MONTH_INDEX: Record<string, number> = {
 
 const inclusiveDuration = (startDate?: string, endDate?: string): string => {
   if (!startDate || !endDate) return "";
+  if (/^\d{4}$/.test(startDate) && /^\d{4}$/.test(endDate)) {
+    const years = Math.max(Number(endDate) - Number(startDate), 1);
+    return years === 1 ? "1 yr" : `${years} yrs`;
+  }
   const [startMonth, startYear] = startDate.split(" ");
   const [endMonth, endYear] = endDate.split(" ");
   const start = Number(startYear) * 12 + MONTH_INDEX[startMonth];
@@ -111,6 +115,20 @@ const inclusiveDuration = (startDate?: string, endDate?: string): string => {
   const months = end - start + 1;
   if (!Number.isFinite(months) || months < 1) return "";
   return months === 1 ? "1 mo" : `${months} mos`;
+};
+
+const durationFromRange = (dateRange?: string): string => {
+  if (!dateRange) return "";
+  const [start, end] = dateRange.split(" — ").map((part) => part.trim());
+  return inclusiveDuration(start, end);
+};
+
+const dateLineFor = (dateRange?: string, startDate?: string, endDate?: string) => {
+  const range = dateRange || (startDate && endDate ? `${startDate} — ${endDate}` : "");
+  const duration = dateRange
+    ? durationFromRange(dateRange)
+    : inclusiveDuration(startDate, endDate);
+  return [range, duration].filter(Boolean).join(" · ");
 };
 
 const splitHeadline = (title?: string) => {
@@ -132,29 +150,17 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
   location,
   ticker,
   exchange,
-  summary,
   delay = 0,
   roles,
-  kind,
   startDate,
   endDate,
   groupIcon,
   employmentType,
 }) => {
   const roleList = roles ?? [];
-  const isProgression = roleList.length > 1;
-  const primary = roleList[0];
   const listedName =
     ticker && exchange ? `${company} (${exchange}: ${ticker})` : company;
-  const { headline: internHeadline, group } = splitHeadline(primary?.title);
-  const headline = isProgression ? listedName : internHeadline || listedName;
-  const links = primary?.links;
-  const duration = inclusiveDuration(startDate, endDate);
-  const dateLine = [primary?.dateRange ?? `${startDate} — ${endDate}`, duration]
-    .filter(Boolean)
-    .join(" · ");
   const typeLine = [listedName, employmentType].filter(Boolean).join(" · ");
-  const isInternship = kind === "internship" || (!kind && !isProgression);
 
   return (
     <motion.div
@@ -173,81 +179,31 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
           monogram={monogram}
         />
         <div className="flex-1 min-w-0">
-          {isInternship && !isProgression ? (
-            <>
-              <h3 className="text-[16px] sm:text-[17px] font-semibold text-ink tracking-tight leading-snug">
-                {headline}
-              </h3>
-              <p className="text-[14px] text-ink-muted mt-0.5">{typeLine}</p>
-              {dateLine && (
-                <p className="text-[13px] text-ink-dim mt-0.5">{dateLine}</p>
-              )}
-              {location && (
-                <p className="text-[13px] text-ink-dim mt-0.5">{location}</p>
-              )}
-              {group && (
-                <p className="text-[14px] text-ink-muted mt-2">
-                  {groupIcon ? `${groupIcon} ${group}` : group}
-                </p>
-              )}
-            </>
-          ) : (
-            <>
-              <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                <h3 className="text-[17px] sm:text-[19px] font-medium text-ink tracking-tight leading-snug">
-                  {isProgression ? listedName : primary?.title ?? listedName}
+          {roleList.map((role, index) => {
+            const { headline, group } = splitHeadline(role.title);
+            const showMeta = index === 0;
+            return (
+              <div key={`${role.title}-${role.dateRange}`} className={index === 0 ? "" : "mt-5"}>
+                <h3 className="text-[16px] sm:text-[17px] font-semibold text-ink tracking-tight leading-snug">
+                  {headline || listedName}
                 </h3>
-                {links?.map((link) => (
-                  <a
-                    key={link.href}
-                    href={link.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="hover-underline text-[12.5px] text-accent hover:text-ink transition-colors"
-                  >
-                    {link.label}
-                  </a>
-                ))}
-              </div>
-              {!isProgression && (
-                <p className="text-ink-muted text-[14px] mt-0.5">{listedName}</p>
-              )}
-              {location && (
-                <p className="text-[12px] text-ink-dim mt-1">{location}</p>
-              )}
-              {isProgression ? (
-                <ol className="relative mt-5">
-                  <div
-                    aria-hidden="true"
-                    className="absolute left-[5px] top-2 bottom-2 w-px bg-line"
-                  />
-                  {roleList.map((role) => (
-                    <li
-                      key={`${role.title}-${role.dateRange}`}
-                      className="relative pl-7 pb-6 last:pb-0"
-                    >
-                      <span
-                        aria-hidden="true"
-                        className="absolute left-[1.5px] top-1.5 h-2 w-2 rounded-full bg-ink ring-4 ring-canvas"
-                      />
-                      <p className="text-[11px] uppercase tracking-[0.22em] text-ink-dim font-medium">
-                        {role.dateRange}
-                      </p>
-                      <p className="mt-1.5 text-[16px] sm:text-[17px] font-medium text-ink tracking-tight leading-snug">
-                        {role.title}
-                      </p>
-                    </li>
-                  ))}
-                </ol>
-              ) : (
-                summary && (
-                  <p className="text-ink-muted text-[14px] leading-relaxed mt-3 max-w-2xl">
-                    {summary}
+                {showMeta && (
+                  <p className="text-[14px] text-ink-muted mt-0.5">{typeLine}</p>
+                )}
+                <p className="text-[13px] text-ink-dim mt-0.5">
+                  {dateLineFor(role.dateRange, startDate, endDate)}
+                </p>
+                {showMeta && location && (
+                  <p className="text-[13px] text-ink-dim mt-0.5">{location}</p>
+                )}
+                {group && (
+                  <p className="text-[14px] text-ink-muted mt-2">
+                    {groupIcon ? `${groupIcon} ${group}` : group}
                   </p>
-                )
-              )}
-            </>
-          )}
+                )}
+              </div>
+            );
+          })}
         </div>
       </div>
     </motion.div>

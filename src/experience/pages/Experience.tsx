@@ -81,7 +81,7 @@ const Experience: React.FC = () => {
                 <p className="text-ink-muted text-[15px] sm:text-base leading-relaxed max-w-xl">
                   Full-time roles will live here.
                 </p>
-              ) : kind === "internship" ? (
+              ) : (
                 <ul className="divide-y divide-line">
                   {items.map((experience, index) => (
                     <li
@@ -97,55 +97,19 @@ const Experience: React.FC = () => {
                         location={experience.location}
                         ticker={experience.ticker}
                         exchange={experience.exchange}
-                        summary={experience.summary}
                         delay={index * 0.04}
                         roles={experience.roles}
-                        kind="internship"
+                        kind={kind}
                         startDate={experience.startDate}
                         endDate={experience.endDate}
                         groupIcon={experience.groupIcon}
-                        employmentType={experience.employmentType}
+                        employmentType={
+                          experience.employmentType ||
+                          (kind === "fulltime" ? "Full-time" : "Internship")
+                        }
                       />
                     </li>
                   ))}
-                </ul>
-              ) : (
-                <ul className="relative">
-                  <div
-                    aria-hidden="true"
-                    className="absolute left-[20px] top-1 bottom-1 w-px bg-line hidden sm:block"
-                  />
-                  {items.map((experience, index) => {
-                    const dateRange = `${experience.startDate} — ${experience.endDate}`;
-                    return (
-                      <li
-                        key={`${experience.company}-${experience.startDate}-${index}`}
-                        className="relative sm:pl-16 pb-14 last:pb-0"
-                      >
-                        <span
-                          aria-hidden="true"
-                          className="hidden sm:block absolute left-[17px] top-4 h-1.5 w-1.5 rounded-full bg-ink ring-4 ring-canvas"
-                        />
-                        <p className="text-[11px] uppercase tracking-[0.22em] text-ink-dim font-medium mb-3">
-                          {dateRange}
-                        </p>
-                        <ExperienceItem
-                          company={experience.company}
-                          logo={experience.logo}
-                          logoFull={experience.logoFull}
-                          tileColor={experience.tileColor}
-                          monogram={experience.monogram}
-                          location={experience.location}
-                          ticker={experience.ticker}
-                          exchange={experience.exchange}
-                          summary={experience.summary}
-                          delay={index * 0.05}
-                          roles={experience.roles}
-                          kind="fulltime"
-                        />
-                      </li>
-                    );
-                  })}
                 </ul>
               )}
             </motion.div>
