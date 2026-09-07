@@ -70,6 +70,28 @@ const FIVE_BULLETS: string[] = [
 
 export const EXPERIENCES: Experience[] = [
   {
+    company: "Google",
+    monogram: "G",
+    logo: "/icons/organizations/google.png",
+    kind: "fulltime",
+    ticker: "GOOG",
+    exchange: "NASDAQ",
+    location: "Mountain View, California, United States",
+    startDate: "2035",
+    endDate: "Present",
+    summary: "Making Google Maps better at Google",
+    groupIcon: "🗺️",
+    employmentType: "Full-time",
+    roles: [
+      {
+        title: "Senior Product Manager, Google Maps",
+        dateRange: "2035 — Present",
+        location: "Mountain View, California, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "Microsoft",
     monogram: "MS",
     logo: "/icons/organizations/microsoft.png",

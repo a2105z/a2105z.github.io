@@ -104,6 +104,7 @@ const MONTH_INDEX: Record<string, number> = {
 
 const inclusiveDuration = (startDate?: string, endDate?: string): string => {
   if (!startDate || !endDate) return "";
+  if (/present/i.test(endDate)) return "";
   if (/^\d{4}$/.test(startDate) && /^\d{4}$/.test(endDate)) {
     const years = Math.max(Number(endDate) - Number(startDate), 1);
     return years === 1 ? "1 yr" : `${years} yrs`;
