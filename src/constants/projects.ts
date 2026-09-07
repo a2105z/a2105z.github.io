@@ -107,7 +107,7 @@ export const EXPERIENCES: Experience[] = [
     summary: "Making autonomy data infrastructure better at Tesla",
     roles: [
       {
-        title: "Software Engineering Intern, Autonomy Data Infrastructure Team",
+        title: "Software Engineering Intern, Autonomy Data Infrastructure",
         dateRange: "Jun 2029 — Aug 2029",
         location: "Palo Alto, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -124,7 +124,7 @@ export const EXPERIENCES: Experience[] = [
     summary: "Making AI infrastructure better at Google",
     roles: [
       {
-        title: "Software Engineering Intern, AI Infrastructure Team",
+        title: "Software Engineering Intern, AI Infrastructure",
         dateRange: "Jun 2028 — Aug 2028",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -143,7 +143,7 @@ export const EXPERIENCES: Experience[] = [
     summary: "Making Connect Mobile better at John Deere",
     roles: [
       {
-        title: "Software Engineering Intern, Connect Mobile Team",
+        title: "Software Engineering Intern, Connect Mobile",
         dateRange: "Sep 2027 — May 2028",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -162,7 +162,7 @@ export const EXPERIENCES: Experience[] = [
     summary: "Making Core AI better at LinkedIn",
     roles: [
       {
-        title: "Software Engineering Intern, Core AI Team",
+        title: "Software Engineering Intern, Core AI",
         dateRange: "Jun 2027 — Aug 2027",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -181,7 +181,7 @@ export const EXPERIENCES: Experience[] = [
     summary: "Making Gemini API and AI Studio better at Google DeepMind",
     roles: [
       {
-        title: "Software Engineering Contributor, Gemini API & AI Studio Team",
+        title: "Software Engineering Contributor, Gemini API & AI Studio",
         dateRange: "Jun 2027 — Aug 2027",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -200,7 +200,7 @@ export const EXPERIENCES: Experience[] = [
     summary: "Making electric power conversion more reliable at Rivian",
     roles: [
       {
-        title: "Software Engineering Intern, Electric Power Conversion Team",
+        title: "Software Engineering Intern, Electric Power Conversion",
         dateRange: "Sep 2026 — May 2027",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -219,7 +219,7 @@ export const EXPERIENCES: Experience[] = [
     summary: "Making vehicle telematics scale at Rivian",
     roles: [
       {
-        title: "Software Engineering Intern, Vehicle Telematics Team",
+        title: "Software Engineering Intern, Vehicle Telematics",
         dateRange: "Jun 2026 — Aug 2026",
         location: "Palo Alto, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -237,7 +237,7 @@ export const EXPERIENCES: Experience[] = [
       "Making AI agents and on-device MediaPipe easier to build at Google",
     roles: [
       {
-        title: "Software Engineering Contributor, Cloud AI Team",
+        title: "Software Engineering Contributor, Cloud AI",
         dateRange: "Jun 2026 — Aug 2026",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -256,7 +256,7 @@ export const EXPERIENCES: Experience[] = [
     summary: "Making AI foundations and safety stronger at Capital One ASKS",
     roles: [
       {
-        title: "Machine Learning Engineering Intern, AI Foundations and Safety Team",
+        title: "Machine Learning Engineering Intern, AI Foundations and Safety",
         dateRange: "Sep 2025 — May 2026",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -276,7 +276,7 @@ export const EXPERIENCES: Experience[] = [
     summary: "Making quantitative systems and software better at Jane Street",
     roles: [
       {
-        title: "Software Engineering Fellow, Quant Systems Team",
+        title: "Software Engineering Fellow, Trading Systems",
         dateRange: "Jun 2025 — Aug 2025",
         location: "New York City, New York, United States",
         highlights: [...FIVE_BULLETS],
@@ -295,7 +295,7 @@ export const EXPERIENCES: Experience[] = [
     summary: "Making conversational AI better at Amazon AICE",
     roles: [
       {
-        title: "Software Engineering Intern, Conversational AI Team",
+        title: "Software Engineering Intern, Conversational AI",
         dateRange: "Jun 2025 — Aug 2025",
         location: "Chicago, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -314,7 +314,7 @@ export const EXPERIENCES: Experience[] = [
     summary: "Making defense tech better at Palantir",
     roles: [
       {
-        title: "Software Engineering Intern, Defense Tech Team",
+        title: "Software Engineering Intern, Defense Tech",
         dateRange: "Jun 2024 — Aug 2024",
         location: "New York City, New York, United States",
         highlights: [...FIVE_BULLETS],
