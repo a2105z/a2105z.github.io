@@ -66,6 +66,26 @@ const FIVE_BULLETS: string[] = [
 
 export const EXPERIENCES: Experience[] = [
   {
+    company: "Amazon",
+    monogram: "AMZ",
+    logo: "/icons/organizations/amazon.png",
+    kind: "fulltime",
+    logoFull: true,
+    tileColor: "#f47024",
+    location: "Seattle, Washington, United States",
+    startDate: "2035",
+    endDate: "2038",
+    summary: "Making Marketplace better at Amazon",
+    roles: [
+      {
+        title: "Senior Product Manager, Marketplace",
+        dateRange: "2035 — 2038",
+        location: "Seattle, Washington, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "Microsoft",
     monogram: "MS",
     logo: "/icons/organizations/microsoft.png",
