@@ -170,25 +170,6 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "Google DeepMind",
-    monogram: "DM",
-    logo: "/icons/organizations/deepmind.png",
-    logoFull: true,
-    tileColor: "#5477EF",
-    location: "Mountain View, California, United States",
-    startDate: "Jun 2027",
-    endDate: "Aug 2027",
-    summary: "Making Gemini API and AI Studio better at Google DeepMind",
-    roles: [
-      {
-        title: "Software Engineering Contributor, Gemini API & AI Studio",
-        dateRange: "Jun 2027 — Aug 2027",
-        location: "Mountain View, California, United States",
-        highlights: [...FIVE_BULLETS],
-      },
-    ],
-  },
-  {
     company: "Rivian",
     monogram: "RIV",
     logo: "/icons/organizations/rivian.png",
@@ -227,17 +208,18 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "Google",
-    monogram: "G",
-    logo: "/icons/organizations/google.png",
+    company: "Google DeepMind",
+    monogram: "DM",
+    logo: "/icons/organizations/deepmind.png",
+    logoFull: true,
+    tileColor: "#5477EF",
     location: "Mountain View, California, United States",
     startDate: "Jun 2026",
     endDate: "Aug 2026",
-    summary:
-      "Making AI agents and on-device MediaPipe easier to build at Google",
+    summary: "Making Gemini API and AI Studio better at Google DeepMind",
     roles: [
       {
-        title: "Software Engineering Contributor, Cloud AI",
+        title: "Part-Time Software Developer, Gemini API & AI Studio",
         dateRange: "Jun 2026 — Aug 2026",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
