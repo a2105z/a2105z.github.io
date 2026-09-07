@@ -264,6 +264,26 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
+    company: "Jane Street",
+    monogram: "JS",
+    logo: "/icons/organizations/jane-street.png",
+    kind: "internship",
+    logoFull: true,
+    tileColor: "#1B4EA0",
+    location: "New York City, New York, United States",
+    startDate: "Jun 2025",
+    endDate: "Aug 2025",
+    summary: "Making quantitative systems and software better at Jane Street",
+    roles: [
+      {
+        title: "Quantitative Systems & Software Engineering Extern",
+        dateRange: "Jun 2025 — Aug 2025",
+        location: "New York City, New York, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "Amazon AICE",
     monogram: "AMZ",
     logo: "/icons/organizations/amazon.png",
