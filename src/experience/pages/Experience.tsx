@@ -37,7 +37,7 @@ const Experience: React.FC = () => {
           index="02"
           eyebrow="Experience"
           text="Where I've been building."
-          description="Selected engineering work across autonomy, AI, systems, and infrastructure."
+          description="Selected work across engineering, product, and strategy."
         />
 
         <div className="mt-10 inline-flex items-center rounded-full border border-line bg-surface p-1 shadow-ring">
