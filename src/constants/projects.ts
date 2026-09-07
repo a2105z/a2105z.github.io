@@ -272,6 +272,24 @@ export const EXPERIENCES: Experience[] = [
 
 export const EDUCATION: Education[] = [
   {
+    institution: "Harvard University (Harvard Business School)",
+    monogram: "HBS",
+    logo: "/icons/organizations/harvard.png",
+    logoFull: true,
+    tileColor: "#A51C30",
+    location: "Boston, Massachusetts, United States",
+    degree: "Master of Business Administration",
+    startDate: "Aug 2028",
+    endDate: "May 2029",
+    dateRange: "Aug 2028 — May 2029",
+    focus: [
+      "Strategy",
+      "Finance",
+      "Leadership",
+      "General Management",
+    ],
+  },
+  {
     institution: "University of California, Berkeley",
     monogram: "UCB",
     logo: "/icons/organizations/berkeley.png",
@@ -281,8 +299,8 @@ export const EDUCATION: Education[] = [
     degree:
       "Master of Engineering, Electrical Engineering & Computer Sciences",
     startDate: "Aug 2028",
-    endDate: "Spring 2029",
-    dateRange: "Aug 2028 — Spring 2029",
+    endDate: "May 2029",
+    dateRange: "Aug 2028 — May 2029",
     focus: [
       "Artificial Intelligence",
       "Data Science",

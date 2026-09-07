@@ -134,7 +134,12 @@ const About: React.FC = () => {
                   Sciences
                 </span>{" "}
                 at UC Berkeley, focused on AI, data science, computer vision, and
-                product.
+                product, and an{" "}
+                <span className="text-ink font-medium">MBA</span> at{" "}
+                <span className="text-ink font-medium">
+                  Harvard Business School
+                </span>
+                .
               </motion.p>
             </motion.div>
 
@@ -149,7 +154,7 @@ const About: React.FC = () => {
               {[
                 { k: "Focus", v: "Product · Capital" },
                 { k: "Now", v: "Rivian × Google" },
-                { k: "Next", v: "Berkeley M.Eng. EECS" },
+                { k: "Next", v: "HBS MBA · Berkeley M.Eng." },
               ].map((s) => (
                 <div key={s.k}>
                   <p className="text-[10px] uppercase tracking-[0.24em] text-ink-dim font-medium">
