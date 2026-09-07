@@ -75,10 +75,10 @@ export const EXPERIENCES: Experience[] = [
     location: "Redmond, Washington, United States",
     startDate: "2031",
     endDate: "2033",
-    summary: "Making Copilot, Teams, and AI integration better at Microsoft",
+    summary: "Making Copilot and Teams better at Microsoft",
     roles: [
       {
-        title: "Product Manager II, Copilot/Teams & AI Integration",
+        title: "Product Manager II, Copilot and Teams",
         dateRange: "2031 — 2033",
         location: "Redmond, Washington, United States",
         highlights: [...FIVE_BULLETS],
@@ -95,10 +95,10 @@ export const EXPERIENCES: Experience[] = [
     location: "Chicago, Illinois, United States",
     startDate: "2029",
     endDate: "2031",
-    summary: "Making digital strategy better at McKinsey's Digital Practice",
+    summary: "Making AI and digital strategy better at McKinsey's AI and Digital Practice",
     roles: [
       {
-        title: "Business Analyst, Digital Practice",
+        title: "Business Analyst, AI and Digital Practice",
         dateRange: "2029 — 2031",
         location: "Chicago, Illinois, United States",
         highlights: [...FIVE_BULLETS],
