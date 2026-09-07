@@ -74,11 +74,17 @@ export const EXPERIENCES: Experience[] = [
     tileColor: "#f47024",
     location: "Seattle, Washington, United States",
     startDate: "2035",
-    endDate: "2038",
+    endDate: "2041",
     summary: "Making Marketplace better at Amazon",
     roles: [
       {
-        title: "Senior Product Manager, Marketplace",
+        title: "Senior Manager of Product Management, Amazon Marketplace",
+        dateRange: "2038 — 2041",
+        location: "Seattle, Washington, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+      {
+        title: "Senior Product Manager, Amazon Marketplace",
         dateRange: "2035 — 2038",
         location: "Seattle, Washington, United States",
         highlights: [...FIVE_BULLETS],
@@ -95,16 +101,16 @@ export const EXPERIENCES: Experience[] = [
     location: "Redmond, Washington, United States",
     startDate: "2029",
     endDate: "2033",
-    summary: "Making Copilot and Teams better at Microsoft",
+    summary: "Making Microsoft 365 Copilot and Teams better at Microsoft",
     roles: [
       {
-        title: "Product Manager II, Copilot and Teams",
+        title: "Product Manager II, Microsoft 365 Copilot",
         dateRange: "2031 — 2033",
         location: "Redmond, Washington, United States",
         highlights: [...FIVE_BULLETS],
       },
       {
-        title: "Product Manager I, Copilot and Teams",
+        title: "Product Manager I, Microsoft Teams",
         dateRange: "2029 — 2031",
         location: "Redmond, Washington, United States",
         highlights: [...FIVE_BULLETS],
