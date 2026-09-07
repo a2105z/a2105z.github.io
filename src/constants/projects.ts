@@ -22,10 +22,13 @@ export type ExperienceRole = {
   links?: ExperienceRoleLink[];
 };
 
+export type ExperienceKind = "internship" | "fulltime";
+
 export type Experience = {
   company: string;
   monogram: string;
   logo: string;
+  kind?: ExperienceKind;
   logoFull?: boolean;
   /** Hex color the logo tile should adopt when `logoFull` is true, so the badge
    *  chrome flows seamlessly with the logo's own background (no white halo). */

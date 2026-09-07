@@ -76,29 +76,11 @@ const About: React.FC = () => {
             >
               <motion.p variants={item}>
                 Building software and products by day, paying close attention
-                to the <span className="text-ink font-medium">operators, investors, and bankers</span>{" "}
-                who decide which technologies actually reach scale.
-              </motion.p>
-
-              <motion.p variants={item}>
-                Right now I'm at{" "}
-                <span className="text-ink font-medium">Rivian</span> on
-                Vehicle Telematics and Electric Power Conversion, and at{" "}
-                <span className="text-ink font-medium">Google</span> on Cloud
-                AI — plus earlier roles at{" "}
+                to the{" "}
                 <span className="text-ink font-medium">
-                  Capital One ASKS
-                </span>
-                ,{" "}
-                <span className="text-ink font-medium">Amazon AICE</span>, and{" "}
-                <span className="text-ink font-medium">Palantir</span> — and
-                upcoming work at{" "}
-                <span className="text-ink font-medium">Tesla</span>,{" "}
-                <span className="text-ink font-medium">Google</span> on AI
-                Infrastructure,{" "}
-                <span className="text-ink font-medium">John Deere</span>,{" "}
-                <span className="text-ink font-medium">LinkedIn</span>, and{" "}
-                <span className="text-ink font-medium">Google DeepMind</span>.
+                  operators, investors, and bankers
+                </span>{" "}
+                who decide which technologies actually reach scale.
               </motion.p>
 
               <motion.p variants={item}>
@@ -116,53 +98,6 @@ const About: React.FC = () => {
                 </span>{" "}
                 as adjacent lenses on the same question.
               </motion.p>
-
-              <motion.p variants={item}>
-                I study{" "}
-                <span className="text-ink font-medium">Computer Science</span>{" "}
-                and{" "}
-                <span className="text-ink font-medium">
-                  Electrical Engineering
-                </span>
-                , along with{" "}
-                <span className="text-ink font-medium">
-                  Innovation, Leadership &amp; Engineering Entrepreneurship
-                </span>{" "}
-                at UIUC, then continue to a{" "}
-                <span className="text-ink font-medium">
-                  Master of Engineering, Electrical Engineering &amp; Computer
-                  Sciences
-                </span>{" "}
-                at UC Berkeley, focused on AI, data science, computer vision, and
-                product, and an{" "}
-                <span className="text-ink font-medium">MBA</span> at{" "}
-                <span className="text-ink font-medium">
-                  Harvard Business School
-                </span>
-                .
-              </motion.p>
-            </motion.div>
-
-            {/* Signature markers */}
-            <motion.div
-              initial={{ opacity: 0, y: 12 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.4 }}
-              transition={{ duration: 0.7, delay: 0.2, ease: EASE_PREMIUM }}
-              className="mt-14 grid grid-cols-3 gap-6 sm:gap-10 border-t border-line pt-8 max-w-2xl"
-            >
-              {[
-                { k: "Focus", v: "Product · Capital" },
-                { k: "Now", v: "Rivian × Google" },
-                { k: "Next", v: "HBS MBA · Berkeley M.Eng." },
-              ].map((s) => (
-                <div key={s.k}>
-                  <p className="text-[10px] uppercase tracking-[0.24em] text-ink-dim font-medium">
-                    {s.k}
-                  </p>
-                  <p className="mt-2 text-[14px] text-ink font-medium">{s.v}</p>
-                </div>
-              ))}
             </motion.div>
           </div>
         </div>
