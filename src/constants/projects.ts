@@ -264,7 +264,7 @@ export const EXPERIENCES: Experience[] = [
     summary: "Making defense tech better at Palantir",
     roles: [
       {
-        title: "Software Engineering Fellow, Defense Tech Team",
+        title: "Software Engineering Intern, Defense Tech Team",
         dateRange: "Jun 2024 — Aug 2024",
         location: "New York City, New York, United States",
         highlights: [...FIVE_BULLETS],
