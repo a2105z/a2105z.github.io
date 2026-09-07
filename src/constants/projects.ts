@@ -78,9 +78,15 @@ export const EXPERIENCES: Experience[] = [
     tileColor: "#FF5000",
     location: "Phoenix, Arizona, United States",
     startDate: "2044",
-    endDate: "2049",
-    summary: "Making avionics, navigation, and advanced air mobility better at Honeywell Aerospace",
+    endDate: "2054",
+    summary: "Making avionics, navigation, and electronic solutions better at Honeywell Aerospace",
     roles: [
+      {
+        title: "President, Electronic Solutions",
+        dateRange: "2049 — 2054",
+        location: "Phoenix, Arizona, United States",
+        highlights: [...FIVE_BULLETS],
+      },
       {
         title: "Vice President & General Manager, Advanced Air Mobility",
         dateRange: "2048 — 2049",
