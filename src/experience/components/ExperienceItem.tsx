@@ -117,20 +117,6 @@ const inclusiveDuration = (startDate?: string, endDate?: string): string => {
   return months === 1 ? "1 mo" : `${months} mos`;
 };
 
-const durationFromRange = (dateRange?: string): string => {
-  if (!dateRange) return "";
-  const [start, end] = dateRange.split(" — ").map((part) => part.trim());
-  return inclusiveDuration(start, end);
-};
-
-const dateLineFor = (dateRange?: string, startDate?: string, endDate?: string) => {
-  const range = dateRange || (startDate && endDate ? `${startDate} — ${endDate}` : "");
-  const duration = dateRange
-    ? durationFromRange(dateRange)
-    : inclusiveDuration(startDate, endDate);
-  return [range, duration].filter(Boolean).join(" · ");
-};
-
 const splitHeadline = (title?: string) => {
   if (!title) return { headline: "", group: undefined as string | undefined };
   const idx = title.lastIndexOf(", ");
@@ -160,7 +146,9 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
   const roleList = roles ?? [];
   const listedName =
     ticker && exchange ? `${company} (${exchange}: ${ticker})` : company;
-  const typeLine = [listedName, employmentType].filter(Boolean).join(" · ");
+  const tenure = inclusiveDuration(startDate, endDate);
+  const metaLine = [employmentType, tenure].filter(Boolean).join(" · ");
+  const hasRail = roleList.length > 0;
 
   return (
     <motion.div
@@ -170,40 +158,61 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
       transition={{ duration: 0.7, delay, ease: EASE_PREMIUM }}
       className="group"
     >
-      <div className="flex items-start gap-4">
-        <LogoBadge
-          logo={logo}
-          logoFull={logoFull}
-          tileColor={tileColor}
-          company={company}
-          monogram={monogram}
-        />
-        <div className="flex-1 min-w-0">
-          {roleList.map((role, index) => {
-            const { headline, group } = splitHeadline(role.title);
-            const showMeta = index === 0;
-            return (
-              <div key={`${role.title}-${role.dateRange}`} className={index === 0 ? "" : "mt-5"}>
-                <h3 className="text-[16px] sm:text-[17px] font-semibold text-ink tracking-tight leading-snug">
-                  {headline || listedName}
-                </h3>
-                {showMeta && (
-                  <p className="text-[14px] text-ink-muted mt-0.5">{typeLine}</p>
-                )}
-                <p className="text-[13px] text-ink-dim mt-0.5">
-                  {dateLineFor(role.dateRange, startDate, endDate)}
-                </p>
-                {showMeta && location && (
-                  <p className="text-[13px] text-ink-dim mt-0.5">{location}</p>
-                )}
-                {group && (
-                  <p className="text-[14px] text-ink-muted mt-2">
-                    {groupIcon ? `${groupIcon} ${group}` : group}
+      <div className="flex items-stretch gap-4">
+        <div className="relative w-11 flex-shrink-0">
+          <div className="relative z-10">
+            <LogoBadge
+              logo={logo}
+              logoFull={logoFull}
+              tileColor={tileColor}
+              company={company}
+              monogram={monogram}
+            />
+          </div>
+          {hasRail && (
+            <div
+              aria-hidden="true"
+              className="absolute left-1/2 top-12 bottom-1 w-px -translate-x-1/2 bg-line"
+            />
+          )}
+        </div>
+
+        <div className="min-w-0 flex-1">
+          <h3 className="text-[16px] sm:text-[17px] font-semibold text-ink tracking-tight leading-snug">
+            {listedName}
+          </h3>
+          {metaLine && (
+            <p className="text-[13px] text-ink-muted mt-0.5">{metaLine}</p>
+          )}
+          <p className="text-[13px] text-ink-dim mt-0.5">On-site</p>
+
+          <ul className="mt-5 space-y-6">
+            {roleList.map((role) => {
+              const { headline, group } = splitHeadline(role.title);
+              return (
+                <li key={`${role.title}-${role.dateRange}`} className="relative">
+                  <span
+                    aria-hidden="true"
+                    className="absolute top-1.5 left-[-2.625rem] h-2 w-2 rounded-full bg-ink-dim ring-4 ring-canvas"
+                  />
+                  <p className="text-[15px] sm:text-[16px] font-semibold text-ink tracking-tight leading-snug">
+                    {headline || role.title}
                   </p>
-                )}
-              </div>
-            );
-          })}
+                  <p className="text-[13px] text-ink-dim mt-0.5">{role.dateRange}</p>
+                  {(role.location || location) && (
+                    <p className="text-[13px] text-ink-dim mt-0.5">
+                      {role.location || location}
+                    </p>
+                  )}
+                  {group && (
+                    <p className="text-[14px] text-ink-muted mt-2">
+                      {groupIcon ? `${groupIcon} ${group}` : group}
+                    </p>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
     </motion.div>
