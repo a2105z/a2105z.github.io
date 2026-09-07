@@ -74,9 +74,15 @@ export const EXPERIENCES: Experience[] = [
     tileColor: "#f47024",
     location: "Seattle, Washington, United States",
     startDate: "2035",
-    endDate: "2041",
+    endDate: "2044",
     summary: "Making Marketplace better at Amazon",
     roles: [
+      {
+        title: "General Manager, Amazon Marketplace Seller Services",
+        dateRange: "2041 — 2044",
+        location: "Seattle, Washington, United States",
+        highlights: [...FIVE_BULLETS],
+      },
       {
         title: "Senior Manager of Product Management, Amazon Marketplace",
         dateRange: "2038 — 2041",
