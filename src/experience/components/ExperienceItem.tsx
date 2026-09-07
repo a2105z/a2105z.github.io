@@ -138,6 +138,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
   exchange,
   delay = 0,
   roles,
+  kind,
   startDate,
   endDate,
   groupIcon,
@@ -149,6 +150,51 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
   const tenure = inclusiveDuration(startDate, endDate);
   const metaLine = [employmentType, tenure].filter(Boolean).join(" · ");
   const hasRail = roleList.length > 0;
+  const isInternship = kind !== "fulltime";
+
+  if (isInternship) {
+    const role = roleList[0];
+    const { headline, group } = splitHeadline(role?.title);
+    const typeLine = [listedName, employmentType].filter(Boolean).join(" · ");
+    const dateLine = [role?.dateRange, tenure].filter(Boolean).join(" · ");
+
+    return (
+      <motion.div
+        initial={{ opacity: 0, y: 18 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.7, delay, ease: EASE_PREMIUM }}
+        className="group"
+      >
+        <div className="flex items-start gap-4">
+          <LogoBadge
+            logo={logo}
+            logoFull={logoFull}
+            tileColor={tileColor}
+            company={company}
+            monogram={monogram}
+          />
+          <div className="min-w-0 flex-1">
+            <h3 className="text-[16px] sm:text-[17px] font-semibold text-ink tracking-tight leading-snug">
+              {headline || listedName}
+            </h3>
+            <p className="text-[14px] text-ink-muted mt-0.5">{typeLine}</p>
+            {dateLine && (
+              <p className="text-[13px] text-ink-dim mt-0.5">{dateLine}</p>
+            )}
+            {location && (
+              <p className="text-[13px] text-ink-dim mt-0.5">{location}</p>
+            )}
+            {group && (
+              <p className="text-[14px] text-ink-muted mt-2">
+                {groupIcon ? `${groupIcon} ${group}` : group}
+              </p>
+            )}
+          </div>
+        </div>
+      </motion.div>
+    );
+  }
 
   return (
     <motion.div
