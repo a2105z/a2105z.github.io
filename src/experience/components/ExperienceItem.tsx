@@ -134,8 +134,6 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
   company,
   monogram,
   location,
-  ticker,
-  exchange,
   delay = 0,
   roles,
   kind,
@@ -145,8 +143,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
   employmentType,
 }) => {
   const roleList = roles ?? [];
-  const listedName =
-    ticker && exchange ? `${company} (${exchange}: ${ticker})` : company;
+  const listedName = company;
   const tenure = inclusiveDuration(startDate, endDate);
   const metaLine = [employmentType, tenure].filter(Boolean).join(" · ");
   const hasRail = roleList.length > 0;
