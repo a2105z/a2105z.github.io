@@ -88,19 +88,19 @@ export const EXPERIENCES: Experience[] = [
         highlights: [...FIVE_BULLETS],
       },
       {
-        title: "Vice President & General Manager, Space",
+        title: "Vice President and General Manager, Space",
         dateRange: "2048 — 2050",
         location: "Phoenix, Arizona, United States",
         highlights: [...FIVE_BULLETS],
       },
       {
-        title: "Vice President & General Manager, Navigation & Sensors",
+        title: "Vice President and General Manager, Navigation and Sensors",
         dateRange: "2046 — 2048",
         location: "Phoenix, Arizona, United States",
         highlights: [...FIVE_BULLETS],
       },
       {
-        title: "Vice President & General Manager, Avionics",
+        title: "Vice President and General Manager, Avionics",
         dateRange: "2044 — 2046",
         location: "Phoenix, Arizona, United States",
         highlights: [...FIVE_BULLETS],
