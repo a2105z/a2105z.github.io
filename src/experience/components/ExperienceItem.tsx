@@ -13,6 +13,7 @@ interface ExperienceRole {
   location?: string;
   highlights: string[];
   links?: ExperienceRoleLink[];
+  groupIcon?: string;
 }
 
 interface ExperienceItemProps {
@@ -233,6 +234,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
           <ul className="mt-5 space-y-6">
             {roleList.map((role) => {
               const { headline, group } = splitHeadline(role.title);
+              const roleIcon = role.groupIcon ?? groupIcon;
               return (
                 <li key={`${role.title}-${role.dateRange}`} className="relative">
                   <span
@@ -250,7 +252,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
                   )}
                   {group && (
                     <p className="text-[14px] text-ink-muted mt-2">
-                      {groupIcon ? `${groupIcon} ${group}` : group}
+                      {roleIcon ? `${roleIcon} ${group}` : group}
                     </p>
                   )}
                 </li>

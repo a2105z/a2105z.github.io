@@ -20,6 +20,7 @@ export type ExperienceRole = {
   location?: string;
   highlights: string[];
   links?: ExperienceRoleLink[];
+  groupIcon?: string;
 };
 
 export type ExperienceKind = "internship" | "fulltime";
@@ -79,14 +80,21 @@ export const EXPERIENCES: Experience[] = [
     location: "Mountain View, California, United States",
     startDate: "2035",
     endDate: "Present",
-    summary: "Making Google Maps better at Google",
-    groupIcon: "🗺️",
+    summary: "Making Google Search and Maps better at Google",
     employmentType: "Full-time",
     roles: [
       {
-        title: "Senior Product Manager, Google Maps",
-        dateRange: "2035 — Present",
+        title: "Group Product Manager, Google Search",
+        dateRange: "2039 — Present",
         location: "Mountain View, California, United States",
+        groupIcon: "🔍",
+        highlights: [...FIVE_BULLETS],
+      },
+      {
+        title: "Senior Product Manager, Google Maps",
+        dateRange: "2035 — 2039",
+        location: "Mountain View, California, United States",
+        groupIcon: "🗺️",
         highlights: [...FIVE_BULLETS],
       },
     ],
