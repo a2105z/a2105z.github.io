@@ -91,8 +91,10 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
   delay = 0,
   roles,
 }) => {
-  const primary = roles && roles.length > 0 ? roles[0] : undefined;
-  const headline = primary?.title ?? company;
+  const roleList = roles ?? [];
+  const isProgression = roleList.length > 1;
+  const primary = roleList[0];
+  const headline = isProgression ? company : primary?.title ?? company;
   const links = primary?.links;
 
   return (
@@ -128,14 +130,42 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
               </a>
             ))}
           </div>
-          <p className="text-ink-muted text-[14px] mt-0.5">{company}</p>
+          {!isProgression && (
+            <p className="text-ink-muted text-[14px] mt-0.5">{company}</p>
+          )}
           {location && (
             <p className="text-[12px] text-ink-dim mt-1">{location}</p>
           )}
-          {summary && (
-            <p className="text-ink-muted text-[14px] leading-relaxed mt-3 max-w-2xl">
-              {summary}
-            </p>
+          {isProgression ? (
+            <ol className="relative mt-5">
+              <div
+                aria-hidden="true"
+                className="absolute left-[5px] top-2 bottom-2 w-px bg-line"
+              />
+              {roleList.map((role) => (
+                <li
+                  key={`${role.title}-${role.dateRange}`}
+                  className="relative pl-7 pb-6 last:pb-0"
+                >
+                  <span
+                    aria-hidden="true"
+                    className="absolute left-[1.5px] top-1.5 h-2 w-2 rounded-full bg-ink ring-4 ring-canvas"
+                  />
+                  <p className="text-[11px] uppercase tracking-[0.22em] text-ink-dim font-medium">
+                    {role.dateRange}
+                  </p>
+                  <p className="mt-1.5 text-[16px] sm:text-[17px] font-medium text-ink tracking-tight leading-snug">
+                    {role.title}
+                  </p>
+                </li>
+              ))}
+            </ol>
+          ) : (
+            summary && (
+              <p className="text-ink-muted text-[14px] leading-relaxed mt-3 max-w-2xl">
+                {summary}
+              </p>
+            )
           )}
         </div>
       </div>
