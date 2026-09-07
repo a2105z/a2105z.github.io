@@ -98,7 +98,9 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
   const roleList = roles ?? [];
   const isProgression = roleList.length > 1;
   const primary = roleList[0];
-  const headline = isProgression ? company : primary?.title ?? company;
+  const listedName =
+    ticker && exchange ? `${company} (${exchange}: ${ticker})` : company;
+  const headline = isProgression ? listedName : primary?.title ?? listedName;
   const links = primary?.links;
 
   return (
@@ -135,17 +137,10 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
             ))}
           </div>
           {!isProgression && (
-            <p className="text-ink-muted text-[14px] mt-0.5">{company}</p>
-          )}
-          {ticker && exchange && (
-            <p className="text-[12px] text-ink-dim mt-1 tracking-[0.04em]">
-              {exchange}: {ticker}
-            </p>
+            <p className="text-ink-muted text-[14px] mt-0.5">{listedName}</p>
           )}
           {location && (
-            <p className={`text-[12px] text-ink-dim ${ticker && exchange ? "mt-0.5" : "mt-1"}`}>
-              {location}
-            </p>
+            <p className="text-[12px] text-ink-dim mt-1">{location}</p>
           )}
           {isProgression ? (
             <ol className="relative mt-5">
