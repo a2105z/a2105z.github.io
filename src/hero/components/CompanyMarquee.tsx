@@ -16,11 +16,7 @@ const ITEMS: MarqueeItem[] = [
   { label: "Google", logo: "/icons/organizations/google.png" },
   { label: "Capital One ASKS", logo: "/icons/organizations/capital-one.png" },
   { label: "Amazon AICE", logo: "/icons/organizations/amazon.png" },
-  {
-    label: "Uber",
-    logo: "/icons/organizations/uber.svg",
-    wordmark: "U",
-  },
+  { label: "Palantir", logo: "/icons/organizations/palantir.png" },
   { label: "UIUC", logo: "/icons/organizations/uiuc.png" },
   { label: "UC Berkeley", logo: "/icons/organizations/berkeley.png" },
 ];

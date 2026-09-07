@@ -91,7 +91,7 @@ const About: React.FC = () => {
                 </span>
                 ,{" "}
                 <span className="text-ink font-medium">Amazon AICE</span>, and{" "}
-                <span className="text-ink font-medium">Uber</span> — and
+                <span className="text-ink font-medium">Palantir</span> — and
                 upcoming work at{" "}
                 <span className="text-ink font-medium">Tesla</span>,{" "}
                 <span className="text-ink font-medium">Google</span> on AI

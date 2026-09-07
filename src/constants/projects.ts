@@ -250,18 +250,18 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "Uber",
-    monogram: "U",
-    logo: "/icons/organizations/uber.svg",
+    company: "Palantir",
+    monogram: "P",
+    logo: "/icons/organizations/palantir.png",
     logoFull: true,
     tileColor: "#000000",
     location: "New York City, New York, United States",
     startDate: "Jun 2024",
     endDate: "Aug 2024",
-    summary: "Making marketplace data better at Uber",
+    summary: "Making defense tech better at Palantir",
     roles: [
       {
-        title: "Software Engineering Fellow, Marketplace Data Team",
+        title: "Software Engineering Fellow, Defense Tech Team",
         dateRange: "Jun 2024 — Aug 2024",
         location: "New York City, New York, United States",
         highlights: [...FIVE_BULLETS],
