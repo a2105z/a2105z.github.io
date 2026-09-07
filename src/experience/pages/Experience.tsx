@@ -10,12 +10,12 @@ import {
 import { EASE_PREMIUM } from "../../shared/motion";
 
 const TABS: { id: ExperienceKind; label: string }[] = [
-  { id: "internship", label: "Internships" },
   { id: "fulltime", label: "Full-time" },
+  { id: "internship", label: "Internships" },
 ];
 
 const Experience: React.FC = () => {
-  const [kind, setKind] = useState<ExperienceKind>("internship");
+  const [kind, setKind] = useState<ExperienceKind>("fulltime");
 
   const items = useMemo(
     () => EXPERIENCES.filter((experience) => (experience.kind ?? "internship") === kind),

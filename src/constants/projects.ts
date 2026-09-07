@@ -92,7 +92,7 @@ export const EXPERIENCES: Experience[] = [
     kind: "fulltime",
     logoFull: true,
     tileColor: "#041628",
-    location: "New York City, New York, United States",
+    location: "Chicago, Illinois, United States",
     startDate: "Aug 2029",
     endDate: "Aug 2031",
     summary: "Making strategy better at McKinsey & Company",
@@ -100,7 +100,7 @@ export const EXPERIENCES: Experience[] = [
       {
         title: "Business Analyst",
         dateRange: "Aug 2029 — Aug 2031",
-        location: "New York City, New York, United States",
+        location: "Chicago, Illinois, United States",
         highlights: [...FIVE_BULLETS],
       },
     ],

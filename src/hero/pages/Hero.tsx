@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { BackgroundPaths } from "../components/BackgroundPaths";
 import Subheader from "../components/Subheader";
-import CompanyMarquee from "../components/CompanyMarquee";
 import NowLine from "../components/NowLine";
 import RotatingWord from "../components/RotatingWord";
 import {
@@ -137,19 +136,6 @@ const Hero: React.FC<{
           >
             Email
           </a>
-        </motion.div>
-
-        {/* Company marquee */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            delay: 0.28 + NAME.length * 0.06 + 0.55,
-            duration: 0.9,
-          }}
-          className="mt-16 sm:mt-20 border-t border-line pt-6"
-        >
-          <CompanyMarquee delay={0} />
         </motion.div>
       </div>
     </BackgroundPaths>
