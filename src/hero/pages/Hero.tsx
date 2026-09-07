@@ -149,9 +149,6 @@ const Hero: React.FC<{
           }}
           className="mt-16 sm:mt-20 border-t border-line pt-6"
         >
-          <p className="text-[10px] uppercase tracking-[0.28em] text-ink-dim mb-4">
-            Where I've worked & studied
-          </p>
           <CompanyMarquee delay={0} />
         </motion.div>
       </div>
