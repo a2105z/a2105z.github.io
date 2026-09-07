@@ -106,8 +106,6 @@ export const EXPERIENCES: Experience[] = [
     kind: "fulltime",
     ticker: "MSFT",
     exchange: "NASDAQ",
-    logoFull: true,
-    tileColor: "#FFFFFF",
     location: "Redmond, Washington, United States",
     startDate: "2029",
     endDate: "2033",
