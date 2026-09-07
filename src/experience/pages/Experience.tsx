@@ -69,7 +69,7 @@ const Experience: React.FC = () => {
         </div>
 
         <div className="mt-10">
-          <AnimatePresence mode="wait">
+          <AnimatePresence exitBeforeEnter>
             <motion.div
               key={kind}
               initial={{ opacity: 0, y: 10 }}
