@@ -279,9 +279,9 @@ export const EDUCATION: Education[] = [
     tileColor: "#000000",
     location: "Boston, Massachusetts, United States",
     degree: "Master of Business Administration",
-    startDate: "Aug 2028",
-    endDate: "May 2029",
-    dateRange: "Aug 2028 — May 2029",
+    startDate: "Aug 2033",
+    endDate: "May 2035",
+    dateRange: "Aug 2033 — May 2035",
     focus: [
       "Strategy",
       "Finance",
