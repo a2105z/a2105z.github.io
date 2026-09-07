@@ -40,6 +40,8 @@ export type Experience = {
   endDate: string;
   summary: string;
   roles: ExperienceRole[];
+  groupIcon?: string;
+  employmentType?: string;
 };
 
 export type Education = {
@@ -105,6 +107,8 @@ export const EXPERIENCES: Experience[] = [
     startDate: "Jun 2029",
     endDate: "Aug 2029",
     summary: "Making autonomy data infrastructure better at Tesla",
+    groupIcon: "⚙️",
+    employmentType: "Internship",
     roles: [
       {
         title: "Software Engineering Intern, Autonomy Data Infrastructure",
@@ -122,6 +126,8 @@ export const EXPERIENCES: Experience[] = [
     startDate: "Jun 2028",
     endDate: "Aug 2028",
     summary: "Making AI infrastructure better at Google",
+    groupIcon: "⛅️",
+    employmentType: "Internship",
     roles: [
       {
         title: "Software Engineering Intern, AI Infrastructure",
@@ -141,6 +147,8 @@ export const EXPERIENCES: Experience[] = [
     startDate: "Sep 2027",
     endDate: "May 2028",
     summary: "Making Connect Mobile better at John Deere",
+    groupIcon: "🚜",
+    employmentType: "Internship",
     roles: [
       {
         title: "Software Engineering Intern, Connect Mobile",
@@ -160,6 +168,8 @@ export const EXPERIENCES: Experience[] = [
     startDate: "Jun 2027",
     endDate: "Aug 2027",
     summary: "Making Core AI better at LinkedIn",
+    groupIcon: "🧠",
+    employmentType: "Internship",
     roles: [
       {
         title: "Software Engineering Intern, Core AI",
@@ -179,6 +189,8 @@ export const EXPERIENCES: Experience[] = [
     startDate: "Sep 2026",
     endDate: "May 2027",
     summary: "Making electric power conversion more reliable at Rivian",
+    groupIcon: "⚡",
+    employmentType: "Internship",
     roles: [
       {
         title: "Software Engineering Intern, Electric Power Conversion",
@@ -198,6 +210,8 @@ export const EXPERIENCES: Experience[] = [
     startDate: "Jun 2026",
     endDate: "Aug 2026",
     summary: "Making vehicle telematics scale at Rivian",
+    groupIcon: "📡",
+    employmentType: "Internship",
     roles: [
       {
         title: "Software Engineering Intern, Vehicle Telematics",
@@ -217,6 +231,8 @@ export const EXPERIENCES: Experience[] = [
     startDate: "Jun 2026",
     endDate: "Aug 2026",
     summary: "Making Gemini API and AI Studio better at Google DeepMind",
+    groupIcon: "✨",
+    employmentType: "Part-time",
     roles: [
       {
         title: "Part-Time Software Developer, Gemini API & AI Studio",
@@ -236,6 +252,8 @@ export const EXPERIENCES: Experience[] = [
     startDate: "Sep 2025",
     endDate: "May 2026",
     summary: "Making AI foundations and safety stronger at Capital One ASKS",
+    groupIcon: "🛡️",
+    employmentType: "Internship",
     roles: [
       {
         title: "Machine Learning Engineering Intern, AI Foundations and Safety",
@@ -256,6 +274,8 @@ export const EXPERIENCES: Experience[] = [
     startDate: "Jun 2025",
     endDate: "Aug 2025",
     summary: "Making quantitative systems and software better at Jane Street",
+    groupIcon: "📈",
+    employmentType: "Internship",
     roles: [
       {
         title: "Software Engineering Fellow, Trading Systems",
@@ -275,6 +295,8 @@ export const EXPERIENCES: Experience[] = [
     startDate: "Jun 2025",
     endDate: "Aug 2025",
     summary: "Making conversational AI better at Amazon AICE",
+    groupIcon: "💬",
+    employmentType: "Internship",
     roles: [
       {
         title: "Software Engineering Intern, Conversational AI",
@@ -294,6 +316,8 @@ export const EXPERIENCES: Experience[] = [
     startDate: "Jun 2024",
     endDate: "Aug 2024",
     summary: "Making defense tech better at Palantir",
+    groupIcon: "🛰️",
+    employmentType: "Internship",
     roles: [
       {
         title: "Software Engineering Intern, Defense Tech",

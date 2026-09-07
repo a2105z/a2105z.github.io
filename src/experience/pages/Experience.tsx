@@ -81,6 +81,34 @@ const Experience: React.FC = () => {
                 <p className="text-ink-muted text-[15px] sm:text-base leading-relaxed max-w-xl">
                   Full-time roles will live here.
                 </p>
+              ) : kind === "internship" ? (
+                <ul className="divide-y divide-line">
+                  {items.map((experience, index) => (
+                    <li
+                      key={`${experience.company}-${experience.startDate}-${index}`}
+                      className="py-7 first:pt-1"
+                    >
+                      <ExperienceItem
+                        company={experience.company}
+                        logo={experience.logo}
+                        logoFull={experience.logoFull}
+                        tileColor={experience.tileColor}
+                        monogram={experience.monogram}
+                        location={experience.location}
+                        ticker={experience.ticker}
+                        exchange={experience.exchange}
+                        summary={experience.summary}
+                        delay={index * 0.04}
+                        roles={experience.roles}
+                        kind="internship"
+                        startDate={experience.startDate}
+                        endDate={experience.endDate}
+                        groupIcon={experience.groupIcon}
+                        employmentType={experience.employmentType}
+                      />
+                    </li>
+                  ))}
+                </ul>
               ) : (
                 <ul className="relative">
                   <div
@@ -113,6 +141,7 @@ const Experience: React.FC = () => {
                           summary={experience.summary}
                           delay={index * 0.05}
                           roles={experience.roles}
+                          kind="fulltime"
                         />
                       </li>
                     );

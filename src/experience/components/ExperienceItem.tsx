@@ -27,6 +27,11 @@ interface ExperienceItemProps {
   summary?: string;
   delay?: number;
   roles?: ExperienceRole[];
+  kind?: "internship" | "fulltime";
+  startDate?: string;
+  endDate?: string;
+  groupIcon?: string;
+  employmentType?: string;
 }
 
 const LogoBadge: React.FC<{
@@ -82,6 +87,42 @@ const LogoBadge: React.FC<{
   );
 };
 
+const MONTH_INDEX: Record<string, number> = {
+  Jan: 0,
+  Feb: 1,
+  Mar: 2,
+  Apr: 3,
+  May: 4,
+  Jun: 5,
+  Jul: 6,
+  Aug: 7,
+  Sep: 8,
+  Oct: 9,
+  Nov: 10,
+  Dec: 11,
+};
+
+const inclusiveDuration = (startDate?: string, endDate?: string): string => {
+  if (!startDate || !endDate) return "";
+  const [startMonth, startYear] = startDate.split(" ");
+  const [endMonth, endYear] = endDate.split(" ");
+  const start = Number(startYear) * 12 + MONTH_INDEX[startMonth];
+  const end = Number(endYear) * 12 + MONTH_INDEX[endMonth];
+  const months = end - start + 1;
+  if (!Number.isFinite(months) || months < 1) return "";
+  return months === 1 ? "1 mo" : `${months} mos`;
+};
+
+const splitHeadline = (title?: string) => {
+  if (!title) return { headline: "", group: undefined as string | undefined };
+  const idx = title.lastIndexOf(", ");
+  if (idx === -1) return { headline: title, group: undefined };
+  return {
+    headline: title.slice(0, idx),
+    group: title.slice(idx + 2),
+  };
+};
+
 const ExperienceItem: React.FC<ExperienceItemProps> = ({
   logo,
   logoFull,
@@ -94,14 +135,26 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
   summary,
   delay = 0,
   roles,
+  kind,
+  startDate,
+  endDate,
+  groupIcon,
+  employmentType,
 }) => {
   const roleList = roles ?? [];
   const isProgression = roleList.length > 1;
   const primary = roleList[0];
   const listedName =
     ticker && exchange ? `${company} (${exchange}: ${ticker})` : company;
-  const headline = isProgression ? listedName : primary?.title ?? listedName;
+  const { headline: internHeadline, group } = splitHeadline(primary?.title);
+  const headline = isProgression ? listedName : internHeadline || listedName;
   const links = primary?.links;
+  const duration = inclusiveDuration(startDate, endDate);
+  const dateLine = [primary?.dateRange ?? `${startDate} — ${endDate}`, duration]
+    .filter(Boolean)
+    .join(" · ");
+  const typeLine = [listedName, employmentType].filter(Boolean).join(" · ");
+  const isInternship = kind === "internship" || (!kind && !isProgression);
 
   return (
     <motion.div
@@ -120,58 +173,80 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
           monogram={monogram}
         />
         <div className="flex-1 min-w-0">
-          <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-            <h3 className="text-[17px] sm:text-[19px] font-medium text-ink tracking-tight leading-snug">
-              {headline}
-            </h3>
-            {links?.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                target="_blank"
-                rel="noreferrer"
-                className="hover-underline text-[12.5px] text-accent hover:text-ink transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
-          {!isProgression && (
-            <p className="text-ink-muted text-[14px] mt-0.5">{listedName}</p>
-          )}
-          {location && (
-            <p className="text-[12px] text-ink-dim mt-1">{location}</p>
-          )}
-          {isProgression ? (
-            <ol className="relative mt-5">
-              <div
-                aria-hidden="true"
-                className="absolute left-[5px] top-2 bottom-2 w-px bg-line"
-              />
-              {roleList.map((role) => (
-                <li
-                  key={`${role.title}-${role.dateRange}`}
-                  className="relative pl-7 pb-6 last:pb-0"
-                >
-                  <span
-                    aria-hidden="true"
-                    className="absolute left-[1.5px] top-1.5 h-2 w-2 rounded-full bg-ink ring-4 ring-canvas"
-                  />
-                  <p className="text-[11px] uppercase tracking-[0.22em] text-ink-dim font-medium">
-                    {role.dateRange}
-                  </p>
-                  <p className="mt-1.5 text-[16px] sm:text-[17px] font-medium text-ink tracking-tight leading-snug">
-                    {role.title}
-                  </p>
-                </li>
-              ))}
-            </ol>
+          {isInternship && !isProgression ? (
+            <>
+              <h3 className="text-[16px] sm:text-[17px] font-semibold text-ink tracking-tight leading-snug">
+                {headline}
+              </h3>
+              <p className="text-[14px] text-ink-muted mt-0.5">{typeLine}</p>
+              {dateLine && (
+                <p className="text-[13px] text-ink-dim mt-0.5">{dateLine}</p>
+              )}
+              {location && (
+                <p className="text-[13px] text-ink-dim mt-0.5">{location}</p>
+              )}
+              {group && (
+                <p className="text-[14px] text-ink-muted mt-2">
+                  {groupIcon ? `${groupIcon} ${group}` : group}
+                </p>
+              )}
+            </>
           ) : (
-            summary && (
-              <p className="text-ink-muted text-[14px] leading-relaxed mt-3 max-w-2xl">
-                {summary}
-              </p>
-            )
+            <>
+              <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                <h3 className="text-[17px] sm:text-[19px] font-medium text-ink tracking-tight leading-snug">
+                  {isProgression ? listedName : primary?.title ?? listedName}
+                </h3>
+                {links?.map((link) => (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover-underline text-[12.5px] text-accent hover:text-ink transition-colors"
+                  >
+                    {link.label}
+                  </a>
+                ))}
+              </div>
+              {!isProgression && (
+                <p className="text-ink-muted text-[14px] mt-0.5">{listedName}</p>
+              )}
+              {location && (
+                <p className="text-[12px] text-ink-dim mt-1">{location}</p>
+              )}
+              {isProgression ? (
+                <ol className="relative mt-5">
+                  <div
+                    aria-hidden="true"
+                    className="absolute left-[5px] top-2 bottom-2 w-px bg-line"
+                  />
+                  {roleList.map((role) => (
+                    <li
+                      key={`${role.title}-${role.dateRange}`}
+                      className="relative pl-7 pb-6 last:pb-0"
+                    >
+                      <span
+                        aria-hidden="true"
+                        className="absolute left-[1.5px] top-1.5 h-2 w-2 rounded-full bg-ink ring-4 ring-canvas"
+                      />
+                      <p className="text-[11px] uppercase tracking-[0.22em] text-ink-dim font-medium">
+                        {role.dateRange}
+                      </p>
+                      <p className="mt-1.5 text-[16px] sm:text-[17px] font-medium text-ink tracking-tight leading-snug">
+                        {role.title}
+                      </p>
+                    </li>
+                  ))}
+                </ol>
+              ) : (
+                summary && (
+                  <p className="text-ink-muted text-[14px] leading-relaxed mt-3 max-w-2xl">
+                    {summary}
+                  </p>
+                )
+              )}
+            </>
           )}
         </div>
       </div>
