@@ -29,6 +29,8 @@ export type Experience = {
   monogram: string;
   logo: string;
   kind?: ExperienceKind;
+  ticker?: string;
+  exchange?: string;
   logoFull?: boolean;
   /** Hex color the logo tile should adopt when `logoFull` is true, so the badge
    *  chrome flows seamlessly with the logo's own background (no white halo). */
@@ -66,10 +68,46 @@ const FIVE_BULLETS: string[] = [
 
 export const EXPERIENCES: Experience[] = [
   {
+    company: "Honeywell Aerospace",
+    monogram: "HON",
+    logo: "/icons/organizations/honeywell.png",
+    kind: "fulltime",
+    ticker: "HON",
+    exchange: "NASDAQ",
+    logoFull: true,
+    tileColor: "#FF5000",
+    location: "Phoenix, Arizona, United States",
+    startDate: "2044",
+    endDate: "2049",
+    summary: "Making avionics, navigation, and advanced air mobility better at Honeywell Aerospace",
+    roles: [
+      {
+        title: "Vice President & General Manager, Advanced Air Mobility",
+        dateRange: "2048 — 2049",
+        location: "Phoenix, Arizona, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+      {
+        title: "Vice President & General Manager, Navigation & Sensors",
+        dateRange: "2046 — 2048",
+        location: "Phoenix, Arizona, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+      {
+        title: "Vice President & General Manager, Avionics",
+        dateRange: "2044 — 2046",
+        location: "Phoenix, Arizona, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "Amazon",
     monogram: "AMZ",
     logo: "/icons/organizations/amazon.png",
     kind: "fulltime",
+    ticker: "AMZN",
+    exchange: "NASDAQ",
     logoFull: true,
     tileColor: "#f47024",
     location: "Seattle, Washington, United States",
@@ -102,6 +140,8 @@ export const EXPERIENCES: Experience[] = [
     monogram: "MS",
     logo: "/icons/organizations/microsoft.png",
     kind: "fulltime",
+    ticker: "MSFT",
+    exchange: "NASDAQ",
     logoFull: true,
     tileColor: "#FFFFFF",
     location: "Redmond, Washington, United States",

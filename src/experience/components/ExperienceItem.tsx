@@ -22,6 +22,8 @@ interface ExperienceItemProps {
   company: string;
   monogram?: string;
   location?: string;
+  ticker?: string;
+  exchange?: string;
   summary?: string;
   delay?: number;
   roles?: ExperienceRole[];
@@ -87,6 +89,8 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
   company,
   monogram,
   location,
+  ticker,
+  exchange,
   summary,
   delay = 0,
   roles,
@@ -133,8 +137,15 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
           {!isProgression && (
             <p className="text-ink-muted text-[14px] mt-0.5">{company}</p>
           )}
+          {ticker && exchange && (
+            <p className="text-[12px] text-ink-dim mt-1 tracking-[0.04em]">
+              {exchange}: {ticker}
+            </p>
+          )}
           {location && (
-            <p className="text-[12px] text-ink-dim mt-1">{location}</p>
+            <p className={`text-[12px] text-ink-dim ${ticker && exchange ? "mt-0.5" : "mt-1"}`}>
+              {location}
+            </p>
           )}
           {isProgression ? (
             <ol className="relative mt-5">

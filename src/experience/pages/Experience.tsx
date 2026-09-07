@@ -108,6 +108,8 @@ const Experience: React.FC = () => {
                           tileColor={experience.tileColor}
                           monogram={experience.monogram}
                           location={experience.location}
+                          ticker={experience.ticker}
+                          exchange={experience.exchange}
                           summary={experience.summary}
                           delay={index * 0.05}
                           roles={experience.roles}
