@@ -276,7 +276,7 @@ export const EDUCATION: Education[] = [
     monogram: "HBS",
     logo: "/icons/organizations/harvard.png",
     logoFull: true,
-    tileColor: "#A51C30",
+    tileColor: "#000000",
     location: "Boston, Massachusetts, United States",
     degree: "Master of Business Administration",
     startDate: "Aug 2028",
