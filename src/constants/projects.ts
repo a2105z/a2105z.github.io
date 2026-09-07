@@ -66,6 +66,46 @@ const FIVE_BULLETS: string[] = [
 
 export const EXPERIENCES: Experience[] = [
   {
+    company: "Microsoft",
+    monogram: "MS",
+    logo: "/icons/organizations/microsoft.png",
+    kind: "fulltime",
+    logoFull: true,
+    tileColor: "#FFFFFF",
+    location: "Redmond, Washington, United States",
+    startDate: "Aug 2031",
+    endDate: "Aug 2033",
+    summary: "Making products better at Microsoft",
+    roles: [
+      {
+        title: "Product Manager II",
+        dateRange: "Aug 2031 — Aug 2033",
+        location: "Redmond, Washington, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
+    company: "McKinsey & Company",
+    monogram: "MCK",
+    logo: "/icons/organizations/mckinsey.png",
+    kind: "fulltime",
+    logoFull: true,
+    tileColor: "#041628",
+    location: "New York City, New York, United States",
+    startDate: "Aug 2029",
+    endDate: "Aug 2031",
+    summary: "Making strategy better at McKinsey & Company",
+    roles: [
+      {
+        title: "Business Analyst",
+        dateRange: "Aug 2029 — Aug 2031",
+        location: "New York City, New York, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "Tesla",
     monogram: "T",
     logo: "/icons/organizations/tesla.png",
@@ -278,8 +318,7 @@ export const EDUCATION: Education[] = [
     institution: "Harvard University (Harvard Business School)",
     monogram: "HBS",
     logo: "/icons/organizations/harvard.png",
-    logoFull: true,
-    tileColor: "#A51C30",
+    logoFull: false,
     location: "Boston, Massachusetts, United States",
     degree: "Master of Business Administration",
     startDate: "Aug 2033",

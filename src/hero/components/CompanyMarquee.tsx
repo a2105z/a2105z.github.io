@@ -8,6 +8,8 @@ interface MarqueeItem {
 }
 
 const ITEMS: MarqueeItem[] = [
+  { label: "Microsoft", logo: "/icons/organizations/microsoft.png" },
+  { label: "McKinsey & Company", logo: "/icons/organizations/mckinsey.png" },
   { label: "Tesla", logo: "/icons/organizations/tesla.png" },
   { label: "John Deere", logo: "/icons/organizations/john-deere.png" },
   { label: "LinkedIn", logo: "/icons/organizations/linkedin.png" },
