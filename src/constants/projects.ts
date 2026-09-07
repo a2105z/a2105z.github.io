@@ -276,7 +276,7 @@ export const EXPERIENCES: Experience[] = [
     summary: "Making quantitative systems and software better at Jane Street",
     roles: [
       {
-        title: "Quantitative Systems & Software Engineering Extern",
+        title: "Software Engineering Fellow, Quant Systems Team",
         dateRange: "Jun 2025 — Aug 2025",
         location: "New York City, New York, United States",
         highlights: [...FIVE_BULLETS],
