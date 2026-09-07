@@ -276,7 +276,7 @@ export const EDUCATION: Education[] = [
     monogram: "HBS",
     logo: "/icons/organizations/harvard.png",
     logoFull: true,
-    tileColor: "#000000",
+    tileColor: "#A51C30",
     location: "Boston, Massachusetts, United States",
     degree: "Master of Business Administration",
     startDate: "Aug 2033",
@@ -290,7 +290,7 @@ export const EDUCATION: Education[] = [
     ],
   },
   {
-    institution: "University of California, Berkeley",
+    institution: "University of California, Berkeley (Grimes College of Engineering)",
     monogram: "UCB",
     logo: "/icons/organizations/berkeley.png",
     logoFull: true,
@@ -309,7 +309,7 @@ export const EDUCATION: Education[] = [
     ],
   },
   {
-    institution: "University of Illinois Urbana–Champaign",
+    institution: "University of Illinois Urbana–Champaign (Grainger College of Engineering)",
     monogram: "UIUC",
     logo: "/icons/organizations/uiuc.png",
     logoFull: true,
