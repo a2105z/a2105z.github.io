@@ -147,6 +147,27 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
+    company: "Databricks",
+    monogram: "DB",
+    logo: "/icons/organizations/databricks.png",
+    logoFull: true,
+    tileColor: "#FF3621",
+    location: "San Francisco, California, United States",
+    startDate: "Sep 2028",
+    endDate: "May 2029",
+    summary: "Making AI systems and research stronger at Databricks",
+    groupIcon: "🔬",
+    employmentType: "Internship",
+    roles: [
+      {
+        title: "Software Engineering Intern, AI Systems & Research",
+        dateRange: "Sep 2028 — May 2029",
+        location: "San Francisco, California, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "Google",
     monogram: "G",
     logo: "/icons/organizations/google.png",
