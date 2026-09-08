@@ -152,7 +152,7 @@ export const EXPERIENCES: Experience[] = [
     logo: "/icons/organizations/databricks.png",
     logoFull: true,
     tileColor: "#FF3621",
-    location: "San Francisco, California, United States",
+    location: "Berkeley, California, United States",
     startDate: "Sep 2028",
     endDate: "May 2029",
     summary: "Making AI systems and research stronger at Databricks",
@@ -162,7 +162,7 @@ export const EXPERIENCES: Experience[] = [
       {
         title: "Software Engineering Intern, AI Systems & Research",
         dateRange: "Sep 2028 — May 2029",
-        location: "San Francisco, California, United States",
+        location: "Berkeley, California, United States",
         highlights: [...FIVE_BULLETS],
       },
     ],
