@@ -284,7 +284,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "ML Research Engineering Intern, AI Foundations and Safety",
+        title: "Software Engineering Intern, AI Foundations and Safety",
         dateRange: "Sep 2025 — May 2026",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -326,7 +326,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Externship",
     roles: [
       {
-        title: "Software & Data Engineering Extern, Conversational AI",
+        title: "Software Engineering Extern, Conversational AI",
         dateRange: "Jun 2024 — Aug 2024",
         location: "Chicago, Illinois, United States",
         highlights: [...FIVE_BULLETS],
