@@ -344,10 +344,10 @@ export const EXPERIENCES: Experience[] = [
     endDate: "May 2025",
     summary: "Making embedded flight telemetry better at NASA",
     groupIcon: "🛰️",
-    employmentType: "Internship",
+    employmentType: "Externship",
     roles: [
       {
-        title: "Software Engineering Intern, Embedded Flight Telemetry",
+        title: "Software Engineering Extern, Embedded Flight Telemetry",
         dateRange: "Sep 2024 — May 2025",
         location: "Phoenix, Arizona, United States",
         highlights: [...FIVE_BULLETS],
