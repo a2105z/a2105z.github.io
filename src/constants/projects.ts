@@ -334,6 +334,27 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
+    company: "NASA",
+    monogram: "NASA",
+    logo: "/icons/organizations/nasa.png",
+    logoFull: true,
+    tileColor: "#000000",
+    location: "Houston, Texas, United States",
+    startDate: "Sep 2024",
+    endDate: "May 2025",
+    summary: "Making embedded flight telemetry better at NASA",
+    groupIcon: "🛰️",
+    employmentType: "Internship",
+    roles: [
+      {
+        title: "Software Engineering Intern, Embedded Flight Telemetry",
+        dateRange: "Sep 2024 — May 2025",
+        location: "Houston, Texas, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "Jane Street",
     monogram: "JS",
     logo: "/icons/organizations/jane-street.png",
