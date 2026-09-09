@@ -128,25 +128,6 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "Meta",
-    monogram: "M",
-    logo: "/icons/organizations/meta.png",
-    location: "Cupertino, California, United States",
-    startDate: "Jun 2029",
-    endDate: "Aug 2029",
-    summary: "Making Facebook infrastructure better at Meta",
-    groupIcon: "🧠",
-    employmentType: "Internship",
-    roles: [
-      {
-        title: "Software Engineering Intern, Facebook Infrastructure",
-        dateRange: "Jun 2029 — Aug 2029",
-        location: "Cupertino, California, United States",
-        highlights: [...FIVE_BULLETS],
-      },
-    ],
-  },
-  {
     company: "Databricks",
     monogram: "DB",
     logo: "/icons/organizations/databricks.png",
