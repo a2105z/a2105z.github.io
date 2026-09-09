@@ -320,7 +320,7 @@ export const EXPERIENCES: Experience[] = [
     logo: "/icons/organizations/amazon.png",
     logoFull: true,
     tileColor: "#f47024",
-    location: "Chicago, Illinois, United States",
+    location: "New York City, New York, United States",
     startDate: "Jun 2024",
     endDate: "Aug 2024",
     summary: "Making OpenSearch infrastructure and data better at Amazon",
@@ -330,7 +330,7 @@ export const EXPERIENCES: Experience[] = [
       {
         title: "Software Engineering Extern, OpenSearch Infrastructure and Data",
         dateRange: "Jun 2024 — Aug 2024",
-        location: "Chicago, Illinois, United States",
+        location: "New York City, New York, United States",
         highlights: [...FIVE_BULLETS],
       },
     ],
