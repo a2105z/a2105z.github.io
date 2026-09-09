@@ -313,27 +313,6 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "NASA",
-    monogram: "NASA",
-    logo: "/icons/organizations/nasa.png",
-    logoFull: true,
-    tileColor: "#000000",
-    location: "Phoenix, Arizona, United States",
-    startDate: "Sep 2024",
-    endDate: "May 2025",
-    summary: "Making embedded flight telemetry better at NASA",
-    groupIcon: "🛰️",
-    employmentType: "Externship",
-    roles: [
-      {
-        title: "Software Engineering Extern, Embedded Flight Telemetry",
-        dateRange: "Sep 2024 — May 2025",
-        location: "Phoenix, Arizona, United States",
-        highlights: [...FIVE_BULLETS],
-      },
-    ],
-  },
-  {
     company: "Amazon",
     monogram: "AMZ",
     logo: "/icons/organizations/amazon.png",

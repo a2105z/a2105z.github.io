@@ -154,7 +154,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
   if (isInternship) {
     const role = roleList[0];
     const { headline, group } = splitHeadline(role?.title);
-    const typeLine = [listedName, employmentType].filter(Boolean).join(" · ");
+    const typeLine = listedName;
     const dateLine = [role?.dateRange, tenure].filter(Boolean).join(" · ");
 
     return (
