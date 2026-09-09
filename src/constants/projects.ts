@@ -334,7 +334,7 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "Amazon AICE",
+    company: "Amazon",
     monogram: "AMZ",
     logo: "/icons/organizations/amazon.png",
     logoFull: true,
@@ -342,12 +342,12 @@ export const EXPERIENCES: Experience[] = [
     location: "Chicago, Illinois, United States",
     startDate: "Jun 2024",
     endDate: "Aug 2024",
-    summary: "Making conversational AI better at Amazon AICE",
+    summary: "Making conversational AI better at Amazon",
     groupIcon: "💬",
-    employmentType: "Internship",
+    employmentType: "Externship",
     roles: [
       {
-        title: "Software Engineering Intern, Conversational AI",
+        title: "Software & Data Engineering Extern, Conversational AI",
         dateRange: "Jun 2024 — Aug 2024",
         location: "Chicago, Illinois, United States",
         highlights: [...FIVE_BULLETS],
