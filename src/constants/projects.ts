@@ -136,11 +136,12 @@ export const EXPERIENCES: Experience[] = [
     location: "San Francisco, California, United States",
     startDate: "Jun 2029",
     endDate: "Aug 2029",
-    summary: "Advising on technical AI systems at Scale AI",
+    summary: "Advising on generative AI at Scale AI",
+    groupIcon: "✨",
     employmentType: "Internship",
     roles: [
       {
-        title: "Technical Advisor Intern",
+        title: "Technical Advisor Intern, Generative AI",
         dateRange: "Jun 2029 — Aug 2029",
         location: "San Francisco, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -322,12 +323,12 @@ export const EXPERIENCES: Experience[] = [
     location: "Chicago, Illinois, United States",
     startDate: "Jun 2024",
     endDate: "Aug 2024",
-    summary: "Making conversational AI better at Amazon",
-    groupIcon: "💬",
+    summary: "Making OpenSearch infrastructure and data better at Amazon",
+    groupIcon: "🔎",
     employmentType: "Externship",
     roles: [
       {
-        title: "Software Engineering Extern, Conversational AI",
+        title: "Software Engineering Extern, OpenSearch Infrastructure and Data",
         dateRange: "Jun 2024 — Aug 2024",
         location: "Chicago, Illinois, United States",
         highlights: [...FIVE_BULLETS],
