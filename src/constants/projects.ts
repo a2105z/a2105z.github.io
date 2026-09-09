@@ -323,12 +323,12 @@ export const EXPERIENCES: Experience[] = [
     location: "New York City, New York, United States",
     startDate: "Jun 2024",
     endDate: "Aug 2024",
-    summary: "Making OpenSearch infrastructure and data better at Amazon",
+    summary: "Making OpenSearch infrastructure and data analytics better at Amazon",
     groupIcon: "🔎",
     employmentType: "Externship",
     roles: [
       {
-        title: "Software Engineering Extern, OpenSearch Infrastructure and Data",
+        title: "Software Engineering Extern, OpenSearch Infrastructure and Data Analytics",
         dateRange: "Jun 2024 — Aug 2024",
         location: "New York City, New York, United States",
         highlights: [...FIVE_BULLETS],
