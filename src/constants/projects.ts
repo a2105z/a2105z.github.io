@@ -157,10 +157,10 @@ export const EXPERIENCES: Experience[] = [
     endDate: "May 2029",
     summary: "Making AI systems and research stronger at Databricks",
     groupIcon: "🔬",
-    employmentType: "Externship",
+    employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Extern, AI Systems & Research",
+        title: "Software Engineering Intern, AI Systems & Research",
         dateRange: "Sep 2028 — May 2029",
         location: "Berkeley, California, United States",
         highlights: [...FIVE_BULLETS],
