@@ -128,6 +128,25 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
+    company: "Google",
+    monogram: "G",
+    logo: "/icons/organizations/google.png",
+    location: "Mountain View, California, United States",
+    startDate: "Jun 2029",
+    endDate: "Aug 2029",
+    summary: "Making AI infrastructure (Kubeflow) better at Google",
+    groupIcon: "⛅️",
+    employmentType: "Internship",
+    roles: [
+      {
+        title: "Software Engineering Intern, AI Infrastructure (Kubeflow)",
+        dateRange: "Jun 2029 — Aug 2029",
+        location: "Mountain View, California, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "Databricks",
     monogram: "DB",
     logo: "/icons/organizations/databricks.png",
@@ -155,12 +174,12 @@ export const EXPERIENCES: Experience[] = [
     location: "Mountain View, California, United States",
     startDate: "Jun 2028",
     endDate: "Aug 2028",
-    summary: "Making AI infrastructure (Kubeflow) better at Google",
+    summary: "Making AI infrastructure better at Google",
     groupIcon: "⛅️",
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern, AI Infrastructure (Kubeflow)",
+        title: "Software Engineering Intern, AI Infrastructure",
         dateRange: "Jun 2028 — Aug 2028",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
