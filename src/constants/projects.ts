@@ -128,27 +128,6 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "Scale AI",
-    monogram: "S",
-    logo: "/icons/organizations/scale-ai.png",
-    logoFull: true,
-    tileColor: "#000000",
-    location: "San Francisco, California, United States",
-    startDate: "Jun 2029",
-    endDate: "Aug 2029",
-    summary: "Advising on generative AI at Scale AI",
-    groupIcon: "✨",
-    employmentType: "Internship",
-    roles: [
-      {
-        title: "Technical Advisor Intern, Generative AI",
-        dateRange: "Jun 2029 — Aug 2029",
-        location: "San Francisco, California, United States",
-        highlights: [...FIVE_BULLETS],
-      },
-    ],
-  },
-  {
     company: "Databricks",
     monogram: "DB",
     logo: "/icons/organizations/databricks.png",
@@ -176,12 +155,12 @@ export const EXPERIENCES: Experience[] = [
     location: "Mountain View, California, United States",
     startDate: "Jun 2028",
     endDate: "Aug 2028",
-    summary: "Making AI infrastructure better at Google",
+    summary: "Making AI infrastructure (Kubeflow) better at Google",
     groupIcon: "⛅️",
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern, AI Infrastructure",
+        title: "Software Engineering Intern, AI Infrastructure (Kubeflow)",
         dateRange: "Jun 2028 — Aug 2028",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
