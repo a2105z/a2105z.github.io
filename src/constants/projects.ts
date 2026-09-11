@@ -250,6 +250,25 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
+    company: "Netflix",
+    monogram: "N",
+    logo: "/icons/organizations/netflix.png",
+    location: "Los Gatos, California, United States",
+    startDate: "Jun 2026",
+    endDate: "Aug 2026",
+    summary: "Building the GSoC Metaflow VS Code Extension at Netflix",
+    groupIcon: "🎬",
+    employmentType: "Internship",
+    roles: [
+      {
+        title: "Software Engineering Intern, GSoC Metaflow VS Code Extension",
+        dateRange: "Jun 2026 — Aug 2026",
+        location: "Los Gatos, California, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "Rivian and Volkswagen Group Technologies",
     monogram: "RV",
     logo: "/icons/organizations/rivian-vw-tech.png",
