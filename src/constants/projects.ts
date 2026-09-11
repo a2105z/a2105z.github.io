@@ -134,7 +134,7 @@ export const EXPERIENCES: Experience[] = [
     location: "Mountain View, California, United States",
     startDate: "Jun 2029",
     endDate: "Aug 2029",
-    summary: "Making Kubeflow AI infrastructure better at Google through GSoC",
+    summary: "Making Kubeflow AI infrastructure better at Google",
     groupIcon: "⛅️",
     employmentType: "Internship",
     roles: [
