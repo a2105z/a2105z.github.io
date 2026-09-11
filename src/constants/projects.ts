@@ -128,6 +128,25 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
+    company: "Google",
+    monogram: "G",
+    logo: "/icons/organizations/google.png",
+    location: "Mountain View, California, United States",
+    startDate: "Jun 2029",
+    endDate: "Aug 2029",
+    summary: "Making Kubeflow AI infrastructure better at Google through GSoC",
+    groupIcon: "⛅️",
+    employmentType: "Internship",
+    roles: [
+      {
+        title: "Software Engineering Intern (GSoC), Kubeflow AI Infrastructure",
+        dateRange: "Jun 2029 — Aug 2029",
+        location: "Mountain View, California, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "Databricks",
     monogram: "DB",
     logo: "/icons/organizations/databricks.png",
@@ -203,25 +222,6 @@ export const EXPERIENCES: Experience[] = [
     roles: [
       {
         title: "Software Engineering Intern, Core AI",
-        dateRange: "Jun 2027 — Aug 2027",
-        location: "Mountain View, California, United States",
-        highlights: [...FIVE_BULLETS],
-      },
-    ],
-  },
-  {
-    company: "Google",
-    monogram: "G",
-    logo: "/icons/organizations/google.png",
-    location: "Mountain View, California, United States",
-    startDate: "Jun 2027",
-    endDate: "Aug 2027",
-    summary: "Making Kubeflow AI infrastructure better at Google through GSoC",
-    groupIcon: "⛅️",
-    employmentType: "Internship",
-    roles: [
-      {
-        title: "Software Engineering Intern (GSoC), Kubeflow AI Infrastructure",
         dateRange: "Jun 2027 — Aug 2027",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
