@@ -245,7 +245,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern, Cloud AI - Kubeflow GSoC",
+        title: "Software Development Intern, Cloud AI - Kubeflow GSoC",
         dateRange: "Jun 2027 — Aug 2027",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
