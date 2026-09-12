@@ -213,25 +213,6 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "Google",
-    monogram: "G",
-    logo: "/icons/organizations/google.png",
-    location: "Mountain View, California, United States",
-    startDate: "Jun 2027",
-    endDate: "Aug 2027",
-    summary: "Making Cloud AI (Kubeflow) better at Google",
-    groupIcon: "⛅️",
-    employmentType: "Internship",
-    roles: [
-      {
-        title: "Software Engineering Intern, Cloud AI (Kubeflow)",
-        dateRange: "Jun 2027 — Aug 2027",
-        location: "Mountain View, California, United States",
-        highlights: [...FIVE_BULLETS],
-      },
-    ],
-  },
-  {
     company: "LinkedIn",
     monogram: "in",
     logo: "/icons/organizations/linkedin.png",
@@ -246,6 +227,25 @@ export const EXPERIENCES: Experience[] = [
     roles: [
       {
         title: "Software Engineering Intern, Core AI",
+        dateRange: "Jun 2027 — Aug 2027",
+        location: "Mountain View, California, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
+    company: "Google",
+    monogram: "G",
+    logo: "/icons/organizations/google.png",
+    location: "Mountain View, California, United States",
+    startDate: "Jun 2027",
+    endDate: "Aug 2027",
+    summary: "Making Cloud AI (Kubeflow) better at Google",
+    groupIcon: "⛅️",
+    employmentType: "Internship",
+    roles: [
+      {
+        title: "Software Engineering Intern, Cloud AI (Kubeflow)",
         dateRange: "Jun 2027 — Aug 2027",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
