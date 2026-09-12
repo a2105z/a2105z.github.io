@@ -97,7 +97,7 @@ export const EXPERIENCES: Experience[] = [
         highlights: [...FIVE_BULLETS],
       },
       {
-        title: "Associate Product Manager (L3)",
+        title: "Associate Product Manager",
         dateRange: "2029 — 2031",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
