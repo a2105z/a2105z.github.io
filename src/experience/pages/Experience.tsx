@@ -31,7 +31,7 @@ const Experience: React.FC = () => {
   };
 
   return (
-    <section className="bg-canvas pt-24 pb-32">
+    <section className="bg-canvas pt-24 pb-32 font-linkedin">
       <Wrapper>
         <Header
           index="02"
@@ -49,7 +49,7 @@ const Experience: React.FC = () => {
                 type="button"
                 onClick={() => handleKind(tab.id)}
                 aria-pressed={active}
-                className={`relative rounded-full px-4 py-1.5 text-[13px] font-medium tracking-[-0.01em] transition-colors duration-300 ${
+                className={`relative rounded-full px-4 py-1.5 text-[14px] font-medium transition-colors duration-300 ${
                   active
                     ? "text-canvas"
                     : "text-ink-muted hover:text-ink"
@@ -68,7 +68,7 @@ const Experience: React.FC = () => {
           })}
         </div>
 
-        <div className="mt-10">
+        <div className="mt-8">
           <AnimatePresence exitBeforeEnter>
             <motion.div
               key={kind}
@@ -86,7 +86,7 @@ const Experience: React.FC = () => {
                   {items.map((experience, index) => (
                     <li
                       key={`${experience.company}-${experience.startDate}-${index}`}
-                      className="py-7 first:pt-1"
+                      className="py-5 first:pt-2"
                     >
                       <ExperienceItem
                         company={experience.company}

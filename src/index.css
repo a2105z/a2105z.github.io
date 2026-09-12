@@ -40,6 +40,16 @@
 }
 
 @layer utilities {
+  /* LinkedIn-style system UI stack (SF Pro on Apple, Segoe on Windows) */
+  .font-linkedin {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+      "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+      "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-feature-settings: normal;
+    letter-spacing: normal;
+  }
+
   /* Very quiet paper grain — adds depth without decoration */
   .grain {
     position: relative;

@@ -64,7 +64,7 @@ const LogoBadge: React.FC<{
 
   return (
     <div
-      className={`flex-shrink-0 h-11 w-11 rounded-xl flex items-center justify-center overflow-hidden ${chromeClass}`}
+      className={`flex-shrink-0 h-12 w-12 rounded-lg flex items-center justify-center overflow-hidden ${chromeClass}`}
       style={chromeStyle}
     >
       {showFallback ? (
@@ -157,7 +157,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
   if (isInternship) {
     const role = roleList[0];
     const { headline, group } = splitHeadline(role?.title);
-    const typeLine = listedName;
+    const typeLine = [listedName, employmentType].filter(Boolean).join(" · ");
     const dateLine = [role?.dateRange, tenure].filter(Boolean).join(" · ");
 
     return (
@@ -168,7 +168,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
         transition={{ duration: 0.7, delay, ease: EASE_PREMIUM }}
         className="group"
       >
-        <div className="flex items-start gap-4">
+        <div className="flex items-start gap-3.5">
           <LogoBadge
             logo={logo}
             logoFull={logoFull}
@@ -177,18 +177,24 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
             monogram={monogram}
           />
           <div className="min-w-0 flex-1">
-            <h3 className="text-[16px] sm:text-[17px] font-semibold text-ink tracking-tight leading-snug">
+            <h3 className="text-[16px] font-semibold text-ink leading-snug">
               {headline || listedName}
             </h3>
-            <p className="text-[14px] text-ink-muted mt-0.5">{typeLine}</p>
+            <p className="text-[14px] text-[#666666] mt-0.5 leading-snug">
+              {typeLine}
+            </p>
             {dateLine && (
-              <p className="text-[13px] text-ink-dim mt-0.5">{dateLine}</p>
+              <p className="text-[14px] text-[#666666] mt-0.5 leading-snug">
+                {dateLine}
+              </p>
             )}
             {location && (
-              <p className="text-[13px] text-ink-dim mt-0.5">{location}</p>
+              <p className="text-[14px] text-[#666666] mt-0.5 leading-snug">
+                {location}
+              </p>
             )}
             {group && (
-              <p className="text-[14px] text-ink-muted mt-2">
+              <p className="text-[14px] text-ink mt-2 leading-snug">
                 {groupIcon ? `${groupIcon} ${group}` : group}
               </p>
             )}
@@ -206,8 +212,8 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
       transition={{ duration: 0.7, delay, ease: EASE_PREMIUM }}
       className="group"
     >
-      <div className="flex items-stretch gap-4">
-        <div className="relative w-11 flex-shrink-0">
+      <div className="flex items-stretch gap-3.5">
+        <div className="relative w-12 flex-shrink-0">
           <div className="relative z-10">
             <LogoBadge
               logo={logo}
@@ -220,19 +226,23 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
           {hasRail && (
             <div
               aria-hidden="true"
-              className="absolute left-1/2 top-12 bottom-1 w-px -translate-x-1/2 bg-line"
+              className="absolute left-1/2 top-14 bottom-1 w-px -translate-x-1/2 bg-line"
             />
           )}
         </div>
 
         <div className="min-w-0 flex-1">
-          <h3 className="text-[16px] sm:text-[17px] font-semibold text-ink tracking-tight leading-snug">
+          <h3 className="text-[16px] font-semibold text-ink leading-snug">
             {listedName}
           </h3>
           {metaLine && (
-            <p className="text-[13px] text-ink-muted mt-0.5">{metaLine}</p>
+            <p className="text-[14px] text-[#666666] mt-0.5 leading-snug">
+              {metaLine}
+            </p>
           )}
-          <p className="text-[13px] text-ink-dim mt-0.5">{workplaceLabel}</p>
+          <p className="text-[14px] text-[#666666] mt-0.5 leading-snug">
+            {workplaceLabel}
+          </p>
 
           <ul className="mt-5 space-y-6">
             {roleList.map((role) => {
@@ -242,19 +252,21 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
                 <li key={`${role.title}-${role.dateRange}`} className="relative">
                   <span
                     aria-hidden="true"
-                    className="absolute top-1.5 left-[-2.625rem] h-2 w-2 rounded-full bg-ink-dim ring-4 ring-canvas"
+                    className="absolute top-1.5 left-[-2.875rem] h-2 w-2 rounded-full bg-ink-dim ring-4 ring-canvas"
                   />
-                  <p className="text-[15px] sm:text-[16px] font-semibold text-ink tracking-tight leading-snug">
+                  <p className="text-[16px] font-semibold text-ink leading-snug">
                     {headline || role.title}
                   </p>
-                  <p className="text-[13px] text-ink-dim mt-0.5">{role.dateRange}</p>
+                  <p className="text-[14px] text-[#666666] mt-0.5 leading-snug">
+                    {role.dateRange}
+                  </p>
                   {(role.location || location) && (
-                    <p className="text-[13px] text-ink-dim mt-0.5">
+                    <p className="text-[14px] text-[#666666] mt-0.5 leading-snug">
                       {role.location || location}
                     </p>
                   )}
                   {group && (
-                    <p className="text-[14px] text-ink-muted mt-2">
+                    <p className="text-[14px] text-ink mt-2 leading-snug">
                       {roleIcon ? `${roleIcon} ${group}` : group}
                     </p>
                   )}
