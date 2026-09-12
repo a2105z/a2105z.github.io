@@ -105,6 +105,27 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
+    company: "Y Combinator",
+    monogram: "YC",
+    logo: "/icons/organizations/ycombinator.png",
+    logoFull: true,
+    tileColor: "#F26625",
+    location: "San Francisco, California, United States",
+    startDate: "Jun 2029",
+    endDate: "Aug 2029",
+    summary: "Building Blackbox at Y Combinator",
+    groupIcon: "⬛",
+    employmentType: "Fellowship",
+    roles: [
+      {
+        title: "Summer Grant Fellow, Building Blackbox",
+        dateRange: "Jun 2029 — Aug 2029",
+        location: "San Francisco, California, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "Scale AI",
     monogram: "S",
     logo: "/icons/organizations/scale-ai.png",
