@@ -107,6 +107,7 @@ const Experience: React.FC = () => {
                           experience.employmentType ||
                           (kind === "fulltime" ? "Full-time" : "Internship")
                         }
+                        workplaceType={experience.workplaceType}
                       />
                     </li>
                   ))}

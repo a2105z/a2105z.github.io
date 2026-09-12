@@ -43,6 +43,7 @@ export type Experience = {
   roles: ExperienceRole[];
   groupIcon?: string;
   employmentType?: string;
+  workplaceType?: string;
 };
 
 export type Education = {
@@ -111,6 +112,7 @@ export const EXPERIENCES: Experience[] = [
     endDate: "2035",
     summary: "Working on an AI-powered shopping assistant at Phia",
     employmentType: "Part-time",
+    workplaceType: "Hybrid",
     roles: [
       {
         title: "Product Manager, AI-Powered Shopping Assistant",

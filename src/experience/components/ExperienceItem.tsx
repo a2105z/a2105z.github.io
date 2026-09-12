@@ -33,6 +33,7 @@ interface ExperienceItemProps {
   endDate?: string;
   groupIcon?: string;
   employmentType?: string;
+  workplaceType?: string;
 }
 
 const LogoBadge: React.FC<{
@@ -143,6 +144,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
   endDate,
   groupIcon,
   employmentType,
+  workplaceType,
 }) => {
   const roleList = roles ?? [];
   const listedName = company;
@@ -150,6 +152,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
   const metaLine = [employmentType, tenure].filter(Boolean).join(" · ");
   const hasRail = roleList.length > 0;
   const isInternship = kind !== "fulltime";
+  const workplaceLabel = workplaceType || "On-site";
 
   if (isInternship) {
     const role = roleList[0];
@@ -229,7 +232,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
           {metaLine && (
             <p className="text-[13px] text-ink-muted mt-0.5">{metaLine}</p>
           )}
-          <p className="text-[13px] text-ink-dim mt-0.5">On-site</p>
+          <p className="text-[13px] text-ink-dim mt-0.5">{workplaceLabel}</p>
 
           <ul className="mt-5 space-y-6">
             {roleList.map((role) => {
