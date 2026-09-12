@@ -25,7 +25,7 @@ const Hero: React.FC<{
   return (
     <BackgroundPaths onGoToPage={onGoToPage}>
       <div className="pt-24 pb-40 sm:pt-28 sm:pb-44">
-        <NowLine delay={0.15} label="Currently @ Rivian | Previously @ Capital One, Google DeepMind, Amazon" />
+        <NowLine delay={0.15} label="Currently @ Rivian | Previously @ PrairieLearn, Google DeepMind, Amazon" />
 
         {/* Letter-stagger name */}
         <motion.h1
