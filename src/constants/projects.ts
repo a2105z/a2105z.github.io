@@ -186,7 +186,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Technical Advisor Intern, Generative AI",
+        title: "Technical Advising Intern, Generative AI",
         dateRange: "Sep 2028 — May 2029",
         location: "San Francisco, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -311,6 +311,26 @@ export const EXPERIENCES: Experience[] = [
         title: "Software Engineering Intern, Vehicle Telematics",
         dateRange: "Jun 2026 — Aug 2026",
         location: "Palo Alto, California, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
+    company: "IBM",
+    monogram: "IBM",
+    logo: "/icons/organizations/ibm.png",
+    logoFull: true,
+    tileColor: "#FFFFFF",
+    location: "Urbana–Champaign, Illinois, United States",
+    startDate: "Sep 2025",
+    endDate: "May 2026",
+    summary: "Building software at IBM",
+    employmentType: "Internship",
+    roles: [
+      {
+        title: "Software Engineering Intern",
+        dateRange: "Sep 2025 — May 2026",
+        location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
       },
     ],
