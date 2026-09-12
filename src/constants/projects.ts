@@ -179,12 +179,12 @@ export const EXPERIENCES: Experience[] = [
     location: "Mountain View, California, United States",
     startDate: "Jun 2028",
     endDate: "Aug 2028",
-    summary: "Making AI infrastructure better at Google",
-    groupIcon: "⛅️",
+    summary: "Making Google Search better at Google",
+    groupIcon: "🔍",
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern, AI Infrastructure",
+        title: "Associate Product Management Intern, Google Search",
         dateRange: "Jun 2028 — Aug 2028",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -240,12 +240,12 @@ export const EXPERIENCES: Experience[] = [
     location: "Mountain View, California, United States",
     startDate: "Jun 2027",
     endDate: "Aug 2027",
-    summary: "Making Cloud AI - Kubeflow GSoC better at Google",
+    summary: "Making Cloud AI and AI Infrastructure better at Google",
     groupIcon: "⛅️",
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Development Intern, Cloud AI - Kubeflow GSoC",
+        title: "Software Development Intern, Cloud AI and AI Infrastructure",
         dateRange: "Jun 2027 — Aug 2027",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
