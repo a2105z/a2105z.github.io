@@ -100,6 +100,28 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
+    company: "Phia",
+    monogram: "phia",
+    logo: "/icons/organizations/phia.png",
+    kind: "fulltime",
+    logoFull: true,
+    tileColor: "#0B1E3F",
+    location: "New York City, New York, United States",
+    startDate: "2033",
+    endDate: "2035",
+    summary: "Working on an AI-powered shopping assistant at Phia",
+    employmentType: "Part-time",
+    roles: [
+      {
+        title: "Product Manager, AI-Powered Shopping Assistant",
+        dateRange: "2033 — 2035",
+        location: "New York City, New York, United States",
+        groupIcon: "🛍️",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "Microsoft",
     monogram: "MS",
     logo: "/icons/organizations/microsoft.png",
