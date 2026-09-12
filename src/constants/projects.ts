@@ -177,7 +177,7 @@ export const EXPERIENCES: Experience[] = [
     monogram: "S",
     logo: "/icons/organizations/scale-ai.png",
     logoFull: true,
-    tileColor: "#000000",
+    tileColor: "#FFFFFF",
     location: "San Francisco, California, United States",
     startDate: "Sep 2028",
     endDate: "May 2029",
