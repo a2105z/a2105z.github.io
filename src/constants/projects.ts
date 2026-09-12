@@ -261,12 +261,12 @@ export const EXPERIENCES: Experience[] = [
     location: "Mountain View, California, United States",
     startDate: "Jun 2027",
     endDate: "Aug 2027",
-    summary: "Making Cloud AI and AI Infrastructure better at Google through GSoC",
+    summary: "Making Cloud AI (Kubeflow) better at Google through GSoC",
     groupIcon: "⛅️",
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern (GSoC), Cloud AI and AI Infrastructure",
+        title: "Software Engineering Intern, Cloud AI (Kubeflow) - GSoC",
         dateRange: "Jun 2027 — Aug 2027",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -344,12 +344,12 @@ export const EXPERIENCES: Experience[] = [
     location: "Mountain View, California, United States",
     startDate: "Jun 2025",
     endDate: "Aug 2025",
-    summary: "Making Gemini API and AI Studio better at Google DeepMind",
+    summary: "Making Gemini API and AI Infrastructure better at Google DeepMind",
     groupIcon: "✨",
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern (Open Source), Gemini API & AI Studio",
+        title: "Software Engineering Intern (Open Source), Gemini API & AI Infrastructure - GSoC/Research",
         dateRange: "Jun 2025 — Aug 2025",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
