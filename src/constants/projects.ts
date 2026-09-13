@@ -147,20 +147,20 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "Google",
-    monogram: "G",
-    logo: "/icons/organizations/google.png",
-    location: "Mountain View, California, United States",
+    company: "Microsoft",
+    monogram: "MS",
+    logo: "/icons/organizations/microsoft.png",
+    location: "Redmond, Washington, United States",
     startDate: "Jun 2028",
     endDate: "Aug 2028",
-    summary: "Making Google Search better at Google",
-    groupIcon: "🔍",
+    summary: "Making Core AI better at Microsoft",
+    groupIcon: "🧠",
     employmentType: "Internship",
     roles: [
       {
-        title: "Associate Product Management Intern, Google Search",
+        title: "Software Engineering Intern, Core AI",
         dateRange: "Jun 2028 — Aug 2028",
-        location: "Mountain View, California, United States",
+        location: "Redmond, Washington, United States",
         highlights: [...FIVE_BULLETS],
       },
     ],
@@ -303,9 +303,29 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern, Gemini API & AI Infrastructure - GSoC/Research",
+        title: "Software Engineering Contributor, Gemini API & AI Infrastructure - GSoC/Research",
         dateRange: "Jun 2025 — Aug 2025",
         location: "Mountain View, California, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
+    company: "NASA",
+    monogram: "NASA",
+    logo: "/icons/organizations/nasa.png",
+    logoFull: true,
+    tileColor: "#FFFFFF",
+    location: "Phoenix, Arizona, United States",
+    startDate: "Sep 2024",
+    endDate: "May 2025",
+    summary: "Building software at NASA",
+    employmentType: "Internship",
+    roles: [
+      {
+        title: "Software Engineering Intern",
+        dateRange: "Sep 2024 — May 2025",
+        location: "Phoenix, Arizona, United States",
         highlights: [...FIVE_BULLETS],
       },
     ],
@@ -324,7 +344,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Extern, OpenSearch Infrastructure and Data Analytics",
+        title: "Software Engineering Intern, OpenSearch Infrastructure and Data Analytics",
         dateRange: "Jun 2024 — Aug 2024",
         location: "New York City, New York, United States",
         highlights: [...FIVE_BULLETS],
