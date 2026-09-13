@@ -139,7 +139,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering & Research Intern, Omnigent R&D",
+        title: "Software Engineering Extern, Omnigent R&D",
         dateRange: "Sep 2028 — May 2029",
         location: "Berkeley, California, United States",
         highlights: [...FIVE_BULLETS],
