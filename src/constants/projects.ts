@@ -115,7 +115,7 @@ export const EXPERIENCES: Experience[] = [
     endDate: "Aug 2029",
     summary: "Making Omnigent R&D stronger at Databricks",
     groupIcon: "🔬",
-    employmentType: "Externship",
+    employmentType: "Internship",
     roles: [
       {
         title: "Software Engineering Extern, Omnigent R&D",
