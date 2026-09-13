@@ -115,10 +115,10 @@ export const EXPERIENCES: Experience[] = [
     endDate: "Aug 2029",
     summary: "Researching AI safety at Anthropic",
     groupIcon: "🛡️",
-    employmentType: "Fellowship",
+    employmentType: "Internship",
     roles: [
       {
-        title: "AI Safety Research Fellow",
+        title: "AI Safety Research Intern",
         dateRange: "Jun 2029 — Aug 2029",
         location: "Berkeley, California, United States",
         highlights: [...FIVE_BULLETS],
