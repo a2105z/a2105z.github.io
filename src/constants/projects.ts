@@ -303,7 +303,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern, Gemini API & AI Infrastructure - GSoC/Research",
+        title: "Software Engineering Extern, Gemini API & AI Infrastructure - GSoC/Research",
         dateRange: "Jun 2025 — Aug 2025",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
