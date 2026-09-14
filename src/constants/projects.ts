@@ -118,7 +118,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Extern, Omnigent R&D @ SkyLab",
+        title: "Software Engineering Intern, Omnigent R&D @ SkyLab",
         dateRange: "Sep 2028 — May 2029",
         location: "Berkeley, California, United States",
         highlights: [...FIVE_BULLETS],
