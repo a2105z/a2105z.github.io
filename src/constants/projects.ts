@@ -105,7 +105,7 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "Databricks",
+    company: "Databricks-SkyLab",
     monogram: "DB",
     logo: "/icons/organizations/databricks.png",
     logoFull: true,
@@ -113,12 +113,12 @@ export const EXPERIENCES: Experience[] = [
     location: "Berkeley, California, United States",
     startDate: "Sep 2028",
     endDate: "May 2029",
-    summary: "Making Omnigent R&D stronger at Databricks",
+    summary: "Making Omnigent R&D stronger at Databricks-SkyLab",
     groupIcon: "🔬",
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Extern, Omnigent R&D",
+        title: "Software Engineering Intern, Omnigent R&D",
         dateRange: "Sep 2028 — May 2029",
         location: "Berkeley, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -282,7 +282,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Contributor, Gemini API & AI Infrastructure - GSoC/Research",
+        title: "Software Engineering Extern, Gemini API & AI Infrastructure - GSoC/Research",
         dateRange: "Jun 2025 — Aug 2025",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
