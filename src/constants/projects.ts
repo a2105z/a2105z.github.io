@@ -324,7 +324,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern, OpenSearch Infrastructure and Data Analytics",
+        title: "Software Engineering Extern, OpenSearch Infrastructure and Data Analytics",
         dateRange: "Jun 2024 — Aug 2024",
         location: "New York City, New York, United States",
         highlights: [...FIVE_BULLETS],
