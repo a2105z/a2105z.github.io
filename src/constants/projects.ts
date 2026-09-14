@@ -299,10 +299,11 @@ export const EXPERIENCES: Experience[] = [
     startDate: "Sep 2024",
     endDate: "May 2025",
     summary: "Building software at NASA",
+    groupIcon: "🚀",
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern",
+        title: "Software Engineering Intern, Flight Systems",
         dateRange: "Sep 2024 — May 2025",
         location: "Phoenix, Arizona, United States",
         highlights: [...FIVE_BULLETS],
