@@ -105,27 +105,6 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "Anthropic",
-    monogram: "AI",
-    logo: "/icons/organizations/anthropic.png",
-    logoFull: true,
-    tileColor: "#F0EEE9",
-    location: "Berkeley, California, United States",
-    startDate: "Jun 2029",
-    endDate: "Aug 2029",
-    summary: "Researching AI safety at Anthropic",
-    groupIcon: "🛡️",
-    employmentType: "Internship",
-    roles: [
-      {
-        title: "AI Safety Research Intern",
-        dateRange: "Jun 2029 — Aug 2029",
-        location: "Berkeley, California, United States",
-        highlights: [...FIVE_BULLETS],
-      },
-    ],
-  },
-  {
     company: "Databricks",
     monogram: "DB",
     logo: "/icons/organizations/databricks.png",
