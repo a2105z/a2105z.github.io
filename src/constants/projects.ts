@@ -256,12 +256,12 @@ export const EXPERIENCES: Experience[] = [
     location: "Urbana–Champaign, Illinois, United States",
     startDate: "Sep 2025",
     endDate: "May 2026",
-    summary: "Making Connect Mobile better at John Deere",
+    summary: "Making Intelligent Systems Solutions better at John Deere",
     groupIcon: "🚜",
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern, Connect Mobile",
+        title: "Software Engineering Intern, Intelligent Systems Solutions",
         dateRange: "Sep 2025 — May 2026",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -295,7 +295,7 @@ export const EXPERIENCES: Experience[] = [
     logo: "/icons/organizations/nasa.png",
     logoFull: true,
     tileColor: "#FFFFFF",
-    location: "Phoenix, Arizona, United States",
+    location: "Urbana–Champaign, Illinois, United States",
     startDate: "Sep 2024",
     endDate: "May 2025",
     summary: "Building software at NASA",
@@ -305,7 +305,7 @@ export const EXPERIENCES: Experience[] = [
       {
         title: "Software Engineering Intern, Flight Systems",
         dateRange: "Sep 2024 — May 2025",
-        location: "Phoenix, Arizona, United States",
+        location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
       },
     ],
