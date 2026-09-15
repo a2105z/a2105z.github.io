@@ -132,12 +132,12 @@ export const EXPERIENCES: Experience[] = [
     location: "Mountain View, California, United States",
     startDate: "Jun 2028",
     endDate: "Aug 2028",
-    summary: "Making Google Search better at Google",
-    groupIcon: "🔍",
+    summary: "Making AI Infrastructure better at Google",
+    groupIcon: "⚙️",
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern, Google Search",
+        title: "Software Engineering Intern, AI Infrastructure",
         dateRange: "Jun 2028 — Aug 2028",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
