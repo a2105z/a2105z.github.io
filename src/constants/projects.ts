@@ -196,10 +196,10 @@ export const EXPERIENCES: Experience[] = [
     startDate: "Jun 2027",
     endDate: "Aug 2027",
     summary: "Building software at Roblox",
-    employmentType: "Fellowship",
+    employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Fellow",
+        title: "Software Engineering Extern",
         dateRange: "Jun 2027 — Aug 2027",
         location: "San Mateo, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -283,7 +283,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Extern, Gemini API & AI Infrastructure - GSoC/Research",
+        title: "Software Engineering Intern, Gemini API & AI Infrastructure - GSoC/Research",
         dateRange: "Jun 2025 — Aug 2025",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
