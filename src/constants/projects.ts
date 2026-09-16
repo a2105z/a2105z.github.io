@@ -359,9 +359,8 @@ export const EDUCATION: Education[] = [
     logoFull: true,
     tileColor: "#13294B",
     location: "Urbana–Champaign, Illinois, United States",
-    degree: "B.S./M.S. Computer Science",
-    degreeSecondary: "B.S. Electrical Engineering",
-    degreeTertiary: "B.S. Innovation, Leadership & Engineering Entrepreneurship",
+    degree:
+      "B.S./M.S. Computer Science · B.S. Electrical Engineering · B.S. Innovation, Leadership & Engineering Entrepreneurship",
     startDate: "Aug 2024",
     endDate: "May 2029",
     dateRange: "Aug 2024 — May 2029",
