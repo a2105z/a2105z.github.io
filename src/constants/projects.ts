@@ -312,26 +312,6 @@ export const EXPERIENCES: Experience[] = [
       },
     ],
   },
-  {
-    company: "Roblox",
-    monogram: "R",
-    logo: "/icons/organizations/roblox.png",
-    logoFull: true,
-    tileColor: "#000000",
-    location: "San Mateo, California, United States",
-    startDate: "Jun 2024",
-    endDate: "Aug 2024",
-    summary: "Building software at Roblox",
-    employmentType: "Internship",
-    roles: [
-      {
-        title: "Software Engineering Extern",
-        dateRange: "Jun 2024 — Aug 2024",
-        location: "San Mateo, California, United States",
-        highlights: [...FIVE_BULLETS],
-      },
-    ],
-  },
 ];
 
 export const EDUCATION: Education[] = [
