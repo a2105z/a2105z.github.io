@@ -10,6 +10,7 @@ interface EducationItemProps {
   tileColor?: string;
   degree: string;
   degreeSecondary?: string;
+  degreeTertiary?: string;
   dateRange: string;
   location?: string;
   delay?: number;
@@ -55,7 +56,7 @@ const LogoBadge: React.FC<{
           onError={() => setErrored(true)}
           className={
             logoFull
-              ? "h-full w-full object-cover object-center"
+              ? "h-full w-full object-contain object-center p-1"
               : "h-full w-full object-contain p-2"
           }
         />
@@ -72,6 +73,7 @@ const EducationItem: React.FC<EducationItemProps> = ({
   tileColor,
   degree,
   degreeSecondary,
+  degreeTertiary,
   dateRange,
   location,
   delay = 0,
@@ -100,6 +102,11 @@ const EducationItem: React.FC<EducationItemProps> = ({
           {degreeSecondary && (
             <p className="text-[14px] text-ink mt-0.5 leading-snug">
               {degreeSecondary}
+            </p>
+          )}
+          {degreeTertiary && (
+            <p className="text-[14px] text-ink mt-0.5 leading-snug">
+              {degreeTertiary}
             </p>
           )}
           <p className="text-[14px] text-[#666666] mt-0.5 leading-snug">

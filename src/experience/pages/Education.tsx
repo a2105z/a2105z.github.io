@@ -50,6 +50,7 @@ const Education: React.FC = () => {
                   tileColor={edu.tileColor}
                   degree={edu.degree}
                   degreeSecondary={edu.degreeSecondary}
+                  degreeTertiary={edu.degreeTertiary}
                   dateRange={edu.dateRange}
                   location={edu.location}
                   delay={index * 0.04}

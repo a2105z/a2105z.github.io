@@ -55,6 +55,7 @@ export type Education = {
   location?: string;
   degree: string;
   degreeSecondary?: string;
+  degreeTertiary?: string;
   startDate: string;
   endDate: string;
   dateRange: string;
@@ -79,26 +80,26 @@ export const EXPERIENCES: Experience[] = [
     ticker: "GOOG",
     exchange: "NASDAQ",
     location: "Mountain View, California, United States",
-    startDate: "2029",
+    startDate: "2031",
     endDate: "Present",
     summary: "Building products at Google",
     employmentType: "Full-time",
     roles: [
       {
         title: "Senior Product Manager",
-        dateRange: "2035 — Present",
+        dateRange: "2036 — Present",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
       },
       {
         title: "Product Manager",
-        dateRange: "2031 — 2033",
+        dateRange: "2033 — 2034",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
       },
       {
         title: "Associate Product Manager",
-        dateRange: "2029 — 2031",
+        dateRange: "2031 — 2033",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
       },
@@ -322,33 +323,33 @@ export const EDUCATION: Education[] = [
     logoFull: true,
     tileColor: "#A51C30",
     location: "Boston, Massachusetts, United States",
-    degree: "M.B.A., General Management",
-    startDate: "Aug 2033",
-    endDate: "May 2035",
-    dateRange: "Aug 2033 — May 2035",
+    degree: "M.B.A. Finance and General Management",
+    startDate: "Aug 2034",
+    endDate: "May 2036",
+    dateRange: "Aug 2034 — May 2036",
     focus: [
-      "Strategy",
       "Finance",
+      "Strategy",
       "Leadership",
       "General Management",
     ],
   },
   {
-    institution: "University of California, Berkeley",
-    monogram: "UCB",
-    logo: "/icons/organizations/berkeley.png",
+    institution: "Stanford University",
+    monogram: "S",
+    logo: "/icons/organizations/stanford.png",
     logoFull: true,
-    tileColor: "#002575",
-    location: "Berkeley, California, United States",
-    degree: "M.Eng., Electrical Engineering & Computer Sciences",
-    startDate: "Aug 2028",
-    endDate: "May 2029",
-    dateRange: "Aug 2028 — May 2029",
+    tileColor: "#FFFFFF",
+    location: "Stanford, California, United States",
+    degree: "M.S. Management Science & Engineering",
+    startDate: "Aug 2029",
+    endDate: "Dec 2030",
+    dateRange: "Aug 2029 — Dec 2030",
     focus: [
-      "Artificial Intelligence",
-      "Data Science",
-      "Computer Vision",
+      "Management Science",
+      "Engineering",
       "Product",
+      "Operations",
     ],
   },
   {
@@ -358,12 +359,12 @@ export const EDUCATION: Education[] = [
     logoFull: true,
     tileColor: "#13294B",
     location: "Urbana–Champaign, Illinois, United States",
-    degree: "B.S., Computer Science · B.S., Electrical Engineering",
-    degreeSecondary:
-      "B.S., Innovation, Leadership & Engineering Entrepreneurship",
+    degree: "B.S./M.S. Computer Science",
+    degreeSecondary: "B.S. Electrical Engineering",
+    degreeTertiary: "B.S. Innovation, Leadership & Engineering Entrepreneurship",
     startDate: "Aug 2024",
-    endDate: "May 2028",
-    dateRange: "Aug 2024 — May 2028",
+    endDate: "May 2029",
+    dateRange: "Aug 2024 — May 2029",
     focus: [
       "Computer Science",
       "Electrical Engineering",
