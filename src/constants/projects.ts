@@ -133,6 +133,28 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
+    company: "Harbor Street Capital",
+    monogram: "HSC",
+    logo: "/icons/organizations/harbor-street-capital.png",
+    logoFull: true,
+    tileColor: "#000000",
+    internshipTrack: "business",
+    location: "Miami, Florida, United States",
+    startDate: "Jun 2029",
+    endDate: "Aug 2029",
+    summary: "Technology, Media & Telecom Group",
+    groupIcon: "📈",
+    employmentType: "Internship",
+    roles: [
+      {
+        title: "Private Equity Summer Analyst",
+        dateRange: "Jun 2029 — Aug 2029",
+        location: "Miami, Florida, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "Databricks",
     monogram: "DB",
     logo: "/icons/organizations/databricks.png",
