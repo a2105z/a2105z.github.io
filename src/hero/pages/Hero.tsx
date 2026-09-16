@@ -61,7 +61,7 @@ const Hero: React.FC<{
           }}
           className="mt-6 max-w-3xl text-ink-soft text-[1.35rem] sm:text-[1.7rem] md:text-[1.9rem] font-medium tracking-display leading-[1.15]"
         >
-          Building software, products, and the{" "}
+          Building products, companies, and the{" "}
           <RotatingWord
             words={ROTATING_WORDS}
             className="text-ink-muted"

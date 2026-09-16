@@ -316,13 +316,13 @@ export const EXPERIENCES: Experience[] = [
 
 export const EDUCATION: Education[] = [
   {
-    institution: "Harvard University (Harvard Business School)",
+    institution: "Harvard Business School",
     monogram: "HBS",
     logo: "/icons/organizations/harvard.png",
     logoFull: true,
     tileColor: "#A51C30",
     location: "Boston, Massachusetts, United States",
-    degree: "Master of Business Administration",
+    degree: "M.B.A., General Management",
     startDate: "Aug 2033",
     endDate: "May 2035",
     dateRange: "Aug 2033 — May 2035",
@@ -334,14 +334,13 @@ export const EDUCATION: Education[] = [
     ],
   },
   {
-    institution: "University of California, Berkeley (Grimes College of Engineering)",
+    institution: "University of California, Berkeley",
     monogram: "UCB",
     logo: "/icons/organizations/berkeley.png",
     logoFull: true,
     tileColor: "#002575",
     location: "Berkeley, California, United States",
-    degree:
-      "Master of Engineering, Electrical Engineering & Computer Sciences",
+    degree: "M.Eng., Electrical Engineering & Computer Sciences",
     startDate: "Aug 2028",
     endDate: "May 2029",
     dateRange: "Aug 2028 — May 2029",
@@ -353,16 +352,15 @@ export const EDUCATION: Education[] = [
     ],
   },
   {
-    institution: "University of Illinois Urbana–Champaign (Grainger College of Engineering)",
+    institution: "University of Illinois Urbana–Champaign",
     monogram: "UIUC",
     logo: "/icons/organizations/uiuc.png",
     logoFull: true,
     tileColor: "#13294B",
     location: "Urbana–Champaign, Illinois, United States",
-    degree:
-      "Bachelor of Science, Computer Science · Bachelor of Science, Electrical Engineering",
+    degree: "B.S., Computer Science · B.S., Electrical Engineering",
     degreeSecondary:
-      "Bachelor of Science, Innovation, Leadership & Engineering Entrepreneurship",
+      "B.S., Innovation, Leadership & Engineering Entrepreneurship",
     startDate: "Aug 2024",
     endDate: "May 2028",
     dateRange: "Aug 2024 — May 2028",

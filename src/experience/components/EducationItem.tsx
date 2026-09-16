@@ -12,8 +12,6 @@ interface EducationItemProps {
   degreeSecondary?: string;
   dateRange: string;
   location?: string;
-  focus: string[];
-  summary?: string;
   delay?: number;
 }
 
@@ -38,19 +36,16 @@ const LogoBadge: React.FC<{
   const chromeClass = isColored
     ? "border-0 shadow-ring"
     : "bg-surface border border-line shadow-ring";
-  const chromeStyle = isColored && tileColor
-    ? { backgroundColor: tileColor }
-    : undefined;
+  const chromeStyle =
+    isColored && tileColor ? { backgroundColor: tileColor } : undefined;
 
   return (
     <div
-      className={`flex-shrink-0 h-11 w-11 rounded-xl flex items-center justify-center overflow-hidden ${chromeClass}`}
+      className={`flex-shrink-0 h-12 w-12 rounded-lg flex items-center justify-center overflow-hidden ${chromeClass}`}
       style={chromeStyle}
     >
       {showFallback ? (
-        <span
-          className={`${fallbackSize} font-bold text-ink tracking-[0.06em]`}
-        >
+        <span className={`${fallbackSize} font-bold text-ink tracking-[0.06em]`}>
           {fallbackText}
         </span>
       ) : (
@@ -60,7 +55,7 @@ const LogoBadge: React.FC<{
           onError={() => setErrored(true)}
           className={
             logoFull
-              ? "h-full w-full object-contain object-center"
+              ? "h-full w-full object-cover object-center"
               : "h-full w-full object-contain p-2"
           }
         />
@@ -77,20 +72,19 @@ const EducationItem: React.FC<EducationItemProps> = ({
   tileColor,
   degree,
   degreeSecondary,
+  dateRange,
   location,
-  focus,
-  summary,
   delay = 0,
 }) => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 18 }}
+      initial={{ opacity: 0, y: 14 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.7, delay, ease: EASE_PREMIUM }}
+      transition={{ duration: 0.55, delay, ease: EASE_PREMIUM }}
       className="group"
     >
-      <div className="flex items-start gap-4">
+      <div className="flex items-start gap-3.5">
         <LogoBadge
           logo={logo}
           logoFull={logoFull}
@@ -98,44 +92,26 @@ const EducationItem: React.FC<EducationItemProps> = ({
           institution={institution}
           monogram={monogram}
         />
-        <div className="flex-1 min-w-0">
-          <h3 className="text-[17px] sm:text-[19px] font-medium text-ink tracking-tight leading-snug">
-            {degree}
+        <div className="min-w-0 flex-1">
+          <h3 className="text-[16px] font-semibold text-ink leading-snug">
+            {institution}
           </h3>
+          <p className="text-[14px] text-ink mt-0.5 leading-snug">{degree}</p>
           {degreeSecondary && (
-            <h3 className="text-[17px] sm:text-[19px] font-medium text-ink tracking-tight leading-snug mt-1">
+            <p className="text-[14px] text-ink mt-0.5 leading-snug">
               {degreeSecondary}
-            </h3>
+            </p>
           )}
-          <p className="text-ink-muted text-[14px] mt-0.5">{institution}</p>
+          <p className="text-[14px] text-[#666666] mt-0.5 leading-snug">
+            {dateRange}
+          </p>
           {location && (
-            <p className="text-[12px] text-ink-dim mt-1">{location}</p>
-          )}
-          {summary && (
-            <p className="text-ink-muted text-[14px] leading-relaxed mt-3 max-w-2xl">
-              {summary}
+            <p className="text-[14px] text-[#666666] mt-0.5 leading-snug">
+              {location}
             </p>
           )}
         </div>
       </div>
-
-      {focus.length > 0 && (
-        <div className="mt-5 pl-0 sm:pl-[3.75rem]">
-          <p className="text-[10px] uppercase tracking-[0.24em] text-ink-dim font-medium mb-3">
-            Focus
-          </p>
-          <ul className="flex flex-wrap gap-2">
-            {focus.map((f) => (
-              <li
-                key={f}
-                className="text-[12.5px] text-ink-soft bg-surface border border-line rounded-full px-3 py-1"
-              >
-                {f}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
     </motion.div>
   );
 };
