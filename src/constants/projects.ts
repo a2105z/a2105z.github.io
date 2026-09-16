@@ -236,6 +236,26 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
+    company: "Concordia Capital",
+    monogram: "C",
+    logo: "/icons/organizations/concordia-capital.png",
+    logoFull: true,
+    tileColor: "#1D4588",
+    internshipTrack: "business",
+    startDate: "Jun 2027",
+    endDate: "Aug 2027",
+    summary: "Technology, Media & Telecom",
+    groupIcon: "📈",
+    employmentType: "Internship",
+    roles: [
+      {
+        title: "Investment Banking Summer Analyst",
+        dateRange: "Jun 2027 — Aug 2027",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "Rivian",
     monogram: "RIV",
     logo: "/icons/organizations/rivian.png",
