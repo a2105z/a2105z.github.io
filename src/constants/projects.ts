@@ -279,6 +279,28 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
+    company: "Arcadia Capital",
+    monogram: "AC",
+    logo: "/icons/organizations/arcadia-capital.png",
+    logoFull: true,
+    tileColor: "#5A7483",
+    internshipTrack: "business",
+    location: "Miami, Florida, United States",
+    startDate: "Jun 2026",
+    endDate: "Aug 2026",
+    summary: "Technology, Media & Telecom",
+    groupIcon: "📈",
+    employmentType: "Internship",
+    roles: [
+      {
+        title: "Investment Banking Summer Analyst",
+        dateRange: "Jun 2026 — Aug 2026",
+        location: "Miami, Florida, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "Rivian and Volkswagen Group Technologies",
     monogram: "RV",
     logo: "/icons/organizations/rivian-vw-tech.png",
