@@ -137,6 +137,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
   company,
   monogram,
   location,
+  summary,
   delay = 0,
   roles,
   kind,
@@ -196,6 +197,11 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
             {group && (
               <p className="text-[14px] text-ink mt-2 leading-snug">
                 {groupIcon ? `${groupIcon} ${group}` : group}
+              </p>
+            )}
+            {!group && summary && (
+              <p className="text-[14px] text-ink mt-2 leading-snug">
+                {groupIcon ? `${groupIcon} ${summary}` : summary}
               </p>
             )}
           </div>

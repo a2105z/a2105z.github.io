@@ -25,6 +25,7 @@ const InternshipList: React.FC<{ items: Experience[] }> = ({ items }) => (
           tileColor={experience.tileColor}
           monogram={experience.monogram}
           location={experience.location}
+          summary={experience.summary}
           delay={index * 0.03}
           roles={experience.roles}
           kind="internship"

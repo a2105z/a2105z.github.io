@@ -120,12 +120,12 @@ export const EXPERIENCES: Experience[] = [
     location: "Menlo Park, California, United States",
     startDate: "Jun 2035",
     endDate: "Aug 2035",
-    summary: "Investment banking in Technology, Media & Telecom at Morgan Stanley",
+    summary: "Technology, Media & Telecom",
     groupIcon: "📈",
     employmentType: "Internship",
     roles: [
       {
-        title: "Investment Banking Summer Analyst, Technology, Media & Telecom",
+        title: "Investment Banking Summer Associate",
         dateRange: "Jun 2035 — Aug 2035",
         location: "Menlo Park, California, United States",
         highlights: [...FIVE_BULLETS],
