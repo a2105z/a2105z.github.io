@@ -25,11 +25,14 @@ export type ExperienceRole = {
 
 export type ExperienceKind = "internship" | "fulltime";
 
+export type InternshipTrack = "engineering" | "business";
+
 export type Experience = {
   company: string;
   monogram: string;
   logo: string;
   kind?: ExperienceKind;
+  internshipTrack?: InternshipTrack;
   ticker?: string;
   exchange?: string;
   logoFull?: boolean;
@@ -103,6 +106,28 @@ export const EXPERIENCES: Experience[] = [
         title: "Associate Product Manager",
         dateRange: "2029 — 2031",
         location: "Mountain View, California, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
+    company: "Morgan Stanley",
+    monogram: "MS",
+    logo: "/icons/organizations/morgan-stanley.png",
+    logoFull: true,
+    tileColor: "#002B5C",
+    internshipTrack: "business",
+    location: "Menlo Park, California, United States",
+    startDate: "Jun 2035",
+    endDate: "Aug 2035",
+    summary: "Investment banking in Technology, Media & Telecom at Morgan Stanley",
+    groupIcon: "📈",
+    employmentType: "Internship",
+    roles: [
+      {
+        title: "Investment Banking Summer Analyst, Technology, Media & Telecom",
+        dateRange: "Jun 2035 — Aug 2035",
+        location: "Menlo Park, California, United States",
         highlights: [...FIVE_BULLETS],
       },
     ],

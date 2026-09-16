@@ -4,22 +4,107 @@ import Wrapper from "../../shared/components/Wrapper";
 import Header from "../../shared/components/Header";
 import EducationItem from "../components/EducationItem";
 import ExperienceItem from "../components/ExperienceItem";
-import { EDUCATION, EXPERIENCES } from "../../constants/projects";
+import {
+  EDUCATION,
+  EXPERIENCES,
+  Experience,
+} from "../../constants/projects";
 import { EASE_PREMIUM } from "../../shared/motion";
 
-const Education: React.FC = () => {
-  const [showInternships, setShowInternships] = useState(false);
+const InternshipList: React.FC<{ items: Experience[] }> = ({ items }) => (
+  <ul className="mt-4 divide-y divide-line border-t border-line">
+    {items.map((experience, index) => (
+      <li
+        key={`${experience.company}-${experience.startDate}-${index}`}
+        className="py-5"
+      >
+        <ExperienceItem
+          company={experience.company}
+          logo={experience.logo}
+          logoFull={experience.logoFull}
+          tileColor={experience.tileColor}
+          monogram={experience.monogram}
+          location={experience.location}
+          delay={index * 0.03}
+          roles={experience.roles}
+          kind="internship"
+          startDate={experience.startDate}
+          endDate={experience.endDate}
+          groupIcon={experience.groupIcon}
+          employmentType={experience.employmentType || "Internship"}
+          workplaceType={experience.workplaceType}
+        />
+      </li>
+    ))}
+  </ul>
+);
 
-  const internships = useMemo(
+const InternshipToggle: React.FC<{
+  label: string;
+  open: boolean;
+  onToggle: () => void;
+  items: Experience[];
+}> = ({ label, open, onToggle, items }) => (
+  <div className="border-t border-line pt-6">
+    <button
+      type="button"
+      onClick={onToggle}
+      aria-expanded={open}
+      className="group inline-flex items-center gap-2 text-[14px] font-medium text-ink hover:opacity-70 transition-opacity"
+    >
+      <span>{open ? `Hide ${label}` : `Show ${label}`}</span>
+      <span
+        aria-hidden="true"
+        className={`text-ink-dim transition-transform duration-300 ease-premium ${
+          open ? "rotate-180" : ""
+        }`}
+      >
+        ↓
+      </span>
+    </button>
+
+    <AnimatePresence initial={false}>
+      {open && (
+        <motion.div
+          key={label}
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: "auto" }}
+          exit={{ opacity: 0, height: 0 }}
+          transition={{ duration: 0.35, ease: EASE_PREMIUM }}
+          className="overflow-hidden"
+        >
+          <InternshipList items={items} />
+        </motion.div>
+      )}
+    </AnimatePresence>
+  </div>
+);
+
+const Education: React.FC = () => {
+  const [showEngineering, setShowEngineering] = useState(false);
+  const [showBusiness, setShowBusiness] = useState(false);
+
+  const engineeringInternships = useMemo(
     () =>
       EXPERIENCES.filter(
-        (experience) => (experience.kind ?? "internship") === "internship"
+        (experience) =>
+          (experience.kind ?? "internship") === "internship" &&
+          (experience.internshipTrack ?? "engineering") === "engineering"
       ),
     []
   );
 
-  const toggleInternships = () => {
-    setShowInternships((open) => !open);
+  const businessInternships = useMemo(
+    () =>
+      EXPERIENCES.filter(
+        (experience) =>
+          (experience.kind ?? "internship") === "internship" &&
+          experience.internshipTrack === "business"
+      ),
+    []
+  );
+
+  const bumpLayout = () => {
     window.requestAnimationFrame(() => {
       window.dispatchEvent(new Event("resize"));
     });
@@ -62,64 +147,25 @@ const Education: React.FC = () => {
           </ul>
         </div>
 
-        <div className="mt-8 border-t border-line pt-6">
-          <button
-            type="button"
-            onClick={toggleInternships}
-            aria-expanded={showInternships}
-            className="group inline-flex items-center gap-2 text-[14px] font-medium text-ink hover:opacity-70 transition-opacity"
-          >
-            <span>{showInternships ? "Hide internships" : "Show internships"}</span>
-            <span
-              aria-hidden="true"
-              className={`text-ink-dim transition-transform duration-300 ease-premium ${
-                showInternships ? "rotate-180" : ""
-              }`}
-            >
-              ↓
-            </span>
-          </button>
-
-          <AnimatePresence initial={false}>
-            {showInternships && (
-              <motion.div
-                key="internships"
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: "auto" }}
-                exit={{ opacity: 0, height: 0 }}
-                transition={{ duration: 0.35, ease: EASE_PREMIUM }}
-                className="overflow-hidden"
-              >
-                <ul className="mt-4 divide-y divide-line border-t border-line">
-                  {internships.map((experience, index) => (
-                    <li
-                      key={`${experience.company}-${experience.startDate}-${index}`}
-                      className="py-5"
-                    >
-                      <ExperienceItem
-                        company={experience.company}
-                        logo={experience.logo}
-                        logoFull={experience.logoFull}
-                        tileColor={experience.tileColor}
-                        monogram={experience.monogram}
-                        location={experience.location}
-                        delay={index * 0.03}
-                        roles={experience.roles}
-                        kind="internship"
-                        startDate={experience.startDate}
-                        endDate={experience.endDate}
-                        groupIcon={experience.groupIcon}
-                        employmentType={
-                          experience.employmentType || "Internship"
-                        }
-                        workplaceType={experience.workplaceType}
-                      />
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            )}
-          </AnimatePresence>
+        <div className="mt-8 space-y-0">
+          <InternshipToggle
+            label="Engineering Internships"
+            open={showEngineering}
+            onToggle={() => {
+              setShowEngineering((open) => !open);
+              bumpLayout();
+            }}
+            items={engineeringInternships}
+          />
+          <InternshipToggle
+            label="Business Internships"
+            open={showBusiness}
+            onToggle={() => {
+              setShowBusiness((open) => !open);
+              bumpLayout();
+            }}
+            items={businessInternships}
+          />
         </div>
       </Wrapper>
     </section>
