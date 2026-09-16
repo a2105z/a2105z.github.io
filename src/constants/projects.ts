@@ -478,7 +478,7 @@ export const EDUCATION: Education[] = [
     logo: "/icons/organizations/stanford.png",
     logoFull: true,
     tileColor: "#FFFFFF",
-    location: "Palo Alto, California, United States",
+    location: "Palo Alto, California, United States (HCP)",
     degree: "M.S. Management Science & Engineering",
     gpa: "Graduate GPA: 4.00/4.00",
     startDate: "Aug 2029",
