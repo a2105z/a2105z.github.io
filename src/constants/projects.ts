@@ -364,7 +364,7 @@ export const EDUCATION: Education[] = [
     tileColor: "#13294B",
     location: "Urbana–Champaign, Illinois, United States",
     degree:
-      "B.S./M.S. Computer Science · B.S. Electrical Engineering · B.S. Innovation, Leadership & Engineering Entrepreneurship",
+      "B.S./M.S. Computer Science · B.S. Electrical Engineering · B.S. Technology Entrepreneurship",
     gpa: "Undergraduate GPA: 3.93/4.00",
     gpaSecondary: "Graduate GPA: 4.00/4.00",
     startDate: "Aug 2024",
