@@ -319,11 +319,11 @@ export const EXPERIENCES: Experience[] = [
 
 export const EDUCATION: Education[] = [
   {
-    institution: "Harvard Business School",
+    institution: "Harvard University (Harvard Business School)",
     monogram: "HBS",
     logo: "/icons/organizations/harvard.png",
     logoFull: true,
-    tileColor: "#A51C30",
+    tileColor: "#FFFFFF",
     location: "Cambridge, Massachusetts, United States",
     degree: "M.B.A. Finance and General Management",
     gpa: "GPA: 4.00",
@@ -338,7 +338,7 @@ export const EDUCATION: Education[] = [
     ],
   },
   {
-    institution: "Stanford University",
+    institution: "Stanford University (School of Engineering)",
     monogram: "S",
     logo: "/icons/organizations/stanford.png",
     logoFull: true,
@@ -357,7 +357,7 @@ export const EDUCATION: Education[] = [
     ],
   },
   {
-    institution: "University of Illinois Urbana–Champaign",
+    institution: "University of Illinois Urbana–Champaign (Grainger College of Engineering)",
     monogram: "UIUC",
     logo: "/icons/organizations/uiuc.png",
     logoFull: true,
