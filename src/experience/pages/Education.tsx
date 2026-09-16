@@ -12,7 +12,7 @@ import {
 import { EASE_PREMIUM } from "../../shared/motion";
 
 const InternshipList: React.FC<{ items: Experience[] }> = ({ items }) => (
-  <ul className="mt-4 divide-y divide-line border-t border-line">
+  <ul className="divide-y divide-line border-t border-line">
     {items.map((experience, index) => (
       <li
         key={`${experience.company}-${experience.startDate}-${index}`}
@@ -37,47 +37,6 @@ const InternshipList: React.FC<{ items: Experience[] }> = ({ items }) => (
       </li>
     ))}
   </ul>
-);
-
-const InternshipToggle: React.FC<{
-  label: string;
-  open: boolean;
-  onToggle: () => void;
-  items: Experience[];
-}> = ({ label, open, onToggle, items }) => (
-  <div className="border-t border-line pt-6">
-    <button
-      type="button"
-      onClick={onToggle}
-      aria-expanded={open}
-      className="group inline-flex items-center gap-2 text-[14px] font-medium text-ink hover:opacity-70 transition-opacity"
-    >
-      <span>{open ? `Hide ${label}` : `Show ${label}`}</span>
-      <span
-        aria-hidden="true"
-        className={`text-ink-dim transition-transform duration-300 ease-premium ${
-          open ? "rotate-180" : ""
-        }`}
-      >
-        ↓
-      </span>
-    </button>
-
-    <AnimatePresence initial={false}>
-      {open && (
-        <motion.div
-          key={label}
-          initial={{ opacity: 0, height: 0 }}
-          animate={{ opacity: 1, height: "auto" }}
-          exit={{ opacity: 0, height: 0 }}
-          transition={{ duration: 0.35, ease: EASE_PREMIUM }}
-          className="overflow-hidden"
-        >
-          <InternshipList items={items} />
-        </motion.div>
-      )}
-    </AnimatePresence>
-  </div>
 );
 
 const Education: React.FC = () => {
@@ -108,6 +67,16 @@ const Education: React.FC = () => {
     window.requestAnimationFrame(() => {
       window.dispatchEvent(new Event("resize"));
     });
+  };
+
+  const toggleEngineering = () => {
+    setShowEngineering((open) => !open);
+    bumpLayout();
+  };
+
+  const toggleBusiness = () => {
+    setShowBusiness((open) => !open);
+    bumpLayout();
   };
 
   return (
@@ -147,25 +116,88 @@ const Education: React.FC = () => {
           </ul>
         </div>
 
-        <div className="mt-8 space-y-0">
-          <InternshipToggle
-            label="Engineering Internships"
-            open={showEngineering}
-            onToggle={() => {
-              setShowEngineering((open) => !open);
-              bumpLayout();
-            }}
-            items={engineeringInternships}
-          />
-          <InternshipToggle
-            label="Business Internships"
-            open={showBusiness}
-            onToggle={() => {
-              setShowBusiness((open) => !open);
-              bumpLayout();
-            }}
-            items={businessInternships}
-          />
+        <div className="mt-8 border-t border-line pt-6">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
+            <button
+              type="button"
+              onClick={toggleEngineering}
+              aria-expanded={showEngineering}
+              className="group inline-flex items-center gap-2 text-[14px] font-medium text-ink hover:opacity-70 transition-opacity"
+            >
+              <span>
+                {showEngineering
+                  ? "Hide Engineering Internships"
+                  : "Show Engineering Internships"}
+              </span>
+              <span
+                aria-hidden="true"
+                className={`text-ink-dim transition-transform duration-300 ease-premium ${
+                  showEngineering ? "rotate-180" : ""
+                }`}
+              >
+                ↓
+              </span>
+            </button>
+
+            <span aria-hidden="true" className="text-ink-faint hidden sm:inline">
+              ·
+            </span>
+
+            <button
+              type="button"
+              onClick={toggleBusiness}
+              aria-expanded={showBusiness}
+              className="group inline-flex items-center gap-2 text-[14px] font-medium text-ink hover:opacity-70 transition-opacity"
+            >
+              <span>
+                {showBusiness
+                  ? "Hide Business Internships"
+                  : "Show Business Internships"}
+              </span>
+              <span
+                aria-hidden="true"
+                className={`text-ink-dim transition-transform duration-300 ease-premium ${
+                  showBusiness ? "rotate-180" : ""
+                }`}
+              >
+                ↓
+              </span>
+            </button>
+          </div>
+
+          <AnimatePresence initial={false}>
+            {showEngineering && (
+              <motion.div
+                key="engineering"
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: "auto" }}
+                exit={{ opacity: 0, height: 0 }}
+                transition={{ duration: 0.35, ease: EASE_PREMIUM }}
+                className="overflow-hidden"
+              >
+                <div className="mt-4">
+                  <InternshipList items={engineeringInternships} />
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+
+          <AnimatePresence initial={false}>
+            {showBusiness && (
+              <motion.div
+                key="business"
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: "auto" }}
+                exit={{ opacity: 0, height: 0 }}
+                transition={{ duration: 0.35, ease: EASE_PREMIUM }}
+                className="overflow-hidden"
+              >
+                <div className="mt-4">
+                  <InternshipList items={businessInternships} />
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </Wrapper>
     </section>
