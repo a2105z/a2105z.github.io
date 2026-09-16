@@ -263,7 +263,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern, Alexa and Conversational AI",
+        title: "SDE Intern, Alexa and Conversational AI",
         dateRange: "Sep 2025 — May 2026",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -284,7 +284,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern, Gemini API & AI Infrastructure - GSoC/Research",
+        title: "SDE Intern, Gemini API & AI Infrastructure - GSoC/Research",
         dateRange: "Jun 2025 — Aug 2025",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -305,7 +305,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Development Engineer Intern, Quantum Machine Learning",
+        title: "SDE Intern, Quantum Machine Learning",
         dateRange: "Jun 2024 — Aug 2024",
         location: "New York City, New York, United States",
         highlights: [...FIVE_BULLETS],
