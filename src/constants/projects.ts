@@ -305,7 +305,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Development Engineer Intern, Quantum Machine Learning",
+        title: "Software Development Engineer Extern, Quantum Machine Learning",
         dateRange: "Jun 2024 — Aug 2024",
         location: "New York City, New York, United States",
         highlights: [...FIVE_BULLETS],
