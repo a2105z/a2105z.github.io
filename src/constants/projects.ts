@@ -118,7 +118,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Extern, Omnigent R&D @ SkyLab",
+        title: "Software Engineer Extern, Omnigent R&D @ SkyLab",
         dateRange: "Jun 2029 — Aug 2029",
         location: "Berkeley, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -139,7 +139,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern, GPU-Accelerated Data Infrastructure",
+        title: "Software Engineer Intern, GPU-Accelerated Data Infrastructure",
         dateRange: "Sep 2028 — May 2029",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -158,7 +158,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern, AI Infrastructure",
+        title: "Software Engineer Intern, AI Infrastructure",
         dateRange: "Jun 2028 — Aug 2028",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -179,7 +179,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern, Intelligent Systems Solutions",
+        title: "Software Engineer Intern, Intelligent Systems Solutions",
         dateRange: "Sep 2027 — May 2028",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -200,7 +200,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern, Core AI",
+        title: "Software Engineer Intern, Core AI",
         dateRange: "Jun 2027 — Aug 2027",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -221,7 +221,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern, Electric Power Conversion",
+        title: "Software Engineer Intern, Electric Power Conversion",
         dateRange: "Sep 2026 — May 2027",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -242,7 +242,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern, Vehicle Telematics",
+        title: "Software Engineer Intern, Vehicle Telematics",
         dateRange: "Jun 2026 — Aug 2026",
         location: "Palo Alto, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -263,7 +263,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "SDE Intern, Alexa and Conversational AI",
+        title: "Software Development Engineer Intern, Alexa and Conversational AI",
         dateRange: "Sep 2025 — May 2026",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -284,7 +284,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "SDE Intern, Gemini API & AI Infrastructure - GSoC/Research",
+        title: "Software Development Engineer Intern, Gemini API & AI Infrastructure - GSoC/Research",
         dateRange: "Jun 2025 — Aug 2025",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -305,7 +305,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "SDE Intern, Quantum Machine Learning",
+        title: "Software Development Engineer Intern, Quantum Machine Learning",
         dateRange: "Jun 2024 — Aug 2024",
         location: "New York City, New York, United States",
         highlights: [...FIVE_BULLETS],
