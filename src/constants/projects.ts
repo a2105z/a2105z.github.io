@@ -166,7 +166,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineer Intern, AI Infrastructure",
+        title: "Associate Product Manager Intern, AI Infrastructure",
         dateRange: "Jun 2029 — Aug 2029",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -206,7 +206,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern, Core AI",
+        title: "Software Engineer Intern, Core AI",
         dateRange: "Jun 2028 — Aug 2028",
         location: "Redmond, Washington, United States",
         highlights: [...FIVE_BULLETS],
@@ -249,7 +249,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern, APEX Recommendation Team",
+        title: "Software Engineer Intern, APEX Recommendation Team",
         dateRange: "Sep 2027 — May 2028",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
