@@ -400,7 +400,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Investment Engineer Summer Analyst",
+        title: "Investment Research Summer Analyst",
         dateRange: "Jun 2025 — Aug 2025",
         location: "London, England, United Kingdom",
         highlights: [...FIVE_BULLETS],
