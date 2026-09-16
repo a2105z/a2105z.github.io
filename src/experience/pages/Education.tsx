@@ -51,6 +51,8 @@ const Education: React.FC = () => {
                   degree={edu.degree}
                   degreeSecondary={edu.degreeSecondary}
                   degreeTertiary={edu.degreeTertiary}
+                  gpa={edu.gpa}
+                  gpaSecondary={edu.gpaSecondary}
                   dateRange={edu.dateRange}
                   location={edu.location}
                   delay={index * 0.04}

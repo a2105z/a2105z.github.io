@@ -11,6 +11,8 @@ interface EducationItemProps {
   degree: string;
   degreeSecondary?: string;
   degreeTertiary?: string;
+  gpa?: string;
+  gpaSecondary?: string;
   dateRange: string;
   location?: string;
   delay?: number;
@@ -74,6 +76,8 @@ const EducationItem: React.FC<EducationItemProps> = ({
   degree,
   degreeSecondary,
   degreeTertiary,
+  gpa,
+  gpaSecondary,
   dateRange,
   location,
   delay = 0,
@@ -115,6 +119,16 @@ const EducationItem: React.FC<EducationItemProps> = ({
           {location && (
             <p className="text-[14px] text-[#666666] mt-0.5 leading-snug">
               {location}
+            </p>
+          )}
+          {gpa && (
+            <p className="text-[14px] text-[#666666] mt-0.5 leading-snug">
+              {gpa}
+            </p>
+          )}
+          {gpaSecondary && (
+            <p className="text-[14px] text-[#666666] mt-0.5 leading-snug">
+              {gpaSecondary}
             </p>
           )}
         </div>

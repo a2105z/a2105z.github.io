@@ -56,6 +56,8 @@ export type Education = {
   degree: string;
   degreeSecondary?: string;
   degreeTertiary?: string;
+  gpa?: string;
+  gpaSecondary?: string;
   startDate: string;
   endDate: string;
   dateRange: string;
@@ -322,8 +324,9 @@ export const EDUCATION: Education[] = [
     logo: "/icons/organizations/harvard.png",
     logoFull: true,
     tileColor: "#A51C30",
-    location: "Boston, Massachusetts, United States",
+    location: "Cambridge, Massachusetts, United States",
     degree: "M.B.A. Finance and General Management",
+    gpa: "GPA: 4.00",
     startDate: "Aug 2034",
     endDate: "May 2036",
     dateRange: "Aug 2034 — May 2036",
@@ -340,8 +343,9 @@ export const EDUCATION: Education[] = [
     logo: "/icons/organizations/stanford.png",
     logoFull: true,
     tileColor: "#FFFFFF",
-    location: "Stanford, California, United States",
+    location: "Palo Alto, California, United States",
     degree: "M.S. Management Science & Engineering",
+    gpa: "GPA: 4.00",
     startDate: "Aug 2029",
     endDate: "Dec 2030",
     dateRange: "Aug 2029 — Dec 2030",
@@ -361,6 +365,8 @@ export const EDUCATION: Education[] = [
     location: "Urbana–Champaign, Illinois, United States",
     degree:
       "B.S./M.S. Computer Science · B.S. Electrical Engineering · B.S. Innovation, Leadership & Engineering Entrepreneurship",
+    gpa: "Undergraduate GPA: 3.93/4.00",
+    gpaSecondary: "Graduate GPA: 4.00/4.00",
     startDate: "Aug 2024",
     endDate: "May 2029",
     dateRange: "Aug 2024 — May 2029",
