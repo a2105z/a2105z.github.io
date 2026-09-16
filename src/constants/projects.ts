@@ -155,6 +155,27 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
+    company: "Tesla",
+    monogram: "T",
+    logo: "/icons/organizations/tesla.png",
+    logoFull: true,
+    tileColor: "#E41937",
+    location: "Palo Alto, California, United States",
+    startDate: "Jun 2029",
+    endDate: "Aug 2029",
+    summary: "Fleet Operations",
+    groupIcon: "🚗",
+    employmentType: "Internship",
+    roles: [
+      {
+        title: "Software Product Management Intern",
+        dateRange: "Jun 2029 — Aug 2029",
+        location: "Palo Alto, California, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "NVIDIA",
     monogram: "NV",
     logo: "/icons/organizations/nvidia.png",
