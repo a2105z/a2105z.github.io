@@ -292,6 +292,27 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
+    company: "IBM",
+    monogram: "IBM",
+    logo: "/icons/organizations/ibm.png",
+    logoFull: true,
+    tileColor: "#FFFFFF",
+    location: "New York City, New York, United States",
+    startDate: "Jun 2024",
+    endDate: "Aug 2024",
+    summary: "Making quantum machine learning better at IBM",
+    groupIcon: "⚛️",
+    employmentType: "Internship",
+    roles: [
+      {
+        title: "Software Development Engineer Intern, Quantum Machine Learning",
+        dateRange: "Jun 2024 — Aug 2024",
+        location: "New York City, New York, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "Roblox",
     monogram: "R",
     logo: "/icons/organizations/roblox.png",
