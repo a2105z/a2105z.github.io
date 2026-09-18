@@ -366,7 +366,7 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "Amazon",
+    company: "Amazon (AICE Lab)",
     monogram: "AMZ",
     logo: "/icons/organizations/amazon.png",
     logoFull: true,
