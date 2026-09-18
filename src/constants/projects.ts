@@ -459,12 +459,12 @@ export const EXPERIENCES: Experience[] = [
     location: "New York City, New York, United States",
     startDate: "Jun 2024",
     endDate: "Aug 2024",
-    summary: "Making software development & research stronger at Uber",
-    groupIcon: "🔬",
+    summary: "Making Mobility Intelligence Platform better at Uber",
+    groupIcon: "🚕",
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineer Fellow",
+        title: "Software Engineer Fellow, Mobility Intelligence Platform",
         dateRange: "Jun 2024 — Aug 2024",
         location: "New York City, New York, United States",
         highlights: [...FIVE_BULLETS],
