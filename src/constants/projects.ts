@@ -469,6 +469,7 @@ export const EXPERIENCES: Experience[] = [
     logo: "/icons/organizations/nasa.png",
     logoFull: true,
     tileColor: "#FFFFFF",
+    location: "New York City, New York, United States",
     startDate: "May 2024",
     endDate: "Aug 2024",
     summary: "Making Heat Island Systems better at NASA",
@@ -478,6 +479,7 @@ export const EXPERIENCES: Experience[] = [
       {
         title: "Software Engineer Intern, Heat Island Systems",
         dateRange: "May 2024 — Aug 2024",
+        location: "New York City, New York, United States",
         highlights: [...FIVE_BULLETS],
       },
     ],
