@@ -173,7 +173,7 @@ export const EXPERIENCES: Experience[] = [
     logo: "/icons/organizations/databricks.png",
     logoFull: true,
     tileColor: "#FF3621",
-    location: "Berkeley, California, United States",
+    location: "Mountain View, California, United States",
     startDate: "May 2029",
     endDate: "Aug 2029",
     summary: "Making Serverless Compute Infrastructure better at Databricks",
@@ -183,7 +183,7 @@ export const EXPERIENCES: Experience[] = [
       {
         title: "Software Engineer Intern, Serverless Compute Infrastructure",
         dateRange: "May 2029 — Aug 2029",
-        location: "Berkeley, California, United States",
+        location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
       },
     ],
