@@ -471,12 +471,12 @@ export const EXPERIENCES: Experience[] = [
     tileColor: "#FFFFFF",
     startDate: "May 2024",
     endDate: "Aug 2024",
-    summary: "Making Flight Systems better at NASA",
+    summary: "Making Heat Island Systems better at NASA",
     groupIcon: "🚀",
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineer Intern, Flight Systems",
+        title: "Software Engineer Intern, Heat Island Systems",
         dateRange: "May 2024 — Aug 2024",
         highlights: [...FIVE_BULLETS],
       },
