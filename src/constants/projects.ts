@@ -471,8 +471,7 @@ export const EXPERIENCES: Experience[] = [
     tileColor: "#FFFFFF",
     startDate: "May 2024",
     endDate: "Aug 2024",
-    summary: "Making Heat Island Systems better at NASA",
-    groupIcon: "🚀",
+    groupIcon: "🌡️",
     employmentType: "Internship",
     roles: [
       {
