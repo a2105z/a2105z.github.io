@@ -259,12 +259,12 @@ export const EXPERIENCES: Experience[] = [
     location: "Mountain View, California, United States",
     startDate: "May 2027",
     endDate: "Aug 2027",
-    summary: "Generative AI Infrastructure & Multi-Agent Orchestration",
+    summary: "GenAI Infrastructure & Multi-Agent Systems",
     groupIcon: "🤖",
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Product Manager Extern, Generative AI Infrastructure & Multi-Agent Orchestration",
+        title: "Software Product Manager Extern, GenAI Infrastructure & Multi-Agent Systems",
         dateRange: "May 2027 — Aug 2027",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
