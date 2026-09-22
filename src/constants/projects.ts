@@ -251,27 +251,6 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "Databricks",
-    monogram: "DB",
-    logo: "/icons/organizations/databricks.png",
-    logoFull: true,
-    tileColor: "#FF3621",
-    location: "Mountain View, California, United States",
-    startDate: "May 2027",
-    endDate: "Aug 2027",
-    summary: "GenAI Infrastructure & Multi-Agent Systems",
-    groupIcon: "🤖",
-    employmentType: "Internship",
-    roles: [
-      {
-        title: "Software Product Manager Extern, GenAI Infrastructure & Multi-Agent Systems",
-        dateRange: "May 2027 — Aug 2027",
-        location: "Mountain View, California, United States",
-        highlights: [...FIVE_BULLETS],
-      },
-    ],
-  },
-  {
     company: "LinkedIn",
     monogram: "in",
     logo: "/icons/organizations/linkedin.png",
@@ -286,6 +265,27 @@ export const EXPERIENCES: Experience[] = [
     roles: [
       {
         title: "Software Engineer Intern, Core AI",
+        dateRange: "May 2027 — Aug 2027",
+        location: "Mountain View, California, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
+    company: "Databricks",
+    monogram: "DB",
+    logo: "/icons/organizations/databricks.png",
+    logoFull: true,
+    tileColor: "#FF3621",
+    location: "Mountain View, California, United States",
+    startDate: "May 2027",
+    endDate: "Aug 2027",
+    summary: "GenAI Infrastructure",
+    groupIcon: "🤖",
+    employmentType: "Internship",
+    roles: [
+      {
+        title: "Software Product Manager Extern, GenAI Infrastructure",
         dateRange: "May 2027 — Aug 2027",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
