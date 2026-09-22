@@ -484,6 +484,25 @@ export const EXPERIENCES: Experience[] = [
       },
     ],
   },
+  {
+    company: "TikTok",
+    monogram: "TT",
+    logo: "/icons/organizations/tiktok.png",
+    logoFull: true,
+    tileColor: "#000000",
+    startDate: "May 2023",
+    endDate: "Aug 2023",
+    summary: "Ad-Monetization Engine",
+    groupIcon: "💰",
+    employmentType: "Internship",
+    roles: [
+      {
+        title: "AI Product Strategy Extern, Ad-Monetization Engine",
+        dateRange: "May 2023 — Aug 2023",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
 ];
 
 export const EDUCATION: Education[] = [
