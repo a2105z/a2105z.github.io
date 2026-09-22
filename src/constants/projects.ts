@@ -443,6 +443,27 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
+    company: "IBM (IDAI)",
+    monogram: "IBM",
+    logo: "/icons/organizations/ibm.png",
+    logoFull: true,
+    tileColor: "#FFFFFF",
+    location: "Urbana–Champaign, Illinois, United States",
+    startDate: "Sep 2024",
+    endDate: "Apr 2025",
+    summary: "Making Multi-Agent AI Cloud Management better at IBM",
+    groupIcon: "☁️",
+    employmentType: "Internship",
+    roles: [
+      {
+        title: "Software Development Engineer Intern, Multi-Agent AI Cloud Management",
+        dateRange: "Sep 2024 — Apr 2025",
+        location: "Urbana–Champaign, Illinois, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "NASA",
     monogram: "NASA",
     logo: "/icons/organizations/nasa.png",
