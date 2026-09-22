@@ -259,12 +259,12 @@ export const EXPERIENCES: Experience[] = [
     location: "Mountain View, California, United States",
     startDate: "May 2027",
     endDate: "Aug 2027",
-    summary: "Making Serverless Compute Infrastructure better at Databricks",
-    groupIcon: "☁️",
+    summary: "Generative AI Infrastructure & Multi-Agent Orchestration",
+    groupIcon: "🤖",
     employmentType: "Internship",
     roles: [
       {
-        title: "AI Product Manager Extern, Serverless Compute Infrastructure",
+        title: "Software Product Manager Extern, Generative AI Infrastructure & Multi-Agent Orchestration",
         dateRange: "May 2027 — Aug 2027",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
