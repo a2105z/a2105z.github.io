@@ -472,12 +472,12 @@ export const EXPERIENCES: Experience[] = [
     location: "New York City, New York, United States",
     startDate: "May 2024",
     endDate: "Aug 2024",
-    summary: "AI Agents for Investment Research",
+    summary: "Investment AI Research Agents",
     groupIcon: "🤖",
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineer Extern, AI Agents for Investment Research",
+        title: "Software Engineer Extern, Investment AI Research Agents",
         dateRange: "May 2024 — Aug 2024",
         location: "New York City, New York, United States",
         highlights: [...FIVE_BULLETS],
