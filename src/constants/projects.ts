@@ -254,7 +254,7 @@ export const EXPERIENCES: Experience[] = [
     logo: "/icons/organizations/state-farm.png",
     logoFull: true,
     tileColor: "#E31837",
-    location: "Bloomington, Illinois, United States",
+    location: "Urbana–Champaign, Illinois, United States",
     startDate: "Sep 2027",
     endDate: "Apr 2028",
     summary: "Making insurance technology better at State Farm",
@@ -264,7 +264,7 @@ export const EXPERIENCES: Experience[] = [
       {
         title: "Software Engineer Intern, Enterprise Technology",
         dateRange: "Sep 2027 — Apr 2028",
-        location: "Bloomington, Illinois, United States",
+        location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
       },
     ],
