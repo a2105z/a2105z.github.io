@@ -13,7 +13,16 @@ import {
 } from "../../constants/projects";
 import { EASE_PREMIUM } from "../../shared/motion";
 
-const InternshipList: React.FC<{ items: Experience[] }> = ({ items }) => (
+const isSummerTerm = (experience: Experience) =>
+  experience.startDate.startsWith("May");
+
+const isYearLongCoop = (experience: Experience) =>
+  experience.startDate.startsWith("Sep");
+
+const InternshipList: React.FC<{
+  items: Experience[];
+  employmentType?: string;
+}> = ({ items, employmentType }) => (
   <ul className="divide-y divide-line border-t border-line">
     {items.map((experience, index) => (
       <li
@@ -34,7 +43,9 @@ const InternshipList: React.FC<{ items: Experience[] }> = ({ items }) => (
           startDate={experience.startDate}
           endDate={experience.endDate}
           groupIcon={experience.groupIcon}
-          employmentType={experience.employmentType || "Internship"}
+          employmentType={
+            employmentType || experience.employmentType || "Internship"
+          }
           workplaceType={experience.workplaceType}
         />
       </li>
@@ -42,8 +53,34 @@ const InternshipList: React.FC<{ items: Experience[] }> = ({ items }) => (
   </ul>
 );
 
+const SubToggle: React.FC<{
+  open: boolean;
+  onToggle: () => void;
+  showLabel: string;
+  hideLabel: string;
+}> = ({ open, onToggle, showLabel, hideLabel }) => (
+  <button
+    type="button"
+    onClick={onToggle}
+    aria-expanded={open}
+    className="group inline-flex items-center gap-2 text-[13px] font-medium text-ink hover:opacity-70 transition-opacity"
+  >
+    <span>{open ? hideLabel : showLabel}</span>
+    <span
+      aria-hidden="true"
+      className={`text-ink-dim transition-transform duration-300 ease-premium ${
+        open ? "rotate-180" : ""
+      }`}
+    >
+      ↓
+    </span>
+  </button>
+);
+
 const Education: React.FC = () => {
   const [showEngineering, setShowEngineering] = useState(false);
+  const [showSummer, setShowSummer] = useState(false);
+  const [showCoops, setShowCoops] = useState(false);
   const [showBusiness, setShowBusiness] = useState(false);
   const [showCertifications, setShowCertifications] = useState(false);
 
@@ -55,6 +92,16 @@ const Education: React.FC = () => {
           (experience.internshipTrack ?? "engineering") === "engineering"
       ),
     []
+  );
+
+  const summerInternships = useMemo(
+    () => engineeringInternships.filter(isSummerTerm),
+    [engineeringInternships]
+  );
+
+  const yearLongCoops = useMemo(
+    () => engineeringInternships.filter(isYearLongCoop),
+    [engineeringInternships]
   );
 
   const businessInternships = useMemo(
@@ -74,7 +121,23 @@ const Education: React.FC = () => {
   };
 
   const toggleEngineering = () => {
-    setShowEngineering((open) => !open);
+    setShowEngineering((open) => {
+      if (open) {
+        setShowSummer(false);
+        setShowCoops(false);
+      }
+      return !open;
+    });
+    bumpLayout();
+  };
+
+  const toggleSummer = () => {
+    setShowSummer((open) => !open);
+    bumpLayout();
+  };
+
+  const toggleCoops = () => {
+    setShowCoops((open) => !open);
     bumpLayout();
   };
 
@@ -209,8 +272,67 @@ const Education: React.FC = () => {
                 transition={{ duration: 0.35, ease: EASE_PREMIUM }}
                 className="overflow-hidden"
               >
-                <div className="mt-4">
-                  <InternshipList items={engineeringInternships} />
+                <div className="mt-4 pl-1 sm:pl-2 border-l border-line">
+                  <div className="flex flex-wrap items-center gap-x-5 gap-y-2 pl-3 sm:pl-4">
+                    <SubToggle
+                      open={showSummer}
+                      onToggle={toggleSummer}
+                      showLabel="Show Summer Internships"
+                      hideLabel="Hide Summer Internships"
+                    />
+                    <span
+                      aria-hidden="true"
+                      className="text-ink-faint hidden sm:inline"
+                    >
+                      ·
+                    </span>
+                    <SubToggle
+                      open={showCoops}
+                      onToggle={toggleCoops}
+                      showLabel="Show Year-Long Co-Ops"
+                      hideLabel="Hide Year-Long Co-Ops"
+                    />
+                  </div>
+
+                  <AnimatePresence initial={false}>
+                    {showSummer && (
+                      <motion.div
+                        key="summer"
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.3, ease: EASE_PREMIUM }}
+                        className="overflow-hidden"
+                      >
+                        <div className="mt-3 pl-3 sm:pl-4">
+                          <InternshipList
+                            items={summerInternships}
+                            employmentType="Internship"
+                          />
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+
+                  <AnimatePresence initial={false}>
+                    {showCoops && (
+                      <motion.div
+                        key="coops"
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.3, ease: EASE_PREMIUM }}
+                        className="overflow-hidden"
+                      >
+                        <div className="mt-3 pl-3 sm:pl-4">
+                          <InternshipList
+                            items={yearLongCoops}
+                            employmentType="Co-Op"
+                          />
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
               </motion.div>
             )}
