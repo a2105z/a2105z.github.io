@@ -43,26 +43,13 @@ const InternshipList: React.FC<{ items: Experience[] }> = ({ items }) => (
 );
 
 const Education: React.FC = () => {
-  const [showEngineering, setShowEngineering] = useState(false);
-  const [showBusiness, setShowBusiness] = useState(false);
+  const [showInternships, setShowInternships] = useState(false);
   const [showCertifications, setShowCertifications] = useState(false);
 
-  const engineeringInternships = useMemo(
+  const internships = useMemo(
     () =>
       EXPERIENCES.filter(
-        (experience) =>
-          (experience.kind ?? "internship") === "internship" &&
-          (experience.internshipTrack ?? "engineering") === "engineering"
-      ),
-    []
-  );
-
-  const businessInternships = useMemo(
-    () =>
-      EXPERIENCES.filter(
-        (experience) =>
-          (experience.kind ?? "internship") === "internship" &&
-          experience.internshipTrack === "business"
+        (experience) => (experience.kind ?? "internship") === "internship"
       ),
     []
   );
@@ -73,13 +60,8 @@ const Education: React.FC = () => {
     });
   };
 
-  const toggleEngineering = () => {
-    setShowEngineering((open) => !open);
-    bumpLayout();
-  };
-
-  const toggleBusiness = () => {
-    setShowBusiness((open) => !open);
+  const toggleInternships = () => {
+    setShowInternships((open) => !open);
     bumpLayout();
   };
 
@@ -129,44 +111,17 @@ const Education: React.FC = () => {
           <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
             <button
               type="button"
-              onClick={toggleEngineering}
-              aria-expanded={showEngineering}
+              onClick={toggleInternships}
+              aria-expanded={showInternships}
               className="group inline-flex items-center gap-2 text-[14px] font-medium text-ink hover:opacity-70 transition-opacity"
             >
               <span>
-                {showEngineering
-                  ? "Hide Engineering Internships"
-                  : "Show Engineering Internships"}
+                {showInternships ? "Hide Internships" : "Show Internships"}
               </span>
               <span
                 aria-hidden="true"
                 className={`text-ink-dim transition-transform duration-300 ease-premium ${
-                  showEngineering ? "rotate-180" : ""
-                }`}
-              >
-                ↓
-              </span>
-            </button>
-
-            <span aria-hidden="true" className="text-ink-faint hidden sm:inline">
-              ·
-            </span>
-
-            <button
-              type="button"
-              onClick={toggleBusiness}
-              aria-expanded={showBusiness}
-              className="group inline-flex items-center gap-2 text-[14px] font-medium text-ink hover:opacity-70 transition-opacity"
-            >
-              <span>
-                {showBusiness
-                  ? "Hide Business Internships"
-                  : "Show Business Internships"}
-              </span>
-              <span
-                aria-hidden="true"
-                className={`text-ink-dim transition-transform duration-300 ease-premium ${
-                  showBusiness ? "rotate-180" : ""
+                  showInternships ? "rotate-180" : ""
                 }`}
               >
                 ↓
@@ -200,9 +155,9 @@ const Education: React.FC = () => {
           </div>
 
           <AnimatePresence initial={false}>
-            {showEngineering && (
+            {showInternships && (
               <motion.div
-                key="engineering"
+                key="internships"
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: "auto" }}
                 exit={{ opacity: 0, height: 0 }}
@@ -210,24 +165,7 @@ const Education: React.FC = () => {
                 className="overflow-hidden"
               >
                 <div className="mt-4">
-                  <InternshipList items={engineeringInternships} />
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
-
-          <AnimatePresence initial={false}>
-            {showBusiness && (
-              <motion.div
-                key="business"
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: "auto" }}
-                exit={{ opacity: 0, height: 0 }}
-                transition={{ duration: 0.35, ease: EASE_PREMIUM }}
-                className="overflow-hidden"
-              >
-                <div className="mt-4">
-                  <InternshipList items={businessInternships} />
+                  <InternshipList items={internships} />
                 </div>
               </motion.div>
             )}
