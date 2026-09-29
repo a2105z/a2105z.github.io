@@ -240,7 +240,7 @@ export const EXPERIENCES: Experience[] = [
     startDate: "Sep 2028",
     endDate: "Apr 2029",
     summary: "Doing software engineering research at Databricks",
-    employmentType: "Extern",
+    employmentType: "Internship",
     roles: [
       {
         title: "Software Engineering Research Extern",
@@ -278,7 +278,7 @@ export const EXPERIENCES: Experience[] = [
     startDate: "Sep 2027",
     endDate: "Apr 2028",
     summary: "Doing software engineering research at NVIDIA",
-    employmentType: "Extern",
+    employmentType: "Internship",
     roles: [
       {
         title: "Software Engineering Research Extern",
@@ -318,7 +318,7 @@ export const EXPERIENCES: Experience[] = [
     startDate: "Sep 2026",
     endDate: "Apr 2027",
     summary: "Doing software engineering research at DeepMind",
-    employmentType: "Extern",
+    employmentType: "Internship",
     roles: [
       {
         title: "Software Engineering Research Extern",
