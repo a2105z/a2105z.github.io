@@ -243,7 +243,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Research Extern",
+        title: "Software Engineering Research Intern",
         dateRange: "Sep 2028 — Apr 2029",
         location: "San Francisco, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -281,7 +281,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Research Extern",
+        title: "Software Engineering Research Intern",
         dateRange: "Sep 2027 — Apr 2028",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
