@@ -405,7 +405,7 @@ export const EXPERIENCES: Experience[] = [
     startDate: "Sep 2024",
     endDate: "Apr 2025",
     summary: "Making Flight Systems and Telemetry better at NASA",
-    groupIcon: "🛰️",
+    groupIcon: "🌡️",
     employmentType: "Internship",
     roles: [
       {
@@ -430,7 +430,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern, Gemini API and AI Compilers",
+        title: "Software Engineering Contributor, Gemini API and AI Compilers",
         dateRange: "May 2024 — Aug 2024",
         location: "New York City, New York, United States",
         highlights: [...FIVE_BULLETS],
