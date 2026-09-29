@@ -349,26 +349,6 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "IBM",
-    monogram: "IBM",
-    logo: "/icons/organizations/ibm.png",
-    logoFull: true,
-    tileColor: "#FFFFFF",
-    location: "Urbana–Champaign, Illinois, United States",
-    startDate: "Sep 2025",
-    endDate: "Apr 2026",
-    summary: "Doing software engineering research at IBM",
-    employmentType: "Internship",
-    roles: [
-      {
-        title: "Software Engineering Research Intern",
-        dateRange: "Sep 2025 — Apr 2026",
-        location: "Urbana–Champaign, Illinois, United States",
-        highlights: [...FIVE_BULLETS],
-      },
-    ],
-  },
-  {
     company: "Amazon",
     monogram: "AMZ",
     logo: "/icons/organizations/amazon.png",
