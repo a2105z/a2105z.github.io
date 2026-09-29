@@ -165,7 +165,7 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "Capital One",
+    company: "Capital One (ASKS)",
     monogram: "C1",
     logo: "/icons/organizations/capital-one.png",
     logoFull: true,
@@ -173,12 +173,12 @@ export const EXPERIENCES: Experience[] = [
     location: "Urbana–Champaign, Illinois, United States",
     startDate: "Sep 2028",
     endDate: "Apr 2029",
-    summary: "Building products at Capital One",
+    summary: "Building products at Capital One (ASKS)",
     groupIcon: "📱",
     employmentType: "Internship",
     roles: [
       {
-        title: "Technical Product Management Intern",
+        title: "Research Product Management Intern",
         dateRange: "Sep 2028 — Apr 2029",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
