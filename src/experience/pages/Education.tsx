@@ -13,70 +13,32 @@ import {
 } from "../../constants/projects";
 import { EASE_PREMIUM } from "../../shared/motion";
 
-const isSameSummer = (a: Experience, b: Experience) =>
-  a.startDate.startsWith("May ") &&
-  a.startDate === b.startDate &&
-  a.endDate === b.endDate;
-
-const groupBySummer = (items: Experience[]): Experience[][] => {
-  const groups: Experience[][] = [];
-  for (const item of items) {
-    const last = groups[groups.length - 1];
-    if (last && isSameSummer(last[0], item)) last.push(item);
-    else groups.push([item]);
-  }
-  return groups;
-};
-
-const InternshipEntry: React.FC<{
-  experience: Experience;
-  delay: number;
-}> = ({ experience, delay }) => (
-  <ExperienceItem
-    company={experience.company}
-    logo={experience.logo}
-    logoFull={experience.logoFull}
-    tileColor={experience.tileColor}
-    monogram={experience.monogram}
-    location={experience.location}
-    summary={experience.summary}
-    delay={delay}
-    roles={experience.roles}
-    kind="internship"
-    startDate={experience.startDate}
-    endDate={experience.endDate}
-    groupIcon={experience.groupIcon}
-    employmentType={experience.employmentType || "Internship"}
-    workplaceType={experience.workplaceType}
-  />
-);
-
 const InternshipList: React.FC<{ items: Experience[] }> = ({ items }) => (
   <ul className="divide-y divide-line border-t border-line">
-    {groupBySummer(items).map((group, groupIndex) =>
-      group.length > 1 ? (
-        <li
-          key={`${group[0].startDate}-${groupIndex}`}
-          className="grid grid-cols-1 md:grid-cols-2 md:divide-x md:divide-line"
-        >
-          {group.map((experience, index) => (
-            <div
-              key={`${experience.company}-${experience.startDate}-${index}`}
-              className={`py-5 ${index > 0 ? "border-t border-line md:border-t-0 md:pl-6" : "md:pr-6"}`}
-            >
-              <InternshipEntry experience={experience} delay={groupIndex * 0.03} />
-            </div>
-          ))}
-        </li>
-      ) : (
-        <li
-          key={`${group[0].company}-${group[0].startDate}-${groupIndex}`}
-          className="py-5"
-        >
-          <InternshipEntry experience={group[0]} delay={groupIndex * 0.03} />
-        </li>
-      )
-    )}
+    {items.map((experience, index) => (
+      <li
+        key={`${experience.company}-${experience.startDate}-${index}`}
+        className="py-5"
+      >
+        <ExperienceItem
+          company={experience.company}
+          logo={experience.logo}
+          logoFull={experience.logoFull}
+          tileColor={experience.tileColor}
+          monogram={experience.monogram}
+          location={experience.location}
+          summary={experience.summary}
+          delay={index * 0.03}
+          roles={experience.roles}
+          kind="internship"
+          startDate={experience.startDate}
+          endDate={experience.endDate}
+          groupIcon={experience.groupIcon}
+          employmentType={experience.employmentType || "Internship"}
+          workplaceType={experience.workplaceType}
+        />
+      </li>
+    ))}
   </ul>
 );
 
