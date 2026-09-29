@@ -427,7 +427,7 @@ export const EXPERIENCES: Experience[] = [
     endDate: "Aug 2024",
     summary: "Making Gemini API and AI Compilers better at Google DeepMind",
     groupIcon: "✨",
-    employmentType: "Internship",
+    employmentType: "Extern",
     roles: [
       {
         title: "Software Engineering Contributor, Gemini API and AI Compilers",
