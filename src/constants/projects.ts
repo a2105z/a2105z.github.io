@@ -196,7 +196,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineer Intern, AI Infrastructure",
+        title: "Software Engineering Contributor, AI Infrastructure",
         dateRange: "May 2028 — Aug 2028",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -239,7 +239,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineer Intern, GPU-Accelerated Data Infrastructure",
+        title: "Software Engineering Contributor, GPU-Accelerated Data Infrastructure",
         dateRange: "Sep 2027 — Apr 2028",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -260,7 +260,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineer Intern, Core AI",
+        title: "Software Engineering Contributor, Core AI",
         dateRange: "May 2027 — Aug 2027",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -303,7 +303,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineer Intern, Electric Power Conversion",
+        title: "Software Engineering Contributor, Electric Power Conversion",
         dateRange: "Sep 2026 — Apr 2027",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -324,7 +324,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineer Intern, Vehicle Telematics",
+        title: "Software Engineering Contributor, Vehicle Telematics",
         dateRange: "May 2026 — Aug 2026",
         location: "Palo Alto, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -345,7 +345,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineer Intern, Intelligent Systems Solutions",
+        title: "Software Engineering Contributor, Intelligent Systems Solutions",
         dateRange: "Sep 2025 — Apr 2026",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -404,12 +404,12 @@ export const EXPERIENCES: Experience[] = [
     location: "Urbana–Champaign, Illinois, United States",
     startDate: "Sep 2024",
     endDate: "Apr 2025",
-    summary: "Making Heat Island Systems better at NASA",
-    groupIcon: "🌡️",
+    summary: "Making Flight Systems and Telemetry better at NASA",
+    groupIcon: "🛰️",
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineer Intern, Heat Island Systems",
+        title: "Software Engineering Intern, Flight Systems and Telemetry",
         dateRange: "Sep 2024 — Apr 2025",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -430,7 +430,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineer Intern, Gemini API and AI Compilers",
+        title: "Software Engineering Contributor, Gemini API and AI Compilers",
         dateRange: "May 2024 — Aug 2024",
         location: "New York City, New York, United States",
         highlights: [...FIVE_BULLETS],
