@@ -397,7 +397,7 @@ export const EDUCATION: Education[] = [
     logoFull: true,
     tileColor: "#FFFFFF",
     location: "Cambridge, Massachusetts, United States",
-    degree: "M.B.A. Finance and General Management",
+    degree: "M.B.A. General Management and Finance/Strategy",
     gpa: "GPA: 4.00/4.00",
     startDate: "Aug 2034",
     endDate: "May 2036",
