@@ -353,6 +353,27 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
+    company: "Capital One",
+    monogram: "C1",
+    logo: "/icons/organizations/capital-one.png",
+    logoFull: true,
+    tileColor: "#023D5B",
+    location: "Urbana–Champaign, Illinois, United States",
+    startDate: "Sep 2025",
+    endDate: "Apr 2026",
+    summary: "Making machine learning better at Capital One",
+    groupIcon: "🧠",
+    employmentType: "Internship",
+    roles: [
+      {
+        title: "Machine Learning Engineer Intern",
+        dateRange: "Sep 2025 — Apr 2026",
+        location: "Urbana–Champaign, Illinois, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "Amazon (AICE)",
     monogram: "AMZ",
     logo: "/icons/organizations/amazon.png",
