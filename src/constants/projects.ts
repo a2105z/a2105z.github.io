@@ -405,7 +405,7 @@ export const EXPERIENCES: Experience[] = [
     startDate: "Sep 2024",
     endDate: "Apr 2025",
     summary: "Making Flight Systems and Telemetry better at NASA",
-    groupIcon: "🌡️",
+    groupIcon: "🛰️",
     employmentType: "Internship",
     roles: [
       {
