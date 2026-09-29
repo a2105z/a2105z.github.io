@@ -240,10 +240,10 @@ export const EXPERIENCES: Experience[] = [
     startDate: "Sep 2028",
     endDate: "Apr 2029",
     summary: "Doing software engineering research at Databricks",
-    employmentType: "Internship",
+    employmentType: "Extern",
     roles: [
       {
-        title: "Software Engineering Research Intern",
+        title: "Software Engineering Research Extern",
         dateRange: "Sep 2028 — Apr 2029",
         location: "San Francisco, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -278,10 +278,10 @@ export const EXPERIENCES: Experience[] = [
     startDate: "Sep 2027",
     endDate: "Apr 2028",
     summary: "Doing software engineering research at NVIDIA",
-    employmentType: "Internship",
+    employmentType: "Extern",
     roles: [
       {
-        title: "Software Engineering Research Intern",
+        title: "Software Engineering Research Extern",
         dateRange: "Sep 2027 — Apr 2028",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -318,10 +318,10 @@ export const EXPERIENCES: Experience[] = [
     startDate: "Sep 2026",
     endDate: "Apr 2027",
     summary: "Doing software engineering research at DeepMind",
-    employmentType: "Internship",
+    employmentType: "Extern",
     roles: [
       {
-        title: "Software Engineering Research Intern",
+        title: "Software Engineering Research Extern",
         dateRange: "Sep 2026 — Apr 2027",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
