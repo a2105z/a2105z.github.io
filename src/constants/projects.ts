@@ -458,6 +458,7 @@ export const EDUCATION: Education[] = [
     degree:
       "B.S./M.C.S. Computer Science · B.S. Electrical Engineering · B.S. Technology Entrepreneurship",
     gpa: "GPA: 3.93/4.00",
+    gpaSecondary: "Graduate GPA: 4.00/4.00",
     startDate: "Aug 2024",
     endDate: "May 2029",
     dateRange: "Aug 2024 — May 2029",
