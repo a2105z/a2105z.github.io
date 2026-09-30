@@ -281,7 +281,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Research Intern",
+        title: "Software Engineering Extern",
         dateRange: "Sep 2027 — Apr 2028",
         location: "San Francisco, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -321,7 +321,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Research Extern",
+        title: "Software Engineering Extern",
         dateRange: "Sep 2026 — Apr 2027",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -344,6 +344,26 @@ export const EXPERIENCES: Experience[] = [
         title: "Software Engineering Intern",
         dateRange: "May 2026 — Aug 2026",
         location: "Palo Alto, California, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
+    company: "John Deere",
+    monogram: "JD",
+    logo: "/icons/organizations/john-deere.png",
+    logoFull: true,
+    tileColor: "#387C29",
+    location: "Urbana–Champaign, Illinois, United States",
+    startDate: "Sep 2025",
+    endDate: "Apr 2026",
+    summary: "Making software better at John Deere",
+    employmentType: "Internship",
+    roles: [
+      {
+        title: "Software Engineering Intern",
+        dateRange: "Sep 2025 — Apr 2026",
+        location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
       },
     ],
