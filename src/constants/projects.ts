@@ -439,8 +439,8 @@ export const EDUCATION: Education[] = [
     degree: "M.S. Management Science & Engineering",
     gpa: "Graduate GPA: 4.00/4.00",
     startDate: "Aug 2029",
-    endDate: "Dec 2030",
-    dateRange: "Aug 2029 — Dec 2030",
+    endDate: "Aug 2030",
+    dateRange: "Aug 2029 — Aug 2030",
     focus: [
       "Management Science",
       "Engineering",
