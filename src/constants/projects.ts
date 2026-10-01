@@ -223,7 +223,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Product Management Intern",
+        title: "Associate Product Management Intern",
         dateRange: "May 2029 — Aug 2029",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -231,19 +231,20 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "Uber",
-    monogram: "U",
-    logo: "/icons/organizations/uber.png",
+    company: "Synchrony",
+    monogram: "SY",
+    logo: "/icons/organizations/synchrony.png",
     logoFull: true,
-    tileColor: "#000000",
+    tileColor: "#FFFFFF",
     location: "Chicago, Illinois, United States",
     startDate: "Sep 2028",
     endDate: "Apr 2029",
-    summary: "Making software better at Uber",
+    summary: "Building products at Synchrony",
+    groupIcon: "📱",
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern",
+        title: "Associate Product Management Intern",
         dateRange: "Sep 2028 — Apr 2029",
         location: "Chicago, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -381,7 +382,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern",
+        title: "Software Development Engineering Intern",
         dateRange: "May 2025 — Aug 2025",
         location: "Chicago, Illinois, United States",
         highlights: [...FIVE_BULLETS],
