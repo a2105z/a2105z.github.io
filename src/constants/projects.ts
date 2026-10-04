@@ -177,7 +177,8 @@ export const EXPERIENCES: Experience[] = [
     location: "London, England, United Kingdom",
     startDate: "May 2025",
     endDate: "Aug 2025",
-    summary: "Investment research at AlgoDynamix",
+    summary: "Technology, Media & Telecom Group",
+    groupIcon: "📈",
     employmentType: "Internship",
     roles: [
       {
