@@ -368,26 +368,6 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "IBM",
-    monogram: "IBM",
-    logo: "/icons/organizations/ibm.png",
-    logoFull: true,
-    tileColor: "#FFFFFF",
-    location: "Urbana–Champaign, Illinois, United States",
-    startDate: "Sep 2024",
-    endDate: "Apr 2025",
-    summary: "Making software better at IBM",
-    employmentType: "Internship",
-    roles: [
-      {
-        title: "Software Development Engineering Intern",
-        dateRange: "Sep 2024 — Apr 2025",
-        location: "Urbana–Champaign, Illinois, United States",
-        highlights: [...FIVE_BULLETS],
-      },
-    ],
-  },
-  {
     company: "NASA",
     monogram: "NASA",
     logo: "/icons/organizations/nasa.png",
