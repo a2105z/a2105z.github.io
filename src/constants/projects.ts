@@ -201,7 +201,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Associate Product Management Intern",
+        title: "Associate Product Manager Intern",
         dateRange: "May 2029 — Aug 2029",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -222,7 +222,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Associate Product Management Intern",
+        title: "Associate Product Manager Intern",
         dateRange: "Sep 2028 — Apr 2029",
         location: "Chicago, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -240,7 +240,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern",
+        title: "Software Engineer Intern",
         dateRange: "May 2028 — Aug 2028",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -260,7 +260,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Extern",
+        title: "Software Engineer Extern",
         dateRange: "Sep 2027 — Apr 2028",
         location: "San Francisco, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -280,9 +280,31 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern",
+        title: "Software Engineer Intern",
         dateRange: "May 2027 — Aug 2027",
         location: "Mountain View, California, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
+    company: "Microsoft",
+    monogram: "MS",
+    logo: "/icons/organizations/microsoft.png",
+    logoFull: true,
+    tileColor: "#FFFFFF",
+    internshipTrack: "business",
+    location: "Redmond, Washington, United States",
+    startDate: "May 2027",
+    endDate: "Aug 2027",
+    summary: "Copilot Chat integration into VS Code",
+    groupIcon: "📱",
+    employmentType: "Internship",
+    roles: [
+      {
+        title: "Product Manager Ambassador",
+        dateRange: "May 2027 — Aug 2027",
+        location: "Redmond, Washington, United States",
         highlights: [...FIVE_BULLETS],
       },
     ],
@@ -300,7 +322,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Extern",
+        title: "Software Engineer Extern",
         dateRange: "Sep 2026 — Apr 2027",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -320,7 +342,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern",
+        title: "Software Engineer Intern",
         dateRange: "May 2026 — Aug 2026",
         location: "Palo Alto, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -340,7 +362,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern",
+        title: "Software Engineer Intern",
         dateRange: "Sep 2025 — Apr 2026",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -360,31 +382,9 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Development Engineering Intern",
+        title: "Software Development Engineer Intern",
         dateRange: "May 2025 — Aug 2025",
         location: "Chicago, Illinois, United States",
-        highlights: [...FIVE_BULLETS],
-      },
-    ],
-  },
-  {
-    company: "Roblox",
-    monogram: "R",
-    logo: "/icons/organizations/roblox.png",
-    logoFull: true,
-    tileColor: "#000000",
-    internshipTrack: "business",
-    location: "San Mateo, California, United States",
-    startDate: "May 2026",
-    endDate: "Aug 2026",
-    summary: "Building products at Roblox",
-    groupIcon: "📱",
-    employmentType: "Internship",
-    roles: [
-      {
-        title: "Product Incubator Intern",
-        dateRange: "May 2026 — Aug 2026",
-        location: "San Mateo, California, United States",
         highlights: [...FIVE_BULLETS],
       },
     ],
@@ -402,7 +402,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern",
+        title: "Software Engineer Intern",
         dateRange: "May 2024 — Aug 2024",
         location: "New York City, New York, United States",
         highlights: [...FIVE_BULLETS],
