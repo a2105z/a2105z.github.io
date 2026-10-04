@@ -13,34 +13,119 @@ import {
 } from "../../constants/projects";
 import { EASE_PREMIUM } from "../../shared/motion";
 
-const InternshipList: React.FC<{ items: Experience[] }> = ({ items }) => (
-  <ul className="divide-y divide-line border-t border-line">
-    {items.map((experience, index) => (
-      <li
-        key={`${experience.company}-${experience.startDate}-${index}`}
-        className="py-5"
-      >
-        <ExperienceItem
-          company={experience.company}
-          logo={experience.logo}
-          logoFull={experience.logoFull}
-          tileColor={experience.tileColor}
-          monogram={experience.monogram}
-          location={experience.location}
-          summary={experience.summary}
-          delay={index * 0.03}
-          roles={experience.roles}
-          kind="internship"
-          startDate={experience.startDate}
-          endDate={experience.endDate}
-          groupIcon={experience.groupIcon}
-          employmentType={experience.employmentType || "Internship"}
-          workplaceType={experience.workplaceType}
-        />
-      </li>
-    ))}
-  </ul>
+const isSummerTerm = (experience: Experience) =>
+  experience.startDate.startsWith("May ") &&
+  experience.endDate.startsWith("Aug ");
+
+type InternshipRow = {
+  key: string;
+  engineering: Experience[];
+  business: Experience[];
+  sideBySide: boolean;
+};
+
+const groupInternships = (items: Experience[]): InternshipRow[] => {
+  const rows: InternshipRow[] = [];
+  const summerRows = new Map<string, InternshipRow>();
+
+  items.forEach((experience) => {
+    if (!isSummerTerm(experience)) {
+      const business = experience.internshipTrack === "business";
+      rows.push({
+        key: `${experience.company}-${experience.startDate}`,
+        engineering: business ? [] : [experience],
+        business: business ? [experience] : [],
+        sideBySide: false,
+      });
+      return;
+    }
+
+    const key = `${experience.startDate}|${experience.endDate}`;
+    let row = summerRows.get(key);
+    if (!row) {
+      row = { key, engineering: [], business: [], sideBySide: true };
+      summerRows.set(key, row);
+      rows.push(row);
+    }
+    if (experience.internshipTrack === "business") row.business.push(experience);
+    else row.engineering.push(experience);
+  });
+
+  return rows;
+};
+
+const InternshipEntry: React.FC<{
+  experience: Experience;
+  delay: number;
+}> = ({ experience, delay }) => (
+  <ExperienceItem
+    company={experience.company}
+    logo={experience.logo}
+    logoFull={experience.logoFull}
+    tileColor={experience.tileColor}
+    monogram={experience.monogram}
+    location={experience.location}
+    summary={experience.summary}
+    delay={delay}
+    roles={experience.roles}
+    kind="internship"
+    startDate={experience.startDate}
+    endDate={experience.endDate}
+    groupIcon={experience.groupIcon}
+    employmentType={experience.employmentType || "Internship"}
+    workplaceType={experience.workplaceType}
+  />
 );
+
+const InternshipList: React.FC<{ items: Experience[] }> = ({ items }) => {
+  const rows = groupInternships(items);
+  let delayIndex = 0;
+
+  return (
+    <ul className="divide-y divide-line border-t border-line">
+      {rows.map((row) => {
+        const engineering = row.engineering.map((experience) => {
+          const delay = delayIndex * 0.03;
+          delayIndex += 1;
+          return (
+            <InternshipEntry
+              key={`${experience.company}-${experience.startDate}`}
+              experience={experience}
+              delay={delay}
+            />
+          );
+        });
+        const business = row.business.map((experience) => {
+          const delay = delayIndex * 0.03;
+          delayIndex += 1;
+          return (
+            <InternshipEntry
+              key={`${experience.company}-${experience.startDate}`}
+              experience={experience}
+              delay={delay}
+            />
+          );
+        });
+
+        return (
+          <li key={row.key} className="py-5">
+            {row.sideBySide ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 items-start">
+                <div className="min-w-0 space-y-6">{engineering}</div>
+                <div className="min-w-0 space-y-6">{business}</div>
+              </div>
+            ) : (
+              <div className="space-y-6">
+                {engineering}
+                {business}
+              </div>
+            )}
+          </li>
+        );
+      })}
+    </ul>
+  );
+};
 
 const MONTHS: Record<string, number> = {
   Jan: 0,
