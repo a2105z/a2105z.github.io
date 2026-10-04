@@ -382,7 +382,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Product Management Contributor",
+        title: "Product Incubator Intern",
         dateRange: "May 2026 — Aug 2026",
         location: "San Mateo, California, United States",
         highlights: [...FIVE_BULLETS],
