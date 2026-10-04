@@ -153,15 +153,15 @@ export const EXPERIENCES: Experience[] = [
     tileColor: "#5A7483",
     internshipTrack: "business",
     location: "Miami, Florida, United States",
-    startDate: "May 2027",
-    endDate: "Aug 2027",
+    startDate: "May 2029",
+    endDate: "Aug 2029",
     summary: "Technology, Media & Telecom Group",
     groupIcon: "📈",
     employmentType: "Internship",
     roles: [
       {
         title: "Investment Banking Summer Analyst",
-        dateRange: "May 2027 — Aug 2027",
+        dateRange: "May 2029 — Aug 2029",
         location: "Miami, Florida, United States",
         highlights: [...FIVE_BULLETS],
       },
