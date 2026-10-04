@@ -368,6 +368,27 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
+    company: "Roblox",
+    monogram: "R",
+    logo: "/icons/organizations/roblox.png",
+    logoFull: true,
+    tileColor: "#000000",
+    location: "San Mateo, California, United States",
+    startDate: "Sep 2024",
+    endDate: "Apr 2025",
+    summary: "Building products at Roblox",
+    groupIcon: "📱",
+    employmentType: "Internship",
+    roles: [
+      {
+        title: "Technical Product Management Contributor",
+        dateRange: "Sep 2024 — Apr 2025",
+        location: "San Mateo, California, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "NASA",
     monogram: "NASA",
     logo: "/icons/organizations/nasa.png",
