@@ -42,28 +42,39 @@ const InternshipList: React.FC<{ items: Experience[] }> = ({ items }) => (
   </ul>
 );
 
+const MONTHS: Record<string, number> = {
+  Jan: 0,
+  Feb: 1,
+  Mar: 2,
+  Apr: 3,
+  May: 4,
+  Jun: 5,
+  Jul: 6,
+  Aug: 7,
+  Sep: 8,
+  Oct: 9,
+  Nov: 10,
+  Dec: 11,
+};
+
+const startSortKey = (startDate: string): number => {
+  const parts = startDate.trim().split(/\s+/);
+  const year = Number(parts[parts.length - 1]);
+  const month = parts.length > 1 ? MONTHS[parts[0].slice(0, 3)] ?? 0 : 0;
+  return year * 12 + month;
+};
+
 const Education: React.FC = () => {
-  const [showEngineering, setShowEngineering] = useState(false);
-  const [showBusiness, setShowBusiness] = useState(false);
+  const [showSummer, setShowSummer] = useState(false);
   const [showCertifications, setShowCertifications] = useState(false);
 
-  const engineeringInternships = useMemo(
+  const summerInternships = useMemo(
     () =>
       EXPERIENCES.filter(
-        (experience) =>
-          (experience.kind ?? "internship") === "internship" &&
-          (experience.internshipTrack ?? "engineering") === "engineering"
-      ),
-    []
-  );
-
-  const businessInternships = useMemo(
-    () =>
-      EXPERIENCES.filter(
-        (experience) =>
-          (experience.kind ?? "internship") === "internship" &&
-          experience.internshipTrack === "business"
-      ),
+        (experience) => (experience.kind ?? "internship") === "internship"
+      )
+        .slice()
+        .sort((a, b) => startSortKey(b.startDate) - startSortKey(a.startDate)),
     []
   );
 
@@ -73,13 +84,8 @@ const Education: React.FC = () => {
     });
   };
 
-  const toggleEngineering = () => {
-    setShowEngineering((open) => !open);
-    bumpLayout();
-  };
-
-  const toggleBusiness = () => {
-    setShowBusiness((open) => !open);
+  const toggleSummer = () => {
+    setShowSummer((open) => !open);
     bumpLayout();
   };
 
@@ -129,44 +135,19 @@ const Education: React.FC = () => {
           <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
             <button
               type="button"
-              onClick={toggleEngineering}
-              aria-expanded={showEngineering}
+              onClick={toggleSummer}
+              aria-expanded={showSummer}
               className="group inline-flex items-center gap-2 text-[14px] font-medium text-ink hover:opacity-70 transition-opacity"
             >
               <span>
-                {showEngineering
-                  ? "Hide Engineering Internships"
-                  : "Show Engineering Internships"}
+                {showSummer
+                  ? "Hide Summer Internships"
+                  : "Show Summer Internships"}
               </span>
               <span
                 aria-hidden="true"
                 className={`text-ink-dim transition-transform duration-300 ease-premium ${
-                  showEngineering ? "rotate-180" : ""
-                }`}
-              >
-                ↓
-              </span>
-            </button>
-
-            <span aria-hidden="true" className="text-ink-faint hidden sm:inline">
-              ·
-            </span>
-
-            <button
-              type="button"
-              onClick={toggleBusiness}
-              aria-expanded={showBusiness}
-              className="group inline-flex items-center gap-2 text-[14px] font-medium text-ink hover:opacity-70 transition-opacity"
-            >
-              <span>
-                {showBusiness
-                  ? "Hide Business Internships"
-                  : "Show Business Internships"}
-              </span>
-              <span
-                aria-hidden="true"
-                className={`text-ink-dim transition-transform duration-300 ease-premium ${
-                  showBusiness ? "rotate-180" : ""
+                  showSummer ? "rotate-180" : ""
                 }`}
               >
                 ↓
@@ -200,9 +181,9 @@ const Education: React.FC = () => {
           </div>
 
           <AnimatePresence initial={false}>
-            {showEngineering && (
+            {showSummer && (
               <motion.div
-                key="engineering"
+                key="summer"
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: "auto" }}
                 exit={{ opacity: 0, height: 0 }}
@@ -210,24 +191,7 @@ const Education: React.FC = () => {
                 className="overflow-hidden"
               >
                 <div className="mt-4">
-                  <InternshipList items={engineeringInternships} />
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
-
-          <AnimatePresence initial={false}>
-            {showBusiness && (
-              <motion.div
-                key="business"
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: "auto" }}
-                exit={{ opacity: 0, height: 0 }}
-                transition={{ duration: 0.35, ease: EASE_PREMIUM }}
-                className="overflow-hidden"
-              >
-                <div className="mt-4">
-                  <InternshipList items={businessInternships} />
+                  <InternshipList items={summerInternships} />
                 </div>
               </motion.div>
             )}

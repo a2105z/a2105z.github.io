@@ -195,16 +195,14 @@ export const EXPERIENCES: Experience[] = [
     logo: "/icons/organizations/algodynamix.png",
     logoFull: true,
     tileColor: "#FFFFFF",
-    internshipTrack: "business",
     location: "London, England, United Kingdom",
     startDate: "May 2025",
     endDate: "Aug 2025",
-    summary: "Technology, Media & Telecom Group",
-    groupIcon: "📈",
+    summary: "Investment research at AlgoDynamix",
     employmentType: "Internship",
     roles: [
       {
-        title: "Investment Banking Summer Analyst",
+        title: "Investment Research Summer Analyst",
         dateRange: "May 2025 — Aug 2025",
         location: "London, England, United Kingdom",
         highlights: [...FIVE_BULLETS],
