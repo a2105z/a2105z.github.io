@@ -416,7 +416,7 @@ export const EXPERIENCES: Experience[] = [
     monogram: "AMZ",
     logo: "/icons/organizations/amazon.png",
     logoFull: true,
-    tileColor: "#f47024",
+    tileColor: "#FF6201",
     location: "Chicago, Illinois, United States",
     startDate: "May 2025",
     endDate: "Aug 2025",
