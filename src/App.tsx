@@ -31,8 +31,8 @@ function App() {
     About: fetchLocation(aboutRef) - 0,
     Experience: fetchLocation(experienceRef) - 50,
     Education: fetchLocation(educationRef) - 50,
-    Focus: fetchLocation(projectsRef) - 50,
-    Leadership: fetchLocation(skillsRef) - 50,
+    Projects: fetchLocation(projectsRef) - 50,
+    Skills: fetchLocation(skillsRef) - 50,
     Contact: fetchLocation(contactRef) + 50,
   });
 

@@ -9,12 +9,13 @@ const FULL_TIME = EXPERIENCES.filter(
 
 const Experience: React.FC = () => {
   return (
-    <section className="bg-white pt-24 pb-28">
+    <section className="bg-canvas pt-24 pb-32 font-linkedin">
       <Wrapper>
         <Header
+          index="02"
           eyebrow="Experience"
-          text="Operating roles."
-          description="Product and P&L, full-time."
+          text="Full-time."
+          description="Roles across product and leadership."
         />
 
         <div className="mt-10">
