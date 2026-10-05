@@ -11,7 +11,6 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({
   text,
   eyebrow,
-  index,
   description,
 }) => {
   return (
@@ -23,13 +22,8 @@ const Header: React.FC<HeaderProps> = ({
         transition={{ duration: 0.55, ease: EASE_PREMIUM }}
         className="flex items-baseline gap-4"
       >
-        {index && (
-          <span className="text-[11px] font-mono text-ink-dim tracking-widest">
-            {index}
-          </span>
-        )}
         {eyebrow && (
-          <span className="text-[11px] uppercase tracking-[0.28em] text-ink-dim font-medium">
+          <span className="text-[13px] text-accent font-medium">
             {eyebrow}
           </span>
         )}
@@ -40,7 +34,7 @@ const Header: React.FC<HeaderProps> = ({
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.7, delay: 0.05, ease: EASE_PREMIUM }}
-        className="mt-4 text-ink font-medium tracking-tight leading-[1.05] text-[2rem] sm:text-[2.6rem] md:text-[3.2rem]"
+        className="mt-3 text-ink font-normal tracking-[-0.02em] leading-[1.15] text-[1.85rem] sm:text-[2.25rem] md:text-[2.6rem]"
       >
         {text}
       </motion.h2>

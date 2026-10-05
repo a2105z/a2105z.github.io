@@ -180,13 +180,12 @@ const Education: React.FC = () => {
   };
 
   return (
-    <section className="bg-canvas pt-24 pb-32 font-linkedin">
+    <section className="bg-white pt-24 pb-28">
       <Wrapper>
         <Header
-          index="03"
           eyebrow="Education"
-          text="Where I'm learning."
-          description="Formal training across engineering, systems, and leadership."
+          text="Engineering, management, and the business."
+          description="Formal training behind the operating work."
         />
 
         <div className="mt-10">

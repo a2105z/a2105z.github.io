@@ -1,139 +1,79 @@
 import { motion } from "framer-motion";
 import { BackgroundPaths } from "../components/BackgroundPaths";
-import Subheader from "../components/Subheader";
-import NowLine from "../components/NowLine";
-import RotatingWord from "../components/RotatingWord";
-import {
-  EMAIL_LINK,
-  GITHUB_LINK,
-  LINKEDIN_LINK,
-} from "../../constants/links";
-import { EASE_PREMIUM, container, letter } from "../../shared/motion";
-
-const NAME = "Aarav Mittal";
-
-const ROTATING_WORDS = [
-  "businesses",
-  "companies",
-  "capital",
-  "categories",
-];
+import { EMAIL_LINK, LINKEDIN_LINK } from "../../constants/links";
+import { EASE_PREMIUM } from "../../shared/motion";
 
 const Hero: React.FC<{
   onGoToPage: (newPage: string) => void;
 }> = ({ onGoToPage }) => {
   return (
     <BackgroundPaths onGoToPage={onGoToPage}>
-      <div className="pt-24 pb-40 sm:pt-28 sm:pb-44">
-        <NowLine delay={0.15} label="Currently @ Rivian | Previously @ Google DeepMind, Amazon" />
-
-        {/* Letter-stagger name */}
-        <motion.h1
-          variants={container}
-          initial="hidden"
-          animate="visible"
-          transition={{ delayChildren: 0.28 }}
-          className="mt-8 text-ink font-medium tracking-tightest leading-[0.98] text-[3.5rem] sm:text-[5.5rem] md:text-[7rem] font-display"
-          aria-label={NAME}
-        >
-          <span className="inline-flex overflow-hidden">
-            {NAME.split("").map((char, i) => (
-              <motion.span
-                key={`${char}-${i}`}
-                variants={letter}
-                className="inline-block"
-                style={{ willChange: "transform, opacity" }}
-              >
-                {char === " " ? "\u00A0" : char}
-              </motion.span>
-            ))}
-          </span>
-        </motion.h1>
-
-        {/* Tagline — two lines, weighted */}
+      <div className="pt-28 pb-28 sm:pt-32 sm:pb-36">
         <motion.p
-          initial={{ opacity: 0, y: 14 }}
+          initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{
-            delay: 0.28 + NAME.length * 0.06 + 0.1,
-            duration: 0.8,
-            ease: EASE_PREMIUM,
-          }}
-          className="mt-6 max-w-3xl text-ink-soft text-[1.35rem] sm:text-[1.7rem] md:text-[1.9rem] font-medium tracking-display leading-[1.15]"
+          transition={{ duration: 0.5, ease: EASE_PREMIUM }}
+          className="text-[13px] font-medium text-accent"
         >
-          Building products, companies, and the{" "}
-          <RotatingWord
-            words={ROTATING_WORDS}
-            className="text-ink-muted"
-          />
-          <br />
-          <span className="text-ink-muted">behind them.</span>
+          Product and P&amp;L
         </motion.p>
 
-        <Subheader delay={0.28 + NAME.length * 0.06 + 0.18} />
+        <motion.h1
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.08, duration: 0.6, ease: EASE_PREMIUM }}
+          className="mt-4 text-ink font-normal tracking-[-0.03em] leading-[1.05] text-[3.25rem] sm:text-[4.5rem] md:text-[5.25rem]"
+        >
+          Aarav Mittal
+        </motion.h1>
 
-        {/* Actions */}
-        <motion.div
+        <motion.p
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.16, duration: 0.6, ease: EASE_PREMIUM }}
+          className="mt-6 max-w-2xl text-ink text-[1.35rem] sm:text-[1.65rem] leading-[1.3] tracking-[-0.02em]"
+        >
+          Technology leadership for products that have to become businesses.
+        </motion.p>
+
+        <motion.p
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{
-            delay: 0.28 + NAME.length * 0.06 + 0.3,
-            duration: 0.7,
-            ease: EASE_PREMIUM,
-          }}
-          className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 text-[14px]"
+          transition={{ delay: 0.24, duration: 0.6, ease: EASE_PREMIUM }}
+          className="mt-5 max-w-xl text-ink-muted text-[16px] sm:text-[17px] leading-[1.65]"
+        >
+          I work across product, engineering, and the P&amp;L — what to build,
+          who it is for, and whether the business can carry it.
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.32, duration: 0.55, ease: EASE_PREMIUM }}
+          className="mt-10 flex flex-wrap items-center gap-x-7 gap-y-3 text-[14px]"
         >
           <button
             onClick={() => onGoToPage("About")}
-            className="group inline-flex items-center gap-1.5 rounded-full bg-ink text-canvas px-5 py-2.5 text-[13.5px] font-medium tracking-[-0.005em] transition-transform duration-300 ease-premium hover:-translate-y-[1px]"
+            className="rounded-md bg-accent text-white px-5 py-2.5 text-[14px] font-medium hover:bg-[#174ea6] transition-colors"
           >
             About
-            <span
-              aria-hidden="true"
-              className="transition-transform duration-300 ease-premium group-hover:translate-x-0.5"
-            >
-              →
-            </span>
           </button>
           <button
             onClick={() => onGoToPage("Experience")}
-            className="hover-underline text-ink-muted hover:text-ink transition-colors"
+            className="text-accent hover:underline"
           >
             Experience
           </button>
           <button
-            onClick={() => onGoToPage("Projects")}
-            className="hover-underline text-ink-muted hover:text-ink transition-colors"
+            onClick={() => onGoToPage("Leadership")}
+            className="text-accent hover:underline"
           >
-            Projects
+            Leadership
           </button>
-          <button
-            onClick={() => onGoToPage("Contact")}
-            className="hover-underline text-ink-muted hover:text-ink transition-colors"
-          >
-            Contact
-          </button>
-          <span className="text-ink-faint">·</span>
-          <a
-            href={LINKEDIN_LINK}
-            target="_blank"
-            rel="noreferrer"
-            className="hover-underline text-ink-muted hover:text-ink transition-colors"
-          >
+          <a href={LINKEDIN_LINK} target="_blank" rel="noreferrer" className="text-accent hover:underline">
             LinkedIn
           </a>
-          <a
-            href={GITHUB_LINK}
-            target="_blank"
-            rel="noreferrer"
-            className="hover-underline text-ink-muted hover:text-ink transition-colors"
-          >
-            GitHub
-          </a>
-          <a
-            href={EMAIL_LINK}
-            className="hover-underline text-ink-muted hover:text-ink transition-colors"
-          >
+          <a href={EMAIL_LINK} className="text-accent hover:underline">
             Email
           </a>
         </motion.div>
