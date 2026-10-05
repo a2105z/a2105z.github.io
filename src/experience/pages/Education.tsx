@@ -226,8 +226,8 @@ const Education: React.FC = () => {
             >
               <span>
                 {showSummer
-                  ? "Hide Summer Internships"
-                  : "Show Summer Internships"}
+                  ? "Hide Internships"
+                  : "Show Internships"}
               </span>
               <span
                 aria-hidden="true"
