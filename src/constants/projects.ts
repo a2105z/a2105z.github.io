@@ -393,10 +393,10 @@ export const EXPERIENCES: Experience[] = [
   {
     company: "AMD",
     monogram: "AMD",
-    logo: "/icons/organizations/amd.svg",
+    logo: "/icons/organizations/amd.png",
     logoFull: true,
     tileColor: "#000000",
-    location: "Santa Clara, California, United States",
+    location: "Urbana–Champaign, Illinois, United States",
     startDate: "Sep 2025",
     endDate: "Apr 2026",
     summary: "Building AI hardware at AMD",
@@ -405,7 +405,7 @@ export const EXPERIENCES: Experience[] = [
       {
         title: "AI Hardware Engineer Intern",
         dateRange: "Sep 2025 — Apr 2026",
-        location: "Santa Clara, California, United States",
+        location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
       },
     ],
