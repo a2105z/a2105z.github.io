@@ -209,6 +209,27 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
+    company: "Capital One",
+    monogram: "C1",
+    logo: "/icons/organizations/capital-one.png",
+    logoFull: true,
+    tileColor: "#023D5B",
+    location: "Urbana–Champaign, Illinois, United States",
+    startDate: "Sep 2028",
+    endDate: "Apr 2029",
+    summary: "Building products at Capital One",
+    groupIcon: "📱",
+    employmentType: "Internship",
+    roles: [
+      {
+        title: "Research Product Management Intern",
+        dateRange: "Sep 2028 — Apr 2029",
+        location: "Urbana–Champaign, Illinois, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "State Farm",
     monogram: "SF",
     logo: "/icons/organizations/state-farm.png",
