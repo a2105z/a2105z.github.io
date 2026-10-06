@@ -178,9 +178,25 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
             monogram={monogram}
           />
           <div className="min-w-0 flex-1">
-            <h3 className="text-[16px] font-semibold text-ink leading-snug">
-              {headline || listedName}
-            </h3>
+            {roleList.length > 1 ? (
+              <div className="space-y-1">
+                {roleList.map((item) => {
+                  const parts = splitHeadline(item.title);
+                  return (
+                    <h3
+                      key={item.title}
+                      className="text-[16px] font-semibold text-ink leading-snug"
+                    >
+                      {parts.headline || item.title}
+                    </h3>
+                  );
+                })}
+              </div>
+            ) : (
+              <h3 className="text-[16px] font-semibold text-ink leading-snug">
+                {headline || listedName}
+              </h3>
+            )}
             <p className="text-[14px] text-[#666666] mt-0.5 leading-snug">
               {typeLine}
             </p>

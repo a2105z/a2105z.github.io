@@ -408,6 +408,12 @@ export const EXPERIENCES: Experience[] = [
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
       },
+      {
+        title: "Machine Learning Research Engineer Intern",
+        dateRange: "Sep 2025 — Apr 2026",
+        location: "Urbana–Champaign, Illinois, United States",
+        highlights: [...FIVE_BULLETS],
+      },
     ],
   },
   {
