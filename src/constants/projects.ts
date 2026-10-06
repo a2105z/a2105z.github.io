@@ -459,7 +459,7 @@ export const EDUCATION: Education[] = [
     logoFull: true,
     tileColor: "#FFFFFF",
     location: "Cambridge, Massachusetts, United States",
-    degree: "MBA",
+    degree: "M.B.A.",
     gpa: "Baker Scholar | Specialization in General Management and Finance",
     startDate: "Aug 2034",
     endDate: "May 2036",
