@@ -457,7 +457,7 @@ export const EDUCATION: Education[] = [
     location: "Urbana–Champaign, Illinois, United States",
     degree:
       "B.S./M.C.S. Computer Science · B.S. Electrical Engineering · B.S. Technology Entrepreneurship",
-    gpa: "GPA: 3.95/4.00 | Specialization in Artificial Intelligence | Minors: Business, Leadership Studies, Technology Management",
+    gpa: "GPA: 3.95/4.00 | Specialization in Artificial Intelligence | Minors: Business, Leadership Studies",
     startDate: "Aug 2024",
     endDate: "May 2029",
     dateRange: "Aug 2024 — May 2029",
