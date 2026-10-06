@@ -133,7 +133,7 @@ export const EXPERIENCES: Experience[] = [
     location: "New York City, New York, United States",
     startDate: "May 2027",
     endDate: "Aug 2027",
-    summary: "Technology, Media & Telecom Group",
+    summary: "TMT Mergers & Acquisitions",
     groupIcon: "📈",
     employmentType: "Internship",
     roles: [
@@ -155,7 +155,7 @@ export const EXPERIENCES: Experience[] = [
     location: "Miami, Florida, United States",
     startDate: "May 2028",
     endDate: "Aug 2028",
-    summary: "Technology, Media & Telecom Group",
+    summary: "TMT Mergers & Acquisitions",
     groupIcon: "📈",
     employmentType: "Internship",
     roles: [
@@ -177,7 +177,7 @@ export const EXPERIENCES: Experience[] = [
     location: "London, England, United Kingdom",
     startDate: "May 2025",
     endDate: "Aug 2025",
-    summary: "Technology, Media & Telecom Group",
+    summary: "TMT Global Markets",
     groupIcon: "📈",
     employmentType: "Internship",
     roles: [
@@ -276,7 +276,7 @@ export const EXPERIENCES: Experience[] = [
     location: "Dallas, Texas, United States",
     startDate: "May 2026",
     endDate: "Aug 2026",
-    summary: "Technology, Media & Entertainment Group",
+    summary: "TMT Mergers & Acquisitions",
     groupIcon: "📈",
     employmentType: "Internship",
     roles: [
