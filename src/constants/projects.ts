@@ -403,12 +403,6 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Hardware Development Engineer Intern",
-        dateRange: "Sep 2025 — Apr 2026",
-        location: "Urbana–Champaign, Illinois, United States",
-        highlights: [...FIVE_BULLETS],
-      },
-      {
         title: "Machine Learning Research Engineer Intern",
         dateRange: "Sep 2025 — Apr 2026",
         location: "Urbana–Champaign, Illinois, United States",
@@ -465,7 +459,9 @@ export const EDUCATION: Education[] = [
     logoFull: true,
     tileColor: "#FFFFFF",
     location: "Cambridge, Massachusetts, United States",
-    degree: "M.B.A. General Management and Finance/Strategy",
+    degree: "MBA",
+    degreeSecondary:
+      "Baker Scholar | Specialization in General Management and Finance",
     startDate: "Aug 2034",
     endDate: "May 2036",
     dateRange: "Aug 2034 — May 2036",
@@ -484,7 +480,7 @@ export const EDUCATION: Education[] = [
     tileColor: "#FFFFFF",
     location: "Palo Alto, California, United States (HCP)",
     degree: "M.S. Management Science & Engineering",
-    gpa: "GPA: 4.00/4.00",
+    gpa: "GPA: 4.00/4.00 | Specialization in Technology & Engineering Management",
     startDate: "Aug 2029",
     endDate: "Aug 2030",
     dateRange: "Aug 2029 — Aug 2030",
@@ -504,7 +500,7 @@ export const EDUCATION: Education[] = [
     location: "Urbana–Champaign, Illinois, United States",
     degree:
       "B.S./M.C.S. Computer Science · B.S. Electrical Engineering · B.S. Technology Entrepreneurship",
-    gpa: "GPA: 3.95/4.00",
+    gpa: "GPA: 3.95/4.00 | Specialization in Artificial Intelligence | Minor(s) in Business and Leadership Studies",
     startDate: "Aug 2024",
     endDate: "May 2029",
     dateRange: "Aug 2024 — May 2029",
