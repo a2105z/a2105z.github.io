@@ -247,26 +247,6 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "NVIDIA",
-    monogram: "NV",
-    logo: "/icons/organizations/nvidia.png",
-    logoFull: true,
-    tileColor: "#77B900",
-    location: "Urbana–Champaign, Illinois, United States",
-    startDate: "Sep 2027",
-    endDate: "Apr 2028",
-    summary: "Making software better at NVIDIA",
-    employmentType: "Internship",
-    roles: [
-      {
-        title: "Software Engineer Intern",
-        dateRange: "Sep 2027 — Apr 2028",
-        location: "Urbana–Champaign, Illinois, United States",
-        highlights: [...FIVE_BULLETS],
-      },
-    ],
-  },
-  {
     company: "LinkedIn",
     monogram: "in",
     logo: "/icons/organizations/linkedin.png",
@@ -377,14 +357,14 @@ export const EXPERIENCES: Experience[] = [
     logoFull: true,
     tileColor: "#387C29",
     location: "Urbana–Champaign, Illinois, United States",
-    startDate: "Sep 2024",
-    endDate: "Apr 2025",
+    startDate: "Sep 2027",
+    endDate: "Apr 2028",
     summary: "Making software better at John Deere",
     employmentType: "Internship",
     roles: [
       {
         title: "Software Engineer Intern",
-        dateRange: "Sep 2024 — Apr 2025",
+        dateRange: "Sep 2027 — Apr 2028",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
       },
@@ -403,7 +383,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Machine Learning Research Engineer Intern",
+        title: "Hardware Development Engineer Intern",
         dateRange: "Sep 2025 — Apr 2026",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
