@@ -221,7 +221,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineer Intern",
+        title: "Software Engineering Intern",
         dateRange: "Sep 2028 — Apr 2029",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -239,7 +239,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineer Intern",
+        title: "Software Engineering Intern",
         dateRange: "May 2028 — Aug 2028",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -259,7 +259,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineer Intern",
+        title: "Software Engineering Intern",
         dateRange: "May 2027 — Aug 2027",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -301,7 +301,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineer Extern",
+        title: "Machine Learning Engineering Intern",
         dateRange: "May 2026 — Aug 2026",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -321,7 +321,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineer Intern",
+        title: "Software Engineering Intern",
         dateRange: "Sep 2026 — Apr 2027",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -341,7 +341,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineer Intern",
+        title: "Software Engineering Intern",
         dateRange: "Sep 2027 — Apr 2028",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -381,7 +381,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Development Engineer Intern",
+        title: "Software Development Engineering Intern",
         dateRange: "May 2025 — Aug 2025",
         location: "Chicago, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -401,7 +401,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineer Intern",
+        title: "Software Engineering Intern",
         dateRange: "May 2024 — Aug 2024",
         location: "New York City, New York, United States",
         highlights: [...FIVE_BULLETS],
