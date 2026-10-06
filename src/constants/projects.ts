@@ -209,15 +209,15 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "Brunswick",
-    monogram: "B",
-    logo: "/icons/organizations/brunswick.png",
+    company: "State Farm",
+    monogram: "SF",
+    logo: "/icons/organizations/state-farm.png",
     logoFull: true,
-    tileColor: "#000018",
+    tileColor: "#FB2928",
     location: "Urbana–Champaign, Illinois, United States",
     startDate: "Sep 2028",
     endDate: "Apr 2029",
-    summary: "Making software better at Brunswick",
+    summary: "Making software better at State Farm",
     employmentType: "Internship",
     roles: [
       {
