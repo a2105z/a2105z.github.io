@@ -309,7 +309,7 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "DeepMind",
+    company: "Google DeepMind",
     monogram: "DM",
     logo: "/icons/organizations/deepmind.png",
     logoFull: true,
@@ -317,7 +317,7 @@ export const EXPERIENCES: Experience[] = [
     location: "Mountain View, California, United States",
     startDate: "May 2026",
     endDate: "Aug 2026",
-    summary: "Doing software engineering research at DeepMind",
+    summary: "Doing software engineering research at Google DeepMind",
     employmentType: "Internship",
     roles: [
       {
@@ -334,7 +334,7 @@ export const EXPERIENCES: Experience[] = [
     logo: "/icons/organizations/rivian.png",
     logoFull: true,
     tileColor: "#173430",
-    location: "Palo Alto, California, United States",
+    location: "Urbana–Champaign, Illinois, United States",
     startDate: "Sep 2026",
     endDate: "Apr 2027",
     summary: "Making software better at Rivian",
@@ -343,7 +343,7 @@ export const EXPERIENCES: Experience[] = [
       {
         title: "Software Engineer Intern",
         dateRange: "Sep 2026 — Apr 2027",
-        location: "Palo Alto, California, United States",
+        location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
       },
     ],
