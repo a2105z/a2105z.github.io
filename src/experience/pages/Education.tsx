@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Wrapper from "../../shared/components/Wrapper";
 import Header from "../../shared/components/Header";
@@ -149,9 +149,17 @@ const startSortKey = (startDate: string): number => {
   return year * 12 + month;
 };
 
+const releasePanel = (panel: HTMLDivElement | null) => {
+  if (!panel) return;
+  panel.style.height = "auto";
+  panel.style.overflow = "visible";
+};
+
 const Education: React.FC = () => {
   const [showSummer, setShowSummer] = useState(false);
   const [showCertifications, setShowCertifications] = useState(false);
+  const summerPanelRef = useRef<HTMLDivElement>(null);
+  const certificationPanelRef = useRef<HTMLDivElement>(null);
 
   const summerInternships = useMemo(
     () =>
@@ -170,11 +178,19 @@ const Education: React.FC = () => {
   };
 
   const toggleSummer = () => {
+    if (showSummer && summerPanelRef.current) {
+      summerPanelRef.current.style.height = "";
+      summerPanelRef.current.style.overflow = "";
+    }
     setShowSummer((open) => !open);
     bumpLayout();
   };
 
   const toggleCertifications = () => {
+    if (showCertifications && certificationPanelRef.current) {
+      certificationPanelRef.current.style.height = "";
+      certificationPanelRef.current.style.overflow = "";
+    }
     setShowCertifications((open) => !open);
     bumpLayout();
   };
@@ -269,10 +285,14 @@ const Education: React.FC = () => {
             {showSummer && (
               <motion.div
                 key="summer"
+                ref={summerPanelRef}
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: "auto" }}
                 exit={{ opacity: 0, height: 0 }}
                 transition={{ duration: 0.35, ease: EASE_PREMIUM }}
+                onAnimationComplete={() => {
+                  if (showSummer) releasePanel(summerPanelRef.current);
+                }}
                 className="overflow-hidden"
               >
                 <div className="mt-4">
@@ -286,10 +306,14 @@ const Education: React.FC = () => {
             {showCertifications && (
               <motion.div
                 key="certifications"
+                ref={certificationPanelRef}
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: "auto" }}
                 exit={{ opacity: 0, height: 0 }}
                 transition={{ duration: 0.35, ease: EASE_PREMIUM }}
+                onAnimationComplete={() => {
+                  if (showCertifications) releasePanel(certificationPanelRef.current);
+                }}
                 className="overflow-hidden"
               >
                 <ul className="mt-4 divide-y divide-line border-t border-line">
