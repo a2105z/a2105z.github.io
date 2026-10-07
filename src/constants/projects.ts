@@ -201,7 +201,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Associate Product Manager Intern",
+        title: "Associate Product Management Intern",
         dateRange: "May 2029 — Aug 2029",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -209,20 +209,19 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "Capital One",
-    monogram: "C1",
-    logo: "/icons/organizations/capital-one.png",
+    company: "NVIDIA",
+    monogram: "NV",
+    logo: "/icons/organizations/nvidia.png",
     logoFull: true,
-    tileColor: "#023D5B",
+    tileColor: "#77B900",
     location: "Urbana–Champaign, Illinois, United States",
     startDate: "Sep 2028",
     endDate: "Apr 2029",
-    summary: "Building products at Capital One",
-    groupIcon: "📱",
+    summary: "Making software better at NVIDIA",
     employmentType: "Internship",
     roles: [
       {
-        title: "Research Product Management Intern",
+        title: "Software Engineering Intern",
         dateRange: "Sep 2028 — Apr 2029",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
