@@ -56,11 +56,6 @@ const InternshipEntry: React.FC<{
   />
 );
 
-const StableInternshipList: React.FC<{ items: Experience[] }> = ({ items }) => {
-  const frozen = useRef(items);
-  return <InternshipList items={frozen.current} />;
-};
-
 const InternshipList: React.FC<{ items: Experience[] }> = ({ items }) => (
   <ul className="divide-y divide-line border-t border-line">
     {items.map((experience, index) => (
@@ -103,9 +98,9 @@ const releasePanel = (panel: HTMLDivElement | null) => {
 };
 
 const Education: React.FC = () => {
-  const [internshipView, setInternshipView] = useState<InternshipView | null>(
-    null
-  );
+  const [showInternships, setShowInternships] = useState(false);
+  const [internshipView, setInternshipView] =
+    useState<InternshipView>("summer-eng");
   const [showCertifications, setShowCertifications] = useState(false);
   const internshipPanelRef = useRef<HTMLDivElement>(null);
   const certificationPanelRef = useRef<HTMLDivElement>(null);
@@ -122,11 +117,9 @@ const Education: React.FC = () => {
 
   const visibleInternships = useMemo(
     () =>
-      internshipView
-        ? internships.filter((experience) =>
-            matchesView(experience, internshipView)
-          )
-        : [],
+      internships.filter((experience) =>
+        matchesView(experience, internshipView)
+      ),
     [internships, internshipView]
   );
 
@@ -136,13 +129,17 @@ const Education: React.FC = () => {
     });
   };
 
-  const selectInternshipView = (view: InternshipView) => {
-    if (internshipPanelRef.current) {
+  const toggleInternships = () => {
+    if (showInternships && internshipPanelRef.current) {
       internshipPanelRef.current.style.height = "";
       internshipPanelRef.current.style.overflow = "";
     }
-    setInternshipView((current) => (current === view ? null : view));
+    setShowInternships((open) => !open);
     bumpLayout();
+  };
+
+  const selectInternshipView = (view: InternshipView) => {
+    setInternshipView(view);
   };
 
   const toggleCertifications = () => {
@@ -192,49 +189,29 @@ const Education: React.FC = () => {
         </div>
 
         <div className="mt-8 border-t border-line pt-6">
-          <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
-            <div>
-              <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-ink-dim">
-                Internships
-              </p>
-              <div
-                role="radiogroup"
-                aria-label="Internships"
-                className="mt-3 flex flex-col items-start gap-2.5"
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
+            <button
+              type="button"
+              onClick={toggleInternships}
+              aria-expanded={showInternships}
+              className="group inline-flex items-center gap-2 text-[14px] font-medium text-ink hover:opacity-70 transition-opacity"
+            >
+              <span>
+                {showInternships ? "Hide Internships" : "Show Internships"}
+              </span>
+              <span
+                aria-hidden="true"
+                className={`text-ink-dim transition-transform duration-300 ease-premium ${
+                  showInternships ? "rotate-180" : ""
+                }`}
               >
-                {INTERNSHIP_VIEWS.map((view) => {
-                  const selected = internshipView === view.id;
-                  return (
-                    <button
-                      key={view.id}
-                      type="button"
-                      role="radio"
-                      aria-checked={selected}
-                      onClick={() => selectInternshipView(view.id)}
-                      className={`inline-flex items-center gap-2 text-left text-[14px] font-medium transition-colors ${
-                        selected
-                          ? "text-ink"
-                          : "text-ink-muted hover:text-ink"
-                      }`}
-                    >
-                      <span
-                        aria-hidden="true"
-                        className={`h-1.5 w-1.5 rounded-full transition-colors ${
-                          selected ? "bg-ink" : "bg-ink-faint"
-                        }`}
-                      />
-                      <span
-                        className={
-                          selected ? "border-b border-ink pb-px" : ""
-                        }
-                      >
-                        {view.label}
-                      </span>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
+                ↓
+              </span>
+            </button>
+
+            <span aria-hidden="true" className="text-ink-faint hidden sm:inline">
+              ·
+            </span>
 
             <button
               type="button"
@@ -259,9 +236,9 @@ const Education: React.FC = () => {
           </div>
 
           <AnimatePresence initial={false}>
-            {internshipView && (
+            {showInternships && (
               <motion.div
-                key={internshipView}
+                key="internships"
                 ref={internshipPanelRef}
                 initial="closed"
                 animate="open"
@@ -278,8 +255,44 @@ const Education: React.FC = () => {
                 }}
                 className="overflow-hidden"
               >
-                <div className="mt-4">
-                  <StableInternshipList items={visibleInternships} />
+                <div className="mt-5">
+                  <div
+                    role="radiogroup"
+                    aria-label="Internship groups"
+                    className="flex flex-wrap items-center gap-x-1 gap-y-2"
+                  >
+                    {INTERNSHIP_VIEWS.map((view, index) => {
+                      const selected = internshipView === view.id;
+                      return (
+                        <span key={view.id} className="inline-flex items-center">
+                          {index > 0 && (
+                            <span
+                              aria-hidden="true"
+                              className="mx-2.5 text-ink-faint"
+                            >
+                              ·
+                            </span>
+                          )}
+                          <button
+                            type="button"
+                            role="radio"
+                            aria-checked={selected}
+                            onClick={() => selectInternshipView(view.id)}
+                            className={`text-[13px] font-medium transition-colors ${
+                              selected
+                                ? "text-ink border-b border-ink pb-px"
+                                : "text-ink-muted hover:text-ink"
+                            }`}
+                          >
+                            {view.label}
+                          </button>
+                        </span>
+                      );
+                    })}
+                  </div>
+                  <div className="mt-2">
+                    <InternshipList items={visibleInternships} />
+                  </div>
                 </div>
               </motion.div>
             )}
