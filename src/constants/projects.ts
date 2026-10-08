@@ -231,6 +231,26 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
+    company: "Rivian",
+    monogram: "RIV",
+    logo: "/icons/organizations/rivian.png",
+    logoFull: true,
+    tileColor: "#173430",
+    location: "Urbana–Champaign, Illinois, United States",
+    startDate: "Sep 2026",
+    endDate: "Apr 2027",
+    summary: "Making software better at Rivian",
+    employmentType: "Co-op",
+    roles: [
+      {
+        title: "Software Engineering Intern",
+        dateRange: "Sep 2026 — Apr 2027",
+        location: "Urbana–Champaign, Illinois, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "AMD-Xilinx",
     monogram: "AMD",
     logo: "/icons/organizations/amd.png",
