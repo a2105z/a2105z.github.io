@@ -316,6 +316,7 @@ export const EXPERIENCES: Experience[] = [
     logo: "/icons/organizations/deepmind.png",
     logoFull: true,
     tileColor: "#5477EF",
+    location: "Palo Alto, California, United States",
     startDate: "May 2024",
     endDate: "Aug 2024",
     summary: "Software engineering contributions to Google DeepMind.",
@@ -324,6 +325,7 @@ export const EXPERIENCES: Experience[] = [
       {
         title: "Software Engineering Contributor",
         dateRange: "May 2024 — Aug 2024",
+        location: "Palo Alto, California, United States",
         highlights: [...FIVE_BULLETS],
       },
     ],
