@@ -115,15 +115,13 @@ const Education: React.FC = () => {
     []
   );
 
-  const visibleInternships = useMemo(() => {
-    const filtered = internships.filter((experience) =>
-      matchesView(experience, internshipView)
-    );
-    if (internshipView !== "summer-eng") return filtered;
-    return filtered
-      .slice()
-      .sort((a, b) => startSortKey(a.startDate) - startSortKey(b.startDate));
-  }, [internships, internshipView]);
+  const visibleInternships = useMemo(
+    () =>
+      internships.filter((experience) =>
+        matchesView(experience, internshipView)
+      ),
+    [internships, internshipView]
+  );
 
   const bumpLayout = () => {
     window.requestAnimationFrame(() => {
