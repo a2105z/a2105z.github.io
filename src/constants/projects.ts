@@ -416,6 +416,25 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
+    company: "Google",
+    monogram: "G",
+    logo: "/icons/organizations/google.png",
+    location: "Mountain View, California, United States",
+    startDate: "May 2029",
+    endDate: "Aug 2029",
+    summary: "Building products at Google",
+    groupIcon: "📱",
+    employmentType: "Internship",
+    roles: [
+      {
+        title: "APM Intern, Google Search & Assistant",
+        dateRange: "May 2029 — Aug 2029",
+        location: "Mountain View, California, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "Databricks",
     monogram: "DB",
     logo: "/icons/organizations/databricks.png",

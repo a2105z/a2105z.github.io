@@ -20,9 +20,9 @@ const isSummerTerm = (experience: Experience) =>
 type InternshipView = "engineering" | "co-op" | "summer-biz";
 
 const INTERNSHIP_VIEWS: { id: InternshipView; label: string }[] = [
-  { id: "engineering", label: "Engineering Internships" },
-  { id: "co-op", label: "Academic Year Co-Ops" },
+  { id: "engineering", label: "Summer Internships" },
   { id: "summer-biz", label: "Summer Business Internships" },
+  { id: "co-op", label: "Academic Year Co-Ops" },
 ];
 
 const matchesView = (experience: Experience, view: InternshipView) => {
