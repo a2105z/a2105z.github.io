@@ -258,7 +258,7 @@ const Education: React.FC = () => {
             </button>
           </div>
 
-          <AnimatePresence initial={false} mode="wait">
+          <AnimatePresence initial={false}>
             {internshipView && (
               <motion.div
                 key={internshipView}
