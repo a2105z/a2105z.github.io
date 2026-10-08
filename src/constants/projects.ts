@@ -240,10 +240,11 @@ export const EXPERIENCES: Experience[] = [
     startDate: "Sep 2026",
     endDate: "Apr 2027",
     summary: "Making software better at Rivian",
+    groupIcon: "🚗",
     employmentType: "Co-op",
     roles: [
       {
-        title: "Software Engineering Intern",
+        title: "Software Engineering Intern, Vehicle Telematics and Data Pipelines",
         dateRange: "Sep 2026 — Apr 2027",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -318,10 +319,11 @@ export const EXPERIENCES: Experience[] = [
     startDate: "May 2027",
     endDate: "Aug 2027",
     summary: "Making software better at LinkedIn",
+    groupIcon: "🧠",
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern",
+        title: "Software Engineering Intern, Core AI Memory Agents",
         dateRange: "May 2027 — Aug 2027",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -360,10 +362,11 @@ export const EXPERIENCES: Experience[] = [
     startDate: "May 2026",
     endDate: "Aug 2026",
     summary: "Making software better at Rivian",
+    groupIcon: "🚗",
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern",
+        title: "Software Engineering Intern, Vehicle Telematics and Data Pipelines",
         dateRange: "May 2026 — Aug 2026",
         location: "Palo Alto, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -380,10 +383,11 @@ export const EXPERIENCES: Experience[] = [
     startDate: "May 2024",
     endDate: "Aug 2024",
     summary: "Software engineering contributions to Google DeepMind.",
+    groupIcon: "✨",
     employmentType: "Apprenticeship",
     roles: [
       {
-        title: "Software Engineering Contributor",
+        title: "Software Engineering Contributor, Gemini Agent Systems",
         dateRange: "May 2024 — Aug 2024",
         location: "New York City, New York, United States",
         highlights: [...FIVE_BULLETS],
@@ -400,10 +404,11 @@ export const EXPERIENCES: Experience[] = [
     startDate: "May 2025",
     endDate: "Aug 2025",
     summary: "Making software better at Amazon",
+    groupIcon: "🗣️",
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern",
+        title: "Software Engineering Intern, Alexa and Conversational AI",
         dateRange: "May 2025 — Aug 2025",
         location: "Chicago, Illinois, United States",
         highlights: [...FIVE_BULLETS],
