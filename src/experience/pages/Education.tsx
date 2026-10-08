@@ -17,41 +17,20 @@ const isSummerTerm = (experience: Experience) =>
   experience.startDate.startsWith("May ") &&
   experience.endDate.startsWith("Aug ");
 
-type InternshipRow = {
-  key: string;
-  engineering: Experience[];
-  business: Experience[];
-  sideBySide: boolean;
-};
+type InternshipView = "summer-eng" | "academic" | "summer-biz";
 
-const groupInternships = (items: Experience[]): InternshipRow[] => {
-  const rows: InternshipRow[] = [];
-  const summerRows = new Map<string, InternshipRow>();
+const INTERNSHIP_VIEWS: { id: InternshipView; label: string }[] = [
+  { id: "summer-eng", label: "Summer Engineering Internships" },
+  { id: "academic", label: "Academic Year Engineering Internships" },
+  { id: "summer-biz", label: "Summer Business Internships" },
+];
 
-  items.forEach((experience) => {
-    if (!isSummerTerm(experience)) {
-      const business = experience.internshipTrack === "business";
-      rows.push({
-        key: `${experience.company}-${experience.startDate}`,
-        engineering: business ? [] : [experience],
-        business: business ? [experience] : [],
-        sideBySide: false,
-      });
-      return;
-    }
-
-    const key = `${experience.startDate}|${experience.endDate}`;
-    let row = summerRows.get(key);
-    if (!row) {
-      row = { key, engineering: [], business: [], sideBySide: true };
-      summerRows.set(key, row);
-      rows.push(row);
-    }
-    if (experience.internshipTrack === "business") row.business.push(experience);
-    else row.engineering.push(experience);
-  });
-
-  return rows;
+const matchesView = (experience: Experience, view: InternshipView) => {
+  const summer = isSummerTerm(experience);
+  const business = experience.internshipTrack === "business";
+  if (view === "summer-eng") return summer && !business;
+  if (view === "academic") return !summer && !business;
+  return summer && business;
 };
 
 const InternshipEntry: React.FC<{
@@ -77,55 +56,23 @@ const InternshipEntry: React.FC<{
   />
 );
 
-const InternshipList: React.FC<{ items: Experience[] }> = ({ items }) => {
-  const rows = groupInternships(items);
-  let delayIndex = 0;
-
-  return (
-    <ul className="divide-y divide-line border-t border-line">
-      {rows.map((row) => {
-        const engineering = row.engineering.map((experience) => {
-          const delay = delayIndex * 0.03;
-          delayIndex += 1;
-          return (
-            <InternshipEntry
-              key={`${experience.company}-${experience.startDate}`}
-              experience={experience}
-              delay={delay}
-            />
-          );
-        });
-        const business = row.business.map((experience) => {
-          const delay = delayIndex * 0.03;
-          delayIndex += 1;
-          return (
-            <InternshipEntry
-              key={`${experience.company}-${experience.startDate}`}
-              experience={experience}
-              delay={delay}
-            />
-          );
-        });
-
-        return (
-          <li key={row.key} className="py-5">
-            {row.sideBySide ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 items-start">
-                <div className="min-w-0 space-y-6">{engineering}</div>
-                <div className="min-w-0 space-y-6">{business}</div>
-              </div>
-            ) : (
-              <div className="space-y-6">
-                {engineering}
-                {business}
-              </div>
-            )}
-          </li>
-        );
-      })}
-    </ul>
-  );
+const StableInternshipList: React.FC<{ items: Experience[] }> = ({ items }) => {
+  const frozen = useRef(items);
+  return <InternshipList items={frozen.current} />;
 };
+
+const InternshipList: React.FC<{ items: Experience[] }> = ({ items }) => (
+  <ul className="divide-y divide-line border-t border-line">
+    {items.map((experience, index) => (
+      <li
+        key={`${experience.company}-${experience.startDate}`}
+        className="py-5"
+      >
+        <InternshipEntry experience={experience} delay={index * 0.03} />
+      </li>
+    ))}
+  </ul>
+);
 
 const MONTHS: Record<string, number> = {
   Jan: 0,
@@ -156,12 +103,14 @@ const releasePanel = (panel: HTMLDivElement | null) => {
 };
 
 const Education: React.FC = () => {
-  const [showSummer, setShowSummer] = useState(false);
+  const [internshipView, setInternshipView] = useState<InternshipView | null>(
+    null
+  );
   const [showCertifications, setShowCertifications] = useState(false);
-  const summerPanelRef = useRef<HTMLDivElement>(null);
+  const internshipPanelRef = useRef<HTMLDivElement>(null);
   const certificationPanelRef = useRef<HTMLDivElement>(null);
 
-  const summerInternships = useMemo(
+  const internships = useMemo(
     () =>
       EXPERIENCES.filter(
         (experience) => (experience.kind ?? "internship") === "internship"
@@ -171,18 +120,28 @@ const Education: React.FC = () => {
     []
   );
 
+  const visibleInternships = useMemo(
+    () =>
+      internshipView
+        ? internships.filter((experience) =>
+            matchesView(experience, internshipView)
+          )
+        : [],
+    [internships, internshipView]
+  );
+
   const bumpLayout = () => {
     window.requestAnimationFrame(() => {
       window.dispatchEvent(new Event("resize"));
     });
   };
 
-  const toggleSummer = () => {
-    if (showSummer && summerPanelRef.current) {
-      summerPanelRef.current.style.height = "";
-      summerPanelRef.current.style.overflow = "";
+  const selectInternshipView = (view: InternshipView) => {
+    if (internshipPanelRef.current) {
+      internshipPanelRef.current.style.height = "";
+      internshipPanelRef.current.style.overflow = "";
     }
-    setShowSummer((open) => !open);
+    setInternshipView((current) => (current === view ? null : view));
     bumpLayout();
   };
 
@@ -233,31 +192,49 @@ const Education: React.FC = () => {
         </div>
 
         <div className="mt-8 border-t border-line pt-6">
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
-            <button
-              type="button"
-              onClick={toggleSummer}
-              aria-expanded={showSummer}
-              className="group inline-flex items-center gap-2 text-[14px] font-medium text-ink hover:opacity-70 transition-opacity"
-            >
-              <span>
-                {showSummer
-                  ? "Hide Internships"
-                  : "Show Internships"}
-              </span>
-              <span
-                aria-hidden="true"
-                className={`text-ink-dim transition-transform duration-300 ease-premium ${
-                  showSummer ? "rotate-180" : ""
-                }`}
+          <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
+            <div>
+              <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-ink-dim">
+                Internships
+              </p>
+              <div
+                role="radiogroup"
+                aria-label="Internships"
+                className="mt-3 flex flex-col items-start gap-2.5"
               >
-                ↓
-              </span>
-            </button>
-
-            <span aria-hidden="true" className="text-ink-faint hidden sm:inline">
-              ·
-            </span>
+                {INTERNSHIP_VIEWS.map((view) => {
+                  const selected = internshipView === view.id;
+                  return (
+                    <button
+                      key={view.id}
+                      type="button"
+                      role="radio"
+                      aria-checked={selected}
+                      onClick={() => selectInternshipView(view.id)}
+                      className={`inline-flex items-center gap-2 text-left text-[14px] font-medium transition-colors ${
+                        selected
+                          ? "text-ink"
+                          : "text-ink-muted hover:text-ink"
+                      }`}
+                    >
+                      <span
+                        aria-hidden="true"
+                        className={`h-1.5 w-1.5 rounded-full transition-colors ${
+                          selected ? "bg-ink" : "bg-ink-faint"
+                        }`}
+                      />
+                      <span
+                        className={
+                          selected ? "border-b border-ink pb-px" : ""
+                        }
+                      >
+                        {view.label}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
 
             <button
               type="button"
@@ -281,22 +258,28 @@ const Education: React.FC = () => {
             </button>
           </div>
 
-          <AnimatePresence initial={false}>
-            {showSummer && (
+          <AnimatePresence initial={false} mode="wait">
+            {internshipView && (
               <motion.div
-                key="summer"
-                ref={summerPanelRef}
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: "auto" }}
-                exit={{ opacity: 0, height: 0 }}
+                key={internshipView}
+                ref={internshipPanelRef}
+                initial="closed"
+                animate="open"
+                exit="closed"
+                variants={{
+                  open: { opacity: 1, height: "auto" },
+                  closed: { opacity: 0, height: 0 },
+                }}
                 transition={{ duration: 0.35, ease: EASE_PREMIUM }}
-                onAnimationComplete={() => {
-                  if (showSummer) releasePanel(summerPanelRef.current);
+                onAnimationComplete={(definition) => {
+                  if (definition === "open") {
+                    releasePanel(internshipPanelRef.current);
+                  }
                 }}
                 className="overflow-hidden"
               >
                 <div className="mt-4">
-                  <InternshipList items={summerInternships} />
+                  <StableInternshipList items={visibleInternships} />
                 </div>
               </motion.div>
             )}

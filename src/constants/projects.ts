@@ -318,10 +318,10 @@ export const EXPERIENCES: Experience[] = [
     startDate: "May 2026",
     endDate: "Aug 2026",
     summary: "Doing software engineering research at Google DeepMind",
-    employmentType: "Internship",
+    employmentType: "Externship",
     roles: [
       {
-        title: "Machine Learning Engineering Intern",
+        title: "Software Engineering Extern",
         dateRange: "May 2026 — Aug 2026",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
@@ -381,7 +381,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Hardware Development Engineering Intern",
+        title: "Software Engineering Intern",
         dateRange: "Sep 2025 — Apr 2026",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -401,7 +401,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Development Engineering Intern",
+        title: "Software Engineering Intern",
         dateRange: "May 2025 — Aug 2025",
         location: "Chicago, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -418,10 +418,10 @@ export const EXPERIENCES: Experience[] = [
     startDate: "May 2024",
     endDate: "Aug 2024",
     summary: "Making software better at Meta",
-    employmentType: "Internship",
+    employmentType: "Fellowship",
     roles: [
       {
-        title: "Production Engineering Intern",
+        title: "Software Engineering Fellow",
         dateRange: "May 2024 — Aug 2024",
         location: "New York City, New York, United States",
         highlights: [...FIVE_BULLETS],
