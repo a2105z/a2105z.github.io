@@ -200,7 +200,7 @@ export const EXPERIENCES: Experience[] = [
     startDate: "Sep 2028",
     endDate: "Apr 2029",
     summary: "Making software better at John Deere",
-    employmentType: "Internship",
+    employmentType: "Co-op",
     roles: [
       {
         title: "Software Engineering Intern",
@@ -220,11 +220,51 @@ export const EXPERIENCES: Experience[] = [
     startDate: "Sep 2027",
     endDate: "Apr 2028",
     summary: "Making software better at State Farm",
-    employmentType: "Internship",
+    employmentType: "Co-op",
     roles: [
       {
         title: "Software Engineering Intern",
         dateRange: "Sep 2027 — Apr 2028",
+        location: "Urbana–Champaign, Illinois, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
+    company: "AMD-Xilinx",
+    monogram: "AMD",
+    logo: "/icons/organizations/amd.png",
+    logoFull: true,
+    tileColor: "#000000",
+    location: "Urbana–Champaign, Illinois, United States",
+    startDate: "Sep 2025",
+    endDate: "Apr 2026",
+    summary: "Building AI hardware at AMD-Xilinx",
+    employmentType: "Co-op",
+    roles: [
+      {
+        title: "Software Engineering Intern",
+        dateRange: "Sep 2025 — Apr 2026",
+        location: "Urbana–Champaign, Illinois, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
+    company: "NASA",
+    monogram: "NASA",
+    logo: "/icons/organizations/nasa.png",
+    logoFull: true,
+    tileColor: "#FFFFFF",
+    location: "Urbana–Champaign, Illinois, United States",
+    startDate: "Sep 2024",
+    endDate: "May 2025",
+    summary: "Making software better at NASA",
+    employmentType: "Co-op",
+    roles: [
+      {
+        title: "Software Engineering Intern",
+        dateRange: "Sep 2024 — May 2025",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
       },

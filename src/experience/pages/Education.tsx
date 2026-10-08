@@ -13,16 +13,23 @@ import {
 } from "../../constants/projects";
 import { EASE_PREMIUM } from "../../shared/motion";
 
-type InternshipView = "engineering" | "summer-biz";
+const isSummerTerm = (experience: Experience) =>
+  experience.startDate.startsWith("May ") &&
+  experience.endDate.startsWith("Aug ");
+
+type InternshipView = "engineering" | "co-op" | "summer-biz";
 
 const INTERNSHIP_VIEWS: { id: InternshipView; label: string }[] = [
   { id: "engineering", label: "Engineering Internships" },
+  { id: "co-op", label: "Academic Year Co-Ops" },
   { id: "summer-biz", label: "Summer Business Internships" },
 ];
 
 const matchesView = (experience: Experience, view: InternshipView) => {
+  const summer = isSummerTerm(experience);
   const business = experience.internshipTrack === "business";
-  if (view === "engineering") return !business;
+  if (view === "engineering") return summer && !business;
+  if (view === "co-op") return !summer && !business;
   return business;
 };
 
