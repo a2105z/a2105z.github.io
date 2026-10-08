@@ -428,26 +428,6 @@ export const EXPERIENCES: Experience[] = [
       },
     ],
   },
-  {
-    company: "Meta",
-    monogram: "M",
-    logo: "/icons/organizations/meta.png",
-    logoFull: true,
-    tileColor: "#FFFFFF",
-    location: "New York City, New York, United States",
-    startDate: "May 2024",
-    endDate: "Aug 2024",
-    summary: "Making software better at Meta",
-    employmentType: "Fellowship",
-    roles: [
-      {
-        title: "Software Engineering Fellow",
-        dateRange: "May 2024 — Aug 2024",
-        location: "New York City, New York, United States",
-        highlights: [...FIVE_BULLETS],
-      },
-    ],
-  },
 ];
 export const EDUCATION: Education[] = [
   {
