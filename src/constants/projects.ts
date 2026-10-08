@@ -291,26 +291,6 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "Google DeepMind",
-    monogram: "DM",
-    logo: "/icons/organizations/deepmind.png",
-    logoFull: true,
-    tileColor: "#5477EF",
-    location: "Mountain View, California, United States",
-    startDate: "May 2026",
-    endDate: "Aug 2026",
-    summary: "Doing software engineering research at Google DeepMind",
-    employmentType: "Internship",
-    roles: [
-      {
-        title: "Software Development Intern",
-        dateRange: "May 2026 — Aug 2026",
-        location: "Mountain View, California, United States",
-        highlights: [...FIVE_BULLETS],
-      },
-    ],
-  },
-  {
     company: "Rivian",
     monogram: "RIV",
     logo: "/icons/organizations/rivian.png",
@@ -338,11 +318,11 @@ export const EXPERIENCES: Experience[] = [
     tileColor: "#5477EF",
     startDate: "May 2024",
     endDate: "Aug 2024",
-    summary: "Open source contributions to Google DeepMind.",
-    employmentType: "Open Source",
+    summary: "Software engineering contributions to Google DeepMind.",
+    employmentType: "Contributor",
     roles: [
       {
-        title: "Open Source Contributor",
+        title: "Software Engineering Contributor",
         dateRange: "May 2024 — Aug 2024",
         highlights: [...FIVE_BULLETS],
       },
