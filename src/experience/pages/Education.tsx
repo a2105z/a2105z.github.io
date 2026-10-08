@@ -13,24 +13,17 @@ import {
 } from "../../constants/projects";
 import { EASE_PREMIUM } from "../../shared/motion";
 
-const isSummerTerm = (experience: Experience) =>
-  experience.startDate.startsWith("May ") &&
-  experience.endDate.startsWith("Aug ");
-
-type InternshipView = "summer-eng" | "academic" | "summer-biz";
+type InternshipView = "engineering" | "summer-biz";
 
 const INTERNSHIP_VIEWS: { id: InternshipView; label: string }[] = [
-  { id: "summer-eng", label: "Summer Engineering Internships" },
-  { id: "academic", label: "Academic Year Engineering Internships" },
+  { id: "engineering", label: "Engineering Internships" },
   { id: "summer-biz", label: "Summer Business Internships" },
 ];
 
 const matchesView = (experience: Experience, view: InternshipView) => {
-  const summer = isSummerTerm(experience);
   const business = experience.internshipTrack === "business";
-  if (view === "summer-eng") return summer && !business;
-  if (view === "academic") return !summer && !business;
-  return summer && business;
+  if (view === "engineering") return !business;
+  return business;
 };
 
 const InternshipEntry: React.FC<{
@@ -100,7 +93,7 @@ const releasePanel = (panel: HTMLDivElement | null) => {
 const Education: React.FC = () => {
   const [showInternships, setShowInternships] = useState(false);
   const [internshipView, setInternshipView] =
-    useState<InternshipView>("summer-eng");
+    useState<InternshipView>("engineering");
   const [showCertifications, setShowCertifications] = useState(false);
   const internshipPanelRef = useRef<HTMLDivElement>(null);
   const certificationPanelRef = useRef<HTMLDivElement>(null);
