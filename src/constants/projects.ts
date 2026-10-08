@@ -319,7 +319,7 @@ export const EXPERIENCES: Experience[] = [
     startDate: "May 2024",
     endDate: "Aug 2024",
     summary: "Software engineering contributions to Google DeepMind.",
-    employmentType: "Contributor",
+    employmentType: "Apprenticeship",
     roles: [
       {
         title: "Software Engineering Contributor",
