@@ -445,10 +445,11 @@ export const EXPERIENCES: Experience[] = [
     startDate: "May 2027",
     endDate: "Aug 2027",
     summary: "Making software better at Databricks",
+    groupIcon: "🔥",
     employmentType: "Externship",
     roles: [
       {
-        title: "Software Engineering Extern",
+        title: "Software Engineering Extern, Delta Lake and Apache Spark",
         dateRange: "May 2027 — Aug 2027",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
