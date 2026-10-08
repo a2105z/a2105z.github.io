@@ -422,14 +422,14 @@ export const EXPERIENCES: Experience[] = [
     logoFull: true,
     tileColor: "#FF3622",
     location: "New York City, New York, United States",
-    startDate: "May 2027",
-    endDate: "Aug 2027",
+    startDate: "May 2029",
+    endDate: "Aug 2029",
     summary: "Making software better at Databricks",
     employmentType: "Externship",
     roles: [
       {
         title: "Software Engineering Extern",
-        dateRange: "May 2027 — Aug 2027",
+        dateRange: "May 2029 — Aug 2029",
         location: "New York City, New York, United States",
         highlights: [...FIVE_BULLETS],
       },
