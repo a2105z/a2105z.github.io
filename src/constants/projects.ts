@@ -295,7 +295,7 @@ export const EXPERIENCES: Experience[] = [
     company: "Google",
     monogram: "G",
     logo: "/icons/organizations/google.png",
-    location: "Mountain View, California, United States",
+    location: "New York City, New York, United States",
     startDate: "May 2024",
     endDate: "Aug 2024",
     summary: "Making software better at Google",
@@ -305,7 +305,7 @@ export const EXPERIENCES: Experience[] = [
       {
         title: "Software Engineering Intern (GSoC), Gemini AI Agent Ecosystem",
         dateRange: "May 2024 — Aug 2024",
-        location: "Mountain View, California, United States",
+        location: "New York City, New York, United States",
         highlights: [...FIVE_BULLETS],
       },
     ],
