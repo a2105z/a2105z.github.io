@@ -244,7 +244,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Co-op",
     roles: [
       {
-        title: "Software Engineering Intern, Vehicle Telematics and Data Pipelines",
+        title: "Software Engineering Intern, Autonomy Telematics",
         dateRange: "Sep 2026 — Apr 2027",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -367,7 +367,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern, Vehicle Telematics and Data Pipelines",
+        title: "Software Engineering Intern, Autonomy Telematics",
         dateRange: "May 2026 — Aug 2026",
         location: "Palo Alto, California, United States",
         highlights: [...FIVE_BULLETS],
