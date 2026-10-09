@@ -299,10 +299,11 @@ export const EXPERIENCES: Experience[] = [
     startDate: "May 2024",
     endDate: "Aug 2024",
     summary: "Making software better at Google",
-    employmentType: "Externship",
+    groupIcon: "✨",
+    employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Extern",
+        title: "Software Development Intern (GSoC), Gemini Agents",
         dateRange: "May 2024 — Aug 2024",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
