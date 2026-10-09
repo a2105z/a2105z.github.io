@@ -449,7 +449,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Externship",
     roles: [
       {
-        title: "Software Engineering Extern, Delta Lake and Apache Spark",
+        title: "Software Product Management Extern, Delta Lake and Apache Spark",
         dateRange: "May 2027 — Aug 2027",
         location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
