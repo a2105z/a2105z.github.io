@@ -200,7 +200,7 @@ export const EXPERIENCES: Experience[] = [
     startDate: "Sep 2028",
     endDate: "Apr 2029",
     summary: "Making software better at John Deere",
-    employmentType: "Co-op",
+    employmentType: "Internship",
     roles: [
       {
         title: "Software Engineering Intern",
@@ -220,7 +220,7 @@ export const EXPERIENCES: Experience[] = [
     startDate: "Sep 2027",
     endDate: "Apr 2028",
     summary: "Making software better at State Farm",
-    employmentType: "Co-op",
+    employmentType: "Internship",
     roles: [
       {
         title: "Software Engineering Intern",
@@ -240,8 +240,8 @@ export const EXPERIENCES: Experience[] = [
     startDate: "Sep 2025",
     endDate: "Apr 2026",
     summary: "Making software better at Rivian",
-    groupIcon: "🚗",
-    employmentType: "Co-op",
+    groupIcon: "⚡",
+    employmentType: "Internship",
     roles: [
       {
         title: "Software Engineering Intern, Electrical Power Control Software",
@@ -335,6 +335,27 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
+    company: "Microsoft",
+    monogram: "MS",
+    logo: "/icons/organizations/microsoft.png",
+    logoFull: true,
+    tileColor: "#FFFFFF",
+    location: "Mountain View, California, United States",
+    startDate: "Sep 2026",
+    endDate: "Apr 2027",
+    summary: "Making software better at Microsoft",
+    groupIcon: "🤖",
+    employmentType: "Internship",
+    roles: [
+      {
+        title: "Software Engineering Extern, Core AI Agent Framework",
+        dateRange: "Sep 2026 — Apr 2027",
+        location: "Mountain View, California, United States",
+        highlights: [...FIVE_BULLETS],
+      },
+    ],
+  },
+  {
     company: "Rivian",
     monogram: "RIV",
     logo: "/icons/organizations/rivian.png",
@@ -344,7 +365,7 @@ export const EXPERIENCES: Experience[] = [
     startDate: "May 2026",
     endDate: "Aug 2026",
     summary: "Making software better at Rivian",
-    groupIcon: "🚗",
+    groupIcon: "📡",
     employmentType: "Internship",
     roles: [
       {
