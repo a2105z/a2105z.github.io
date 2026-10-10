@@ -252,26 +252,6 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "AMD-Xilinx",
-    monogram: "AMD",
-    logo: "/icons/organizations/amd.png",
-    logoFull: true,
-    tileColor: "#000000",
-    location: "Urbana–Champaign, Illinois, United States",
-    startDate: "Sep 2025",
-    endDate: "Apr 2026",
-    summary: "Building AI hardware at AMD-Xilinx",
-    employmentType: "Co-op",
-    roles: [
-      {
-        title: "Software Engineering Intern",
-        dateRange: "Sep 2025 — Apr 2026",
-        location: "Urbana–Champaign, Illinois, United States",
-        highlights: [...FIVE_BULLETS],
-      },
-    ],
-  },
-  {
     company: "NASA",
     monogram: "NASA",
     logo: "/icons/organizations/nasa.png",
