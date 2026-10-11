@@ -237,34 +237,14 @@ export const EXPERIENCES: Experience[] = [
     logoFull: true,
     tileColor: "#173430",
     location: "Urbana–Champaign, Illinois, United States",
-    startDate: "Sep 2025",
-    endDate: "Apr 2026",
+    startDate: "Sep 2026",
+    endDate: "Apr 2027",
     summary: "Making software better at Rivian",
     groupIcon: "⚡",
     employmentType: "Internship",
     roles: [
       {
         title: "Software Engineering Intern, Electrical Power Control Software",
-        dateRange: "Sep 2025 — Apr 2026",
-        location: "Urbana–Champaign, Illinois, United States",
-        highlights: [...FIVE_BULLETS],
-      },
-    ],
-  },
-  {
-    company: "NVIDIA",
-    monogram: "NV",
-    logo: "/icons/organizations/nvidia.png",
-    logoFull: true,
-    tileColor: "#77B900",
-    location: "Urbana–Champaign, Illinois, United States",
-    startDate: "Sep 2026",
-    endDate: "Apr 2027",
-    summary: "Making software better at NVIDIA",
-    employmentType: "Internship",
-    roles: [
-      {
-        title: "Software Engineering Intern",
         dateRange: "Sep 2026 — Apr 2027",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [...FIVE_BULLETS],
@@ -364,7 +344,7 @@ export const EXPERIENCES: Experience[] = [
     startDate: "May 2024",
     endDate: "Aug 2024",
     summary: "Making software better at NVIDIA",
-    employmentType: "Externship",
+    employmentType: "Apprenticeship",
     roles: [
       {
         title: "Software Engineering Extern",
