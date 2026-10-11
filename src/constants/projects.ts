@@ -278,7 +278,7 @@ export const EXPERIENCES: Experience[] = [
     logo: "/icons/organizations/deepmind.png",
     logoFull: true,
     tileColor: "#5477EF",
-    location: "New York City, New York, United States",
+    location: "Mountain View, California, United States",
     startDate: "May 2027",
     endDate: "Aug 2027",
     summary: "Doing software engineering research at Google DeepMind",
@@ -287,7 +287,7 @@ export const EXPERIENCES: Experience[] = [
       {
         title: "Software Research Engineering Intern",
         dateRange: "May 2027 — Aug 2027",
-        location: "New York City, New York, United States",
+        location: "Mountain View, California, United States",
         highlights: [...FIVE_BULLETS],
       },
     ],
