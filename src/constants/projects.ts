@@ -131,7 +131,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Fellow, Lunar Robotics Systems",
+        title: "Software Engineering Intern, Lunar Robotics Systems",
         dateRange: "Sep 2024 — Apr 2025",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [],
@@ -139,19 +139,19 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    company: "LinkedIn",
-    monogram: "IN",
-    logo: "/icons/organizations/linkedin.png",
+    company: "Capital One",
+    monogram: "C1",
+    logo: "/icons/organizations/capital-one.png",
     logoFull: true,
-    tileColor: "#0A66C2",
+    tileColor: "#023D5B",
     location: "New York City, New York, United States",
     startDate: "May 2024",
     endDate: "Aug 2024",
     summary: "",
-    employmentType: "Apprenticeship",
+    employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Extern, Core AI",
+        title: "Software Engineering Fellow, Card & Consumer Banking Tech",
         dateRange: "May 2024 — Aug 2024",
         location: "New York City, New York, United States",
         highlights: [],
