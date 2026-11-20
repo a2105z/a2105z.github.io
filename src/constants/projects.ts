@@ -148,7 +148,7 @@ export const EXPERIENCES: Experience[] = [
     startDate: "May 2024",
     endDate: "Aug 2024",
     summary: "",
-    employmentType: "Internship",
+    employmentType: "Apprenticeship",
     roles: [
       {
         title: "Software Engineering Fellow, Card & Consumer Banking Tech",
