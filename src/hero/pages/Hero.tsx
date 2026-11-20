@@ -118,11 +118,7 @@ const Hero: React.FC<{
       >
         <div className="mx-auto flex w-full max-w-[1180px] flex-col gap-8 md:flex-row md:items-end md:justify-between">
           <div className="intro-copy max-w-xl">
-            <p className="inline-flex items-center gap-2 text-[12px] tracking-[0.08em] text-ink-muted">
-              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-              Currently @ Rivian · Previously @ Amazon
-            </p>
-            <p className="mt-4 text-[1.35rem] font-medium leading-[1.15] tracking-[-0.03em] text-ink sm:text-[1.7rem]">
+            <p className="text-[1.35rem] font-medium leading-[1.15] tracking-[-0.03em] text-ink sm:text-[1.7rem]">
               Building products, companies,
               <br />
               and the businesses behind them.
