@@ -64,6 +64,7 @@ export const EXPERIENCES: Experience[] = [
     logo: "/icons/organizations/rivian.png",
     logoFull: true,
     tileColor: "#173430",
+    location: "Urbana–Champaign, Illinois, United States",
     startDate: "Sep 2026",
     endDate: "Apr 2027",
     summary: "",
@@ -72,6 +73,7 @@ export const EXPERIENCES: Experience[] = [
       {
         title: "Software Engineering Intern, Electric Power Conversion",
         dateRange: "Sep 2026 — Apr 2027",
+        location: "Urbana–Champaign, Illinois, United States",
         highlights: [],
       },
     ],
