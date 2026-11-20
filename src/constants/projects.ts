@@ -59,26 +59,6 @@ export type Education = {
 
 export const EXPERIENCES: Experience[] = [
   {
-    company: "Meta",
-    monogram: "M",
-    logo: "/icons/organizations/meta.png",
-    logoFull: true,
-    tileColor: "#FFFFFF",
-    location: "Urbana–Champaign, Illinois, United States",
-    startDate: "May 2027",
-    endDate: "Aug 2027",
-    summary: "",
-    employmentType: "Internship",
-    roles: [
-      {
-        title: "Software Engineering Intern, Reality Labs x UIUC R&D",
-        dateRange: "May 2027 — Aug 2027",
-        location: "Urbana–Champaign, Illinois, United States",
-        highlights: [],
-      },
-    ],
-  },
-  {
     company: "Rivian",
     monogram: "RIV",
     logo: "/icons/organizations/rivian.png",
