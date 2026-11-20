@@ -154,9 +154,9 @@ const Hero: React.FC<{
 
           <div className="intro-portrait hidden md:block">
             <img
-              src="/images/aarav.png"
+              src="/images/aarav.png?v=2"
               alt="Aarav Mittal"
-              className="h-40 w-32 rounded-2xl object-cover object-[center_18%] shadow-ring"
+              className="h-56 w-44 rounded-2xl object-cover object-[center_20%] shadow-ring"
             />
           </div>
         </div>

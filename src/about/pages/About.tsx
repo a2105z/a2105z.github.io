@@ -12,11 +12,11 @@ const Portrait: React.FC = () => {
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true, amount: 0.4 }}
       transition={{ duration: 0.9, ease: EASE_PREMIUM }}
-      className="relative h-44 w-36 rounded-2xl overflow-hidden ring-1 ring-line shadow-ring flex-shrink-0"
+      className="relative h-64 w-52 rounded-2xl overflow-hidden ring-1 ring-line shadow-ring flex-shrink-0"
     >
       {!errored ? (
         <img
-          src="/images/aarav.png"
+          src="/images/aarav.png?v=2"
           alt="Aarav Mittal"
           onError={() => setErrored(true)}
           className="w-full h-full object-cover object-[center_18%]"
