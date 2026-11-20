@@ -10,14 +10,14 @@ import { EASE_PREMIUM } from "../../shared/motion";
 
 const ContactForm: React.FC = () => {
   return (
-    <section className="relative bg-canvas pt-24 pb-32 overflow-hidden">
+    <section className="reveal relative bg-canvas pt-28 pb-32 overflow-hidden">
       {/* Soft accent light */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -top-40 left-1/2 -translate-x-1/2 w-[820px] h-[520px] rounded-full opacity-70"
         style={{
           background:
-            "radial-gradient(ellipse, rgba(37,99,235,0.10) 0%, transparent 65%)",
+            "radial-gradient(ellipse, rgba(255,255,255,0.06) 0%, transparent 65%)",
         }}
       />
       <Wrapper>
@@ -29,7 +29,7 @@ const ContactForm: React.FC = () => {
           className="flex items-center gap-3 text-[11px] uppercase tracking-[0.28em] text-ink-dim font-medium"
         >
           <span className="h-1 w-1 rounded-full bg-emerald-500 animate-pulseDot" />
-          05 — Contact
+          04 — Contact
         </motion.p>
 
         <motion.h2

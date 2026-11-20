@@ -3,23 +3,23 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        canvas: "#fafaf9",
-        surface: "#ffffff",
+        canvas: "#070708",
+        surface: "#121214",
         ink: {
-          DEFAULT: "#0a0a0a",
-          soft: "#1f1f1f",
-          muted: "#525252",
-          dim: "#a3a3a3",
-          faint: "#d4d4d4",
+          DEFAULT: "#f5f5f7",
+          soft: "#e7e7ea",
+          muted: "#a1a1aa",
+          dim: "#71717a",
+          faint: "#3f3f46",
         },
         line: {
-          DEFAULT: "#e7e5e4",
-          strong: "#d6d3d1",
-          soft: "#efece9",
+          DEFAULT: "#2a2a2e",
+          strong: "#3f3f46",
+          soft: "#1c1c1f",
         },
         accent: {
-          DEFAULT: "#2563eb",
-          soft: "#93c5fd",
+          DEFAULT: "#f5f5f7",
+          soft: "#a1a1aa",
         },
       },
       fontFamily: {
@@ -79,12 +79,12 @@ module.exports = {
       },
       backgroundImage: {
         "canvas-radial":
-          "radial-gradient(ellipse at top, #ffffff 0%, #fafaf9 55%, #f5f5f4 100%)",
+          "radial-gradient(ellipse at top, #141416 0%, #070708 55%, #000000 100%)",
       },
       boxShadow: {
-        card: "0 1px 2px rgba(15,15,20,0.04), 0 1px 3px rgba(15,15,20,0.05)",
-        soft: "0 30px 60px -30px rgba(15,15,20,0.15)",
-        ring: "0 0 0 1px rgba(15,15,20,0.06)",
+        card: "0 1px 2px rgba(0,0,0,0.4)",
+        soft: "0 30px 60px -30px rgba(0,0,0,0.6)",
+        ring: "0 0 0 1px rgba(255,255,255,0.08)",
       },
       screens: {
         mobile: { max: "960px" },

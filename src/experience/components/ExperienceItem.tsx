@@ -197,16 +197,16 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
                 {headline || listedName}
               </h3>
             )}
-            <p className="text-[14px] text-[#666666] mt-0.5 leading-snug">
+            <p className="text-[14px] text-ink-muted mt-0.5 leading-snug">
               {typeLine}
             </p>
             {dateLine && (
-              <p className="text-[14px] text-[#666666] mt-0.5 leading-snug">
+              <p className="text-[14px] text-ink-muted mt-0.5 leading-snug">
                 {dateLine}
               </p>
             )}
             {location && (
-              <p className="text-[14px] text-[#666666] mt-0.5 leading-snug">
+              <p className="text-[14px] text-ink-muted mt-0.5 leading-snug">
                 {location}
               </p>
             )}
@@ -258,11 +258,11 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
             {listedName}
           </h3>
           {metaLine && (
-            <p className="text-[14px] text-[#666666] mt-0.5 leading-snug">
+            <p className="text-[14px] text-ink-muted mt-0.5 leading-snug">
               {metaLine}
             </p>
           )}
-          <p className="text-[14px] text-[#666666] mt-0.5 leading-snug">
+          <p className="text-[14px] text-ink-muted mt-0.5 leading-snug">
             {workplaceLabel}
           </p>
 
@@ -279,11 +279,11 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
                   <p className="text-[16px] font-semibold text-ink leading-snug">
                     {headline || role.title}
                   </p>
-                  <p className="text-[14px] text-[#666666] mt-0.5 leading-snug">
+                  <p className="text-[14px] text-ink-muted mt-0.5 leading-snug">
                     {role.dateRange}
                   </p>
                   {(role.location || location) && (
-                    <p className="text-[14px] text-[#666666] mt-0.5 leading-snug">
+                    <p className="text-[14px] text-ink-muted mt-0.5 leading-snug">
                       {role.location || location}
                     </p>
                   )}

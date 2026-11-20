@@ -6,17 +6,14 @@ import Hero from "./hero/pages/Hero";
 import About from "./about/pages/About";
 import Experience from "./experience/pages/Experience";
 import Education from "./experience/pages/Education";
-import Projects from "./projects/pages/Projects";
-import Skills from "./skills/pages/Skills";
 import ContactForm from "./contact/pages/ContactForm";
 import Footer from "./footer/pages/Footer";
+import RevealObserver from "./shared/components/RevealObserver";
 
 function App() {
   const aboutRef = useRef<HTMLDivElement>(null);
   const experienceRef = useRef<HTMLDivElement>(null);
   const educationRef = useRef<HTMLDivElement>(null);
-  const projectsRef = useRef<HTMLDivElement>(null);
-  const skillsRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
 
   const [selectedPage, setSelectedPage] = useState("About");
@@ -31,9 +28,7 @@ function App() {
     About: fetchLocation(aboutRef) - 0,
     Experience: fetchLocation(experienceRef) - 50,
     Education: fetchLocation(educationRef) - 50,
-    Projects: fetchLocation(projectsRef) - 50,
-    Skills: fetchLocation(skillsRef) - 50,
-    Contact: fetchLocation(contactRef) + 50,
+    Contact: fetchLocation(contactRef) - 50,
   });
 
   useEffect(() => {
@@ -88,7 +83,7 @@ function App() {
           selectedPage={selectedPage}
           handleGoToPage={handleGoToPage}
         >
-          <div className="overflow-x-hidden bg-white">
+          <div className="overflow-x-hidden bg-canvas text-ink">
             <Hero onGoToPage={handleGoToPage} />
             <div ref={aboutRef}>
               <About />
@@ -99,17 +94,11 @@ function App() {
             <div ref={educationRef}>
               <Education />
             </div>
-            <div ref={projectsRef}>
-              <Projects />
-            </div>
-            <div ref={skillsRef}>
-              <Skills />
-            </div>
             <div ref={contactRef}>
               <ContactForm />
             </div>
-            <br />
             <Footer />
+            <RevealObserver />
           </div>
         </NavbarWrapper>
       </Route>

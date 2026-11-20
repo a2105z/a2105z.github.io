@@ -1,14 +1,7 @@
 import { useEffect, useState } from "react";
 import NavbarButton from "./NavbarButton";
 
-const NAV_ITEMS = [
-  "About",
-  "Experience",
-  "Education",
-  "Projects",
-  "Skills",
-  "Contact",
-];
+const NAV_ITEMS = ["About", "Experience", "Education", "Contact"];
 
 const useLocalTime = () => {
   const [time, setTime] = useState("");

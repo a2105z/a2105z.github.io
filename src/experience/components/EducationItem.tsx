@@ -113,16 +113,16 @@ const EducationItem: React.FC<EducationItemProps> = ({
               {degreeTertiary}
             </p>
           )}
-          <p className="text-[14px] text-[#666666] mt-0.5 leading-snug">
+          <p className="text-[14px] text-ink-muted mt-0.5 leading-snug">
             {dateRange}
           </p>
           {location && (
-            <p className="text-[14px] text-[#666666] mt-0.5 leading-snug">
+            <p className="text-[14px] text-ink-muted mt-0.5 leading-snug">
               {location}
             </p>
           )}
           {(gpa || gpaSecondary) && (
-            <p className="mt-0.5 flex flex-wrap items-baseline gap-x-3 text-[14px] leading-snug text-[#666666]">
+            <p className="mt-0.5 flex flex-wrap items-baseline gap-x-3 text-[14px] leading-snug text-ink-muted">
               {gpa ? <span>{gpa}</span> : null}
               {gpaSecondary ? <span>{gpaSecondary}</span> : null}
             </p>

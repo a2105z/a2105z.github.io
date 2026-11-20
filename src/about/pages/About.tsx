@@ -12,14 +12,14 @@ const Portrait: React.FC = () => {
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true, amount: 0.4 }}
       transition={{ duration: 0.9, ease: EASE_PREMIUM }}
-      className="relative h-14 w-14 rounded-full overflow-hidden ring-1 ring-line shadow-ring flex-shrink-0"
+      className="relative h-44 w-36 rounded-2xl overflow-hidden ring-1 ring-line shadow-ring flex-shrink-0"
     >
       {!errored ? (
         <img
-          src="/images/aarav.jpg"
+          src="/images/aarav.png"
           alt="Aarav Mittal"
           onError={() => setErrored(true)}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-[center_18%]"
         />
       ) : (
         <div className="w-full h-full flex items-center justify-center bg-ink text-canvas text-[13px] font-semibold tracking-wide">
@@ -32,7 +32,7 @@ const Portrait: React.FC = () => {
 
 const About: React.FC = () => {
   return (
-    <section className="bg-canvas pt-32 pb-32">
+    <section className="reveal bg-canvas pt-32 pb-32">
       <Wrapper>
         <Header
           index="01"

@@ -5,6 +5,8 @@ import App from "./App";
 
 import { BrowserRouter } from "react-router-dom";
 
+document.documentElement.classList.add("js");
+
 ReactDOM.render(
   <BrowserRouter>
     <App />

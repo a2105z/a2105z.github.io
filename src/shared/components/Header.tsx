@@ -15,7 +15,7 @@ const Header: React.FC<HeaderProps> = ({
   description,
 }) => {
   return (
-    <div className="pb-10 border-b border-line">
+    <div className="scroll-mt-24 pb-10 border-b border-line">
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
