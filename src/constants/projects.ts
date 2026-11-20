@@ -99,6 +99,22 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
+    company: "Google DeepMind",
+    monogram: "DM",
+    logo: "/icons/organizations/deepmind.svg",
+    startDate: "May 2026",
+    endDate: "Aug 2026",
+    summary: "",
+    employmentType: "Contributor",
+    roles: [
+      {
+        title: "Software Engineering Contributor, Gemini API and AI Agents",
+        dateRange: "May 2026 — Aug 2026",
+        highlights: [],
+      },
+    ],
+  },
+  {
     company: "Amazon",
     monogram: "AMZ",
     logo: "/icons/organizations/amazon.png",
