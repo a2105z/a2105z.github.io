@@ -11,7 +11,6 @@ const Education: React.FC = () => {
           index="03"
           eyebrow="Education"
           text="Where I'm learning."
-          description="University of Illinois. Two degrees, one question."
         />
 
         <ul className="mt-10 divide-y divide-line">
