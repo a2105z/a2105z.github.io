@@ -157,7 +157,6 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
 
   if (isInternship) {
     const role = roleList[0];
-    const { headline, group } = splitHeadline(role?.title);
     const typeLine = [listedName, employmentType].filter(Boolean).join(" · ");
     const dateLine = [role?.dateRange, tenure].filter(Boolean).join(" · ");
 
@@ -178,25 +177,9 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
             monogram={monogram}
           />
           <div className="min-w-0 flex-1">
-            {roleList.length > 1 ? (
-              <div className="space-y-1">
-                {roleList.map((item) => {
-                  const parts = splitHeadline(item.title);
-                  return (
-                    <h3
-                      key={item.title}
-                      className="text-[16px] font-semibold text-ink leading-snug"
-                    >
-                      {parts.headline || item.title}
-                    </h3>
-                  );
-                })}
-              </div>
-            ) : (
-              <h3 className="text-[16px] font-semibold text-ink leading-snug">
-                {headline || listedName}
-              </h3>
-            )}
+            <h3 className="text-[16px] font-semibold text-ink leading-snug">
+              {role?.title || listedName}
+            </h3>
             <p className="text-[14px] text-ink-muted mt-0.5 leading-snug">
               {typeLine}
             </p>
@@ -210,14 +193,9 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
                 {location}
               </p>
             )}
-            {group && (
-              <p className="text-[14px] text-ink mt-2 leading-snug">
-                {groupIcon ? `${groupIcon} ${group}` : group}
-              </p>
-            )}
-            {!group && summary && (
-              <p className="text-[14px] text-ink mt-2 leading-snug">
-                {groupIcon ? `${groupIcon} ${summary}` : summary}
+            {summary && (
+              <p className="text-[14px] text-ink-muted mt-2 leading-snug">
+                {summary}
               </p>
             )}
           </div>

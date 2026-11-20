@@ -44,7 +44,7 @@ const Experience: React.FC = () => {
           index="02"
           eyebrow="Experience"
           text="The work so far."
-          description="Internships across software and markets."
+          description="Software roles, most recent first."
         />
 
         <ul className="mt-10 divide-y divide-line">

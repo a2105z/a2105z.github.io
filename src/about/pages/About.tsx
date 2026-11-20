@@ -78,25 +78,20 @@ const About: React.FC = () => {
                 Building software and products by day, paying close attention
                 to the{" "}
                 <span className="text-ink font-medium">
-                  operators, investors, and bankers
+                  operators and investors
                 </span>{" "}
                 who decide which technologies actually reach scale.
               </motion.p>
 
               <motion.p variants={item}>
-                Longer term, I'm aiming at{" "}
+                Longer term, I'm looking at{" "}
                 <span className="text-ink font-medium">
                   product and P&amp;L leadership
                 </span>{" "}
-                at technology companies — with a serious side-interest in{" "}
-                <span className="text-ink font-medium">
-                  early-stage tech investing
-                </span>{" "}
                 and{" "}
                 <span className="text-ink font-medium">
-                  technology-focused banking
-                </span>{" "}
-                as adjacent lenses on the same question.
+                  early-stage investing
+                </span>.
               </motion.p>
             </motion.div>
           </div>
