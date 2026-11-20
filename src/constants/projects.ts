@@ -102,14 +102,16 @@ export const EXPERIENCES: Experience[] = [
     company: "Google DeepMind",
     monogram: "DM",
     logo: "/icons/organizations/deepmind.svg",
+    location: "Mountain View, California, United States",
     startDate: "May 2026",
     endDate: "Aug 2026",
     summary: "",
-    employmentType: "Contributor",
+    employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Contributor, Gemini API and AI Agents",
+        title: "Software Engineering Intern, Gemini API and AI Agents",
         dateRange: "May 2026 — Aug 2026",
+        location: "Mountain View, California, United States",
         highlights: [],
       },
     ],
