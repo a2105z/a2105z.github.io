@@ -1,0 +1,12 @@
+---
+description: Publish portfolio changes to the live GitHub Pages site
+alwaysApply: true
+---
+
+# Deploy the live site
+
+After any change that affects the portfolio visitors see, commit it and push to `master` on `a2105z/a2105z.github.io`. GitHub Actions deploys that branch to https://a2105z.github.io/.
+
+- Do this in the same turn as the change. Do not leave the live site behind the local one.
+- Confirm the Deploy to GitHub Pages workflow succeeds before saying the live site is updated.
+- Skip the push only when the user explicitly says to keep a change local.
