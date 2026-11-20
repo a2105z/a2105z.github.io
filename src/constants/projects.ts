@@ -151,7 +151,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Apprenticeship",
     roles: [
       {
-        title: "Software Engineering Fellow, Card & Consumer Banking Tech",
+        title: "Software Engineering Fellow, Consumer Banking Tech",
         dateRange: "May 2024 — Aug 2024",
         location: "New York City, New York, United States",
         highlights: [],
