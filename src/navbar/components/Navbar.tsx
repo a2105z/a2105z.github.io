@@ -1,33 +1,12 @@
-import { useEffect, useState } from "react";
 import NavbarButton from "./NavbarButton";
 
 const NAV_ITEMS = ["About", "Experience", "Education", "Contact"];
-
-const useLocalTime = () => {
-  const [time, setTime] = useState("");
-  useEffect(() => {
-    const fmt = () => {
-      const d = new Date();
-      return d.toLocaleTimeString("en-US", {
-        hour: "numeric",
-        minute: "2-digit",
-        timeZone: "America/Chicago",
-      });
-    };
-    setTime(fmt());
-    const id = window.setInterval(() => setTime(fmt()), 30_000);
-    return () => window.clearInterval(id);
-  }, []);
-  return time;
-};
 
 const Navbar: React.FC<{
   selectedPage: string;
   isTransparent: boolean;
   handleGoToPage: (newPage: string) => void;
 }> = (props) => {
-  const time = useLocalTime();
-
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-[background-color,backdrop-filter,border-color] duration-500 ease-premium ${
@@ -60,12 +39,6 @@ const Navbar: React.FC<{
               />
             ))}
           </nav>
-
-          {/* Local time */}
-          <div className="hidden lg:flex items-center gap-2 text-[11px] text-ink-dim tracking-[0.06em] font-medium whitespace-nowrap shrink-0">
-            <span className="h-1 w-1 rounded-full bg-emerald-500 animate-pulseDot" />
-            <span>{time ? `${time} CDT · Chicago, Illinois, United States` : "Chicago, Illinois, United States"}</span>
-          </div>
         </div>
       </div>
     </header>
