@@ -12,7 +12,7 @@ const Portrait: React.FC = () => {
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true, amount: 0.4 }}
       transition={{ duration: 0.9, ease: EASE_PREMIUM }}
-      className="relative h-64 w-52 rounded-2xl overflow-hidden ring-1 ring-line shadow-ring flex-shrink-0"
+      className="relative w-full max-w-[16rem] aspect-[4/5] rounded-2xl overflow-hidden ring-1 ring-line shadow-ring flex-shrink-0"
     >
       {!errored ? (
         <img
@@ -42,20 +42,20 @@ const About: React.FC = () => {
 
         <div className="mt-14 grid grid-cols-12 gap-x-8">
           {/* Left rail — portrait + small caption */}
-          <div className="col-span-12 md:col-span-4 lg:col-span-3">
+          <div className="col-span-12 md:col-span-6 lg:col-span-4">
             <div className="md:sticky md:top-32 flex md:flex-col items-center md:items-start gap-4">
               <Portrait />
               <div>
                 <p className="text-[13px] font-medium text-ink">Aarav Mittal</p>
                 <p className="text-[12px] text-ink-dim mt-0.5">
-                  Urbana–Champaign, IL
+                  Chicago, IL
                 </p>
               </div>
             </div>
           </div>
 
           {/* Right column — pull-quote + body */}
-          <div className="col-span-12 md:col-span-8 lg:col-span-8 mt-10 md:mt-0">
+          <div className="col-span-12 md:col-span-6 lg:col-span-8 mt-10 md:mt-0">
             <motion.p
               initial={{ opacity: 0, y: 14 }}
               whileInView={{ opacity: 1, y: 0 }}
