@@ -106,7 +106,7 @@ export const EXPERIENCES: Experience[] = [
     startDate: "May 2026",
     endDate: "Aug 2026",
     summary: "",
-    employmentType: "Contributor",
+    employmentType: "Internship",
     roles: [
       {
         title: "Software Engineering Contributor, Gemini API and AI Agents",
