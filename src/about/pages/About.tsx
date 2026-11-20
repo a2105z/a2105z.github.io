@@ -84,11 +84,18 @@ const About: React.FC = () => {
               </motion.p>
 
               <motion.p variants={item}>
-                Longer term, I'm looking at{" "}
+                Longer term, I'm on the way up through{" "}
                 <span className="text-ink font-medium">
-                  product and P&amp;L leadership
+                  product management
                 </span>{" "}
-                and{" "}
+                to{" "}
+                <span className="text-ink font-medium">
+                  P&amp;L leadership
+                </span>, with a standing interest in{" "}
+                <span className="text-ink font-medium">
+                  corporate development and commercial strategy
+                </span>{" "}
+                at technology companies, and in{" "}
                 <span className="text-ink font-medium">
                   early-stage investing
                 </span>.
