@@ -131,7 +131,7 @@ export const EXPERIENCES: Experience[] = [
     employmentType: "Internship",
     roles: [
       {
-        title: "Software Engineering Intern, Lunar Flight Telematics",
+        title: "Software Engineering Intern, Lunar Robotics Systems",
         dateRange: "Sep 2024 — Apr 2025",
         location: "Urbana–Champaign, Illinois, United States",
         highlights: [],
