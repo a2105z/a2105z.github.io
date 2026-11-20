@@ -172,8 +172,8 @@ export const EDUCATION: Education[] = [
       "Bachelor of Science, Computer Science | Bachelor of Science, Electrical Engineering",
     gpa: "James Scholar | Minor(s): Business, Tech Entrepreneurship | Thesis in AI Safety",
     startDate: "Aug 2024",
-    endDate: "Jun 2028",
-    dateRange: "Aug 2024 — Jun 2028",
+    endDate: "May 2028",
+    dateRange: "Aug 2024 — May 2028",
     focus: [
       "Computer Science",
       "Electrical Engineering",
