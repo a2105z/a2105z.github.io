@@ -107,7 +107,7 @@ export const EXPERIENCES: Experience[] = [
     location: "Urbana–Champaign, Illinois, United States",
     startDate: "Sep 2024",
     endDate: "Apr 2025",
-    summary: "Autonomous Flight Systems Engineering",
+    summary: "",
     employmentType: "Internship",
     roles: [
       {
@@ -127,7 +127,7 @@ export const EXPERIENCES: Experience[] = [
     location: "New York City, New York, United States",
     startDate: "May 2024",
     endDate: "Aug 2024",
-    summary: "Headstarter x LinkedIn, Liger-Kernel",
+    summary: "",
     employmentType: "Apprenticeship",
     roles: [
       {
