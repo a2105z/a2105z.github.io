@@ -4,9 +4,7 @@ import Wrapper from "../../shared/components/Wrapper";
 import Header from "../../shared/components/Header";
 import EducationItem from "../components/EducationItem";
 import ExperienceItem from "../components/ExperienceItem";
-import CertificationItem from "../components/CertificationItem";
 import {
-  CERTIFICATIONS,
   EDUCATION,
   EXPERIENCES,
   Experience,
@@ -94,9 +92,7 @@ const Education: React.FC = () => {
   const [showInternships, setShowInternships] = useState(false);
   const [internshipView, setInternshipView] =
     useState<InternshipView>("engineering");
-  const [showCertifications, setShowCertifications] = useState(false);
   const internshipPanelRef = useRef<HTMLDivElement>(null);
-  const certificationPanelRef = useRef<HTMLDivElement>(null);
 
   const internships = useMemo(
     () =>
@@ -133,15 +129,6 @@ const Education: React.FC = () => {
 
   const selectInternshipView = (view: InternshipView) => {
     setInternshipView(view);
-  };
-
-  const toggleCertifications = () => {
-    if (showCertifications && certificationPanelRef.current) {
-      certificationPanelRef.current.style.height = "";
-      certificationPanelRef.current.style.overflow = "";
-    }
-    setShowCertifications((open) => !open);
-    bumpLayout();
   };
 
   return (
@@ -196,31 +183,6 @@ const Education: React.FC = () => {
                 aria-hidden="true"
                 className={`text-ink-dim transition-transform duration-300 ease-premium ${
                   showInternships ? "rotate-180" : ""
-                }`}
-              >
-                ↓
-              </span>
-            </button>
-
-            <span aria-hidden="true" className="text-ink-faint hidden sm:inline">
-              ·
-            </span>
-
-            <button
-              type="button"
-              onClick={toggleCertifications}
-              aria-expanded={showCertifications}
-              className="group inline-flex items-center gap-2 text-[14px] font-medium text-ink hover:opacity-70 transition-opacity"
-            >
-              <span>
-                {showCertifications
-                  ? "Hide Certifications"
-                  : "Show Certifications"}
-              </span>
-              <span
-                aria-hidden="true"
-                className={`text-ink-dim transition-transform duration-300 ease-premium ${
-                  showCertifications ? "rotate-180" : ""
                 }`}
               >
                 ↓
@@ -287,46 +249,6 @@ const Education: React.FC = () => {
                     <InternshipList items={visibleInternships} />
                   </div>
                 </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
-
-          <AnimatePresence initial={false}>
-            {showCertifications && (
-              <motion.div
-                key="certifications"
-                ref={certificationPanelRef}
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: "auto" }}
-                exit={{ opacity: 0, height: 0 }}
-                transition={{ duration: 0.35, ease: EASE_PREMIUM }}
-                onAnimationComplete={() => {
-                  if (showCertifications) releasePanel(certificationPanelRef.current);
-                }}
-                className="overflow-hidden"
-              >
-                <ul className="mt-4 divide-y divide-line border-t border-line">
-                  {CERTIFICATIONS.map((cert, index) => (
-                    <li
-                      key={`${cert.name}-${cert.issued}`}
-                      className="py-5"
-                    >
-                      <CertificationItem
-                        name={cert.name}
-                        issuer={cert.issuer}
-                        monogram={cert.monogram}
-                        logo={cert.logo}
-                        logoFull={cert.logoFull}
-                        tileColor={cert.tileColor}
-                        issued={cert.issued}
-                        expires={cert.expires}
-                        credentialId={cert.credentialId}
-                        summary={cert.summary}
-                        delay={index * 0.03}
-                      />
-                    </li>
-                  ))}
-                </ul>
               </motion.div>
             )}
           </AnimatePresence>

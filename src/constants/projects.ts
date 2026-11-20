@@ -68,19 +68,6 @@ export type Education = {
   summary?: string;
 };
 
-export type Certification = {
-  name: string;
-  issuer: string;
-  monogram: string;
-  logo?: string;
-  logoFull?: boolean;
-  tileColor?: string;
-  issued: string;
-  expires?: string;
-  credentialId?: string;
-  summary?: string;
-};
-
 const FIVE_BULLETS: string[] = [
   "Bullet #1",
   "Bullet #2",
@@ -267,51 +254,18 @@ export const EDUCATION: Education[] = [
     tileColor: "#13294B",
     degree:
       "Bachelor of Science, Computer Science | Bachelor of Science, Electrical Engineering",
-    gpa: "Minor(s) in Business, Entrepreneurship | Thesis in AI Safety",
+    gpa: "James Scholar | Minor(s): Business, Tech Entrepreneurship | Thesis in AI Safety",
     startDate: "Aug 2024",
     endDate: "Jun 2028",
     dateRange: "Aug 2024 — Jun 2028",
     focus: [
       "Computer Science",
       "Electrical Engineering",
+      "James Scholar",
       "Business",
-      "Entrepreneurship",
+      "Tech Entrepreneurship",
       "AI Safety",
     ],
-  },
-];
-
-export const CERTIFICATIONS: Certification[] = [
-  {
-    name: "Chartered Financial Analyst (CFA)",
-    issuer: "CFA Institute",
-    monogram: "CFA",
-    tileColor: "#1A3C6E",
-    issued: "May 2036",
-    credentialId: "CFA-2036-88421",
-    summary:
-      "Charterholder across ethics, quantitative methods, economics, financial reporting, equity, fixed income, derivatives, and portfolio management.",
-  },
-  {
-    name: "Certified Management Accountant (CMA)",
-    issuer: "Institute of Management Accountants (IMA)",
-    monogram: "CMA",
-    tileColor: "#0B6E4F",
-    issued: "Dec 2035",
-    credentialId: "CMA-2035-44109",
-    summary:
-      "Credential covering financial planning, performance, analytics, and strategic financial management for decision-making and control.",
-  },
-  {
-    name: "Project Management Professional (PMP)",
-    issuer: "Project Management Institute (PMI)",
-    monogram: "PMP",
-    tileColor: "#EE3D3D",
-    issued: "Aug 2032",
-    expires: "Aug 2035",
-    credentialId: "PMP-2032-77204",
-    summary:
-      "Credential in leading projects across predictive, agile, and hybrid approaches—scope, schedule, cost, risk, stakeholders, and delivery.",
   },
 ];
 
