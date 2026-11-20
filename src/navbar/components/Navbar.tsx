@@ -62,9 +62,9 @@ const Navbar: React.FC<{
           </nav>
 
           {/* Local time */}
-          <div className="hidden md:flex items-center gap-2 text-[11px] text-ink-dim tracking-[0.06em] font-medium">
+          <div className="hidden lg:flex items-center gap-2 text-[11px] text-ink-dim tracking-[0.06em] font-medium whitespace-nowrap shrink-0">
             <span className="h-1 w-1 rounded-full bg-emerald-500 animate-pulseDot" />
-            <span>{time ? `${time} CDT · Chicago, IL` : "Chicago, IL"}</span>
+            <span>{time ? `${time} CDT · Chicago, Illinois, United States` : "Chicago, Illinois, United States"}</span>
           </div>
         </div>
       </div>

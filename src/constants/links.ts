@@ -4,4 +4,4 @@ export const GITHUB_LINK = "https://github.com/aaravmittal";
 export const LINKEDIN_LINK = "https://www.linkedin.com/in/aaravmittal/";
 export const GITHUB_PROJECT_LINK =
   "https://github.com/aaravmittal/portfolio-website";
-export const LOCATION = "Chicago, Illinois";
+export const LOCATION = "Chicago, Illinois, United States";

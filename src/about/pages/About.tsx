@@ -48,7 +48,7 @@ const About: React.FC = () => {
               <div>
                 <p className="text-[13px] font-medium text-ink">Aarav Mittal</p>
                 <p className="text-[12px] text-ink-dim mt-0.5">
-                  Chicago, IL
+                  Chicago, Illinois, United States
                 </p>
               </div>
             </div>
