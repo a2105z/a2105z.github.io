@@ -265,9 +265,9 @@ export const EDUCATION: Education[] = [
     logo: "/icons/organizations/uiuc.png",
     logoFull: true,
     tileColor: "#13294B",
-    degree: "Bachelor of Science, Computer Science",
-    degreeSecondary: "Bachelor of Science, Electrical Engineering",
-    gpa: "Minor(s): Business, Tech Entrepreneurship",
+    degree:
+      "Bachelor of Science, Computer Science | Bachelor of Science, Electrical Engineering",
+    gpa: "Minor(s) in Business, Entrepreneurship | Thesis in AI Safety",
     startDate: "Aug 2024",
     endDate: "Jun 2028",
     dateRange: "Aug 2024 — Jun 2028",
@@ -275,7 +275,8 @@ export const EDUCATION: Education[] = [
       "Computer Science",
       "Electrical Engineering",
       "Business",
-      "Tech Entrepreneurship",
+      "Entrepreneurship",
+      "AI Safety",
     ],
   },
 ];
