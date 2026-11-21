@@ -14,7 +14,7 @@ export type ExperienceRole = {
 
 export type ExperienceKind = "internship" | "fulltime";
 
-export type InternshipTrack = "engineering" | "business";
+export type InternshipTrack = "tech" | "finance";
 
 export type Experience = {
   company: string;
